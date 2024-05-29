@@ -168,5 +168,20 @@
   <ItemGroup>
     <None Include="Resources\icons8-selection-32.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rotate-right-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rotate-left-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-flip-horizontal-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-flip-vertical-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-image-editor-48.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

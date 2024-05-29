@@ -133,9 +133,39 @@ namespace RemakePaint.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_flip_horizontal_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-flip-horizontal-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_flip_vertical_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-flip-vertical-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_folder_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-folder-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_image_editor_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-image-editor-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,6 +226,26 @@ namespace RemakePaint.Properties {
         internal static System.Drawing.Bitmap icons8_redo_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-redo-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_rotate_left_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-rotate-left-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_rotate_right_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-rotate-right-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
