@@ -133,6 +133,7 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2VSeparator8 = new Guna.UI2.WinForms.Guna2VSeparator();
+            this.TrackBarPen = new Guna.UI2.WinForms.Guna2VTrackBar();
             this.pnTool.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -173,7 +174,7 @@
             this.flowLayoutPanel1.Controls.Add(this.menuStrip1);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(179, 33);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(181, 33);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // menuStrip1
@@ -186,7 +187,7 @@
             this.viewToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(179, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(181, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -257,7 +258,7 @@
             // 
             this.guna2VSeparator1.BackColor = System.Drawing.SystemColors.Control;
             this.guna2VSeparator1.FillColor = System.Drawing.Color.Silver;
-            this.guna2VSeparator1.Location = new System.Drawing.Point(188, 3);
+            this.guna2VSeparator1.Location = new System.Drawing.Point(190, 3);
             this.guna2VSeparator1.Name = "guna2VSeparator1";
             this.guna2VSeparator1.Size = new System.Drawing.Size(5, 33);
             this.guna2VSeparator1.TabIndex = 1;
@@ -266,7 +267,7 @@
             // 
             this.guna2VSeparator2.BackColor = System.Drawing.SystemColors.Control;
             this.guna2VSeparator2.FillColor = System.Drawing.Color.Silver;
-            this.guna2VSeparator2.Location = new System.Drawing.Point(246, 3);
+            this.guna2VSeparator2.Location = new System.Drawing.Point(248, 3);
             this.guna2VSeparator2.Name = "guna2VSeparator2";
             this.guna2VSeparator2.Size = new System.Drawing.Size(5, 33);
             this.guna2VSeparator2.TabIndex = 3;
@@ -489,6 +490,7 @@
             // 
             // pnPaintRegion
             // 
+            this.pnPaintRegion.Controls.Add(this.TrackBarPen);
             this.pnPaintRegion.Controls.Add(this.guna2PictureBox2);
             this.pnPaintRegion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnPaintRegion.Location = new System.Drawing.Point(0, 192);
@@ -976,7 +978,7 @@
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(97, 58);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(117, 63);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(1000, 500);
             this.guna2PictureBox2.TabIndex = 0;
@@ -1247,6 +1249,7 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 12;
             this.guna2PictureBox1.TabStop = false;
+            this.guna2HtmlToolTip1.SetToolTip(this.guna2PictureBox1, "Current shape");
             // 
             // guna2Button8
             // 
@@ -1266,7 +1269,7 @@
             this.guna2Button8.Name = "guna2Button8";
             this.guna2Button8.Size = new System.Drawing.Size(25, 25);
             this.guna2Button8.TabIndex = 7;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button8, "Flip horizontal");
+            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button8, "Line");
             // 
             // guna2Button17
             // 
@@ -1286,7 +1289,7 @@
             this.guna2Button17.Name = "guna2Button17";
             this.guna2Button17.Size = new System.Drawing.Size(25, 25);
             this.guna2Button17.TabIndex = 8;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button17, "Flip horizontal");
+            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button17, "Circle");
             // 
             // guna2Button18
             // 
@@ -1306,7 +1309,7 @@
             this.guna2Button18.Name = "guna2Button18";
             this.guna2Button18.Size = new System.Drawing.Size(25, 25);
             this.guna2Button18.TabIndex = 9;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button18, "Flip horizontal");
+            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button18, "Rectangle");
             // 
             // guna2Button19
             // 
@@ -1326,7 +1329,7 @@
             this.guna2Button19.Name = "guna2Button19";
             this.guna2Button19.Size = new System.Drawing.Size(25, 25);
             this.guna2Button19.TabIndex = 10;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button19, "Flip horizontal");
+            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button19, "Polygon");
             // 
             // guna2Button20
             // 
@@ -1346,7 +1349,7 @@
             this.guna2Button20.Name = "guna2Button20";
             this.guna2Button20.Size = new System.Drawing.Size(25, 25);
             this.guna2Button20.TabIndex = 11;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button20, "Flip horizontal");
+            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button20, "Triangle");
             // 
             // guna2Button21
             // 
@@ -1366,7 +1369,7 @@
             this.guna2Button21.Name = "guna2Button21";
             this.guna2Button21.Size = new System.Drawing.Size(25, 25);
             this.guna2Button21.TabIndex = 12;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button21, "Flip horizontal");
+            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button21, "Right Triangle");
             // 
             // guna2Button22
             // 
@@ -1386,7 +1389,7 @@
             this.guna2Button22.Name = "guna2Button22";
             this.guna2Button22.Size = new System.Drawing.Size(25, 25);
             this.guna2Button22.TabIndex = 13;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button22, "Flip horizontal");
+            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button22, "Radius Rectangle");
             // 
             // guna2Button23
             // 
@@ -1406,7 +1409,7 @@
             this.guna2Button23.Name = "guna2Button23";
             this.guna2Button23.Size = new System.Drawing.Size(25, 25);
             this.guna2Button23.TabIndex = 14;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button23, "Flip horizontal");
+            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button23, "Rhombus");
             // 
             // guna2Button24
             // 
@@ -1426,7 +1429,7 @@
             this.guna2Button24.Name = "guna2Button24";
             this.guna2Button24.Size = new System.Drawing.Size(25, 25);
             this.guna2Button24.TabIndex = 15;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button24, "Flip horizontal");
+            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button24, "Pentagon");
             // 
             // guna2Button25
             // 
@@ -1446,7 +1449,7 @@
             this.guna2Button25.Name = "guna2Button25";
             this.guna2Button25.Size = new System.Drawing.Size(25, 25);
             this.guna2Button25.TabIndex = 16;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button25, "Flip horizontal");
+            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button25, "Hexagon");
             // 
             // guna2Button26
             // 
@@ -1466,7 +1469,7 @@
             this.guna2Button26.Name = "guna2Button26";
             this.guna2Button26.Size = new System.Drawing.Size(25, 25);
             this.guna2Button26.TabIndex = 17;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button26, "Flip horizontal");
+            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button26, "Arrow up");
             // 
             // guna2Button27
             // 
@@ -1486,7 +1489,7 @@
             this.guna2Button27.Name = "guna2Button27";
             this.guna2Button27.Size = new System.Drawing.Size(25, 25);
             this.guna2Button27.TabIndex = 18;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button27, "Flip horizontal");
+            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button27, "Arrow down");
             // 
             // guna2Button28
             // 
@@ -1506,7 +1509,7 @@
             this.guna2Button28.Name = "guna2Button28";
             this.guna2Button28.Size = new System.Drawing.Size(25, 25);
             this.guna2Button28.TabIndex = 19;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button28, "Flip horizontal");
+            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button28, "Arrow left");
             // 
             // guna2Button29
             // 
@@ -1526,7 +1529,7 @@
             this.guna2Button29.Name = "guna2Button29";
             this.guna2Button29.Size = new System.Drawing.Size(25, 25);
             this.guna2Button29.TabIndex = 20;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button29, "Flip horizontal");
+            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button29, "Arrow right");
             // 
             // guna2Button30
             // 
@@ -1546,7 +1549,7 @@
             this.guna2Button30.Name = "guna2Button30";
             this.guna2Button30.Size = new System.Drawing.Size(25, 25);
             this.guna2Button30.TabIndex = 21;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button30, "Flip horizontal");
+            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button30, "Star");
             // 
             // guna2Button31
             // 
@@ -1579,6 +1582,7 @@
             this.guna2CirclePictureBox1.Size = new System.Drawing.Size(45, 45);
             this.guna2CirclePictureBox1.TabIndex = 35;
             this.guna2CirclePictureBox1.TabStop = false;
+            this.guna2HtmlToolTip1.SetToolTip(this.guna2CirclePictureBox1, "Current color");
             // 
             // newToolStripMenuItem
             // 
@@ -1671,7 +1675,7 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Button1.Image = global::RemakePaint.Properties.Resources.icons8_save_50__1_;
             this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button1.Location = new System.Drawing.Point(199, 3);
+            this.guna2Button1.Location = new System.Drawing.Point(201, 3);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(41, 33);
             this.guna2Button1.TabIndex = 2;
@@ -1688,7 +1692,7 @@
             this.guna2Button2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Button2.Image = global::RemakePaint.Properties.Resources.icons8_undo_50;
             this.guna2Button2.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button2.Location = new System.Drawing.Point(257, 3);
+            this.guna2Button2.Location = new System.Drawing.Point(259, 3);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(41, 33);
             this.guna2Button2.TabIndex = 4;
@@ -1705,7 +1709,7 @@
             this.guna2Button3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Button3.Image = global::RemakePaint.Properties.Resources.icons8_redo_50;
             this.guna2Button3.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button3.Location = new System.Drawing.Point(304, 3);
+            this.guna2Button3.Location = new System.Drawing.Point(306, 3);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(41, 33);
             this.guna2Button3.TabIndex = 5;
@@ -1716,6 +1720,16 @@
             this.guna2VSeparator8.Name = "guna2VSeparator8";
             this.guna2VSeparator8.Size = new System.Drawing.Size(5, 156);
             this.guna2VSeparator8.TabIndex = 11;
+            // 
+            // TrackBarPen
+            // 
+            this.TrackBarPen.Location = new System.Drawing.Point(19, 217);
+            this.TrackBarPen.Maximum = 40;
+            this.TrackBarPen.Name = "TrackBarPen";
+            this.TrackBarPen.Size = new System.Drawing.Size(23, 321);
+            this.TrackBarPen.TabIndex = 1;
+            this.TrackBarPen.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
+            this.TrackBarPen.Value = 39;
             // 
             // Paint
             // 
@@ -1867,6 +1881,7 @@
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton8;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton7;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator8;
+        private Guna.UI2.WinForms.Guna2VTrackBar TrackBarPen;
     }
 }
 
