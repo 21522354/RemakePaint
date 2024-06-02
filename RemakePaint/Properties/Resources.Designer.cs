@@ -83,6 +83,16 @@ namespace RemakePaint.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_bold_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-bold-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_circle_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-circle-30", resourceCulture);
@@ -206,6 +216,16 @@ namespace RemakePaint.Properties {
         internal static System.Drawing.Bitmap icons8_image_editor_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-image-editor-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_italic_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-italic-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -416,6 +436,16 @@ namespace RemakePaint.Properties {
         internal static System.Drawing.Bitmap icons8_triangle_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-triangle-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_underline_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-underline-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
