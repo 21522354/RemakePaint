@@ -72,57 +72,6 @@ namespace RemakePaint
         }
 
 
-        private void LoadFontAndSize()
-        {
-            InstalledFontCollection installedFont = new InstalledFontCollection();
-            FontFamily[] fontFamilies = installedFont.Families;
-            foreach (FontFamily ff in fontFamilies)
-            {
-                cb_Font.Items.Add(ff.Name);
-            }
-            cb_Size.Items.Add("8");
-            cb_Size.Items.Add("10");
-            cb_Size.Items.Add("12");
-            cb_Size.Items.Add("15");
-            cb_Size.Items.Add("18");
-            cb_Size.Items.Add("22");
-            cb_Size.Items.Add("26");
-            cb_Size.Items.Add("30");
-            cb_Size.Items.Add("48");
-            cb_Size.Items.Add("72");
-            cb_Size.SelectedItem = "10";
-            cb_Font.SelectedItem = "Arial";
-            cb_Font.SelectedIndexChanged += Cb_Font_SelectedIndexChanged;
-        }
-
-        private void Cb_Font_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                int i = int.Parse(cb_Size.Text);
-                Font font = new Font(cb_Font.Text, i);
-                textBox1.SelectionColor = currentColor;
-                textBox1.Font = font;
-
-            }
-            catch
-            {
-                MessageBox.Show("Loi font chu");
-            }
-        }
-
-        private void InitGraphic()
-        {
-            bm = new Bitmap(pb_mainScreen.Width, pb_mainScreen.Height);
-            g = Graphics.FromImage(bm);
-            g.Clear(Color.White);
-            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            pb_mainScreen.Image = bm;
-            p = new Pen(Color.Black, 1);
-            eraser = new Pen(Color.White, 20);
-            SelectedMode = 1; // chọn bút chì làm mặc định
-        }
-
         #region Init color event
         private void InitBtncolorEvent()
         {
@@ -258,8 +207,71 @@ namespace RemakePaint
                 eraser = new Pen(Color.White, size);
             }
         }
+        private void Cb_Font_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int i = int.Parse(cb_Size.Text);
+                Font font = new Font(cb_Font.Text, i);
+                textBox1.SelectionColor = currentColor;
+                textBox1.Font = font;
+
+            }
+            catch
+            {
+                MessageBox.Show("Loi font chu");
+            }
+        }
+        private void cb_Size_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int i = int.Parse(cb_Size.Text);
+                Font font = new Font(cb_Font.Text, i);
+                textBox1.SelectionColor = currentColor;
+                textBox1.Font = font;
+
+            }
+            catch
+            {
+                MessageBox.Show("Loi font chu");
+            }
+        }
         #endregion
         #region Custom Function
+        private void LoadFontAndSize()
+        {
+            InstalledFontCollection installedFont = new InstalledFontCollection();
+            FontFamily[] fontFamilies = installedFont.Families;
+            foreach (FontFamily ff in fontFamilies)
+            {
+                cb_Font.Items.Add(ff.Name);
+            }
+            cb_Size.Items.Add("8");
+            cb_Size.Items.Add("10");
+            cb_Size.Items.Add("12");
+            cb_Size.Items.Add("15");
+            cb_Size.Items.Add("18");
+            cb_Size.Items.Add("22");
+            cb_Size.Items.Add("26");
+            cb_Size.Items.Add("30");
+            cb_Size.Items.Add("48");
+            cb_Size.Items.Add("72");
+            cb_Size.SelectedItem = "10";
+            cb_Font.SelectedItem = "Arial";
+            cb_Font.SelectedIndexChanged += Cb_Font_SelectedIndexChanged;
+        }
+        private void InitGraphic()
+        {
+            bm = new Bitmap(pb_mainScreen.Width, pb_mainScreen.Height);
+            g = Graphics.FromImage(bm);
+            g.Clear(Color.White);
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            pb_mainScreen.Image = bm;
+            p = new Pen(Color.Black, 1);
+            eraser = new Pen(Color.White, 20);
+            SelectedMode = 1; // chọn bút chì làm mặc định
+        }
         private void Fill(Bitmap bm, int x, int y, Color newColor)
         {
             Color oldColor = bm.GetPixel(x, y);

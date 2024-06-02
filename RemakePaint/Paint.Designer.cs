@@ -1036,6 +1036,7 @@
             this.cb_Size.Name = "cb_Size";
             this.cb_Size.Size = new System.Drawing.Size(82, 36);
             this.cb_Size.TabIndex = 1;
+            this.cb_Size.SelectedIndexChanged += new System.EventHandler(this.cb_Size_SelectedIndexChanged);
             // 
             // cb_Font
             // 
