@@ -89,26 +89,27 @@
             this.guna2VSeparator8 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2HtmlToolTip1 = new Guna.UI2.WinForms.Guna2HtmlToolTip();
             this.pnPaintRegion = new Guna.UI2.WinForms.Guna2Panel();
-            this.TrackBarPen = new Guna.UI2.WinForms.Guna2VTrackBar();
+            this.textBox1 = new System.Windows.Forms.RichTextBox();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.cb_Font = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cb_Size = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cb_Font = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.TrackBarPen = new Guna.UI2.WinForms.Guna2VTrackBar();
             this.guna2Button18 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button17 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.pb_mainScreen = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button12 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button14 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button15 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button16 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSelection = new Guna.UI2.WinForms.Guna2Button();
+            this.btnZoom = new Guna.UI2.WinForms.Guna2Button();
+            this.btnColorPicker = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEraser = new Guna.UI2.WinForms.Guna2Button();
+            this.btnText = new Guna.UI2.WinForms.Guna2Button();
+            this.btnFill = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPencil = new Guna.UI2.WinForms.Guna2Button();
+            this.btnImageEditor = new Guna.UI2.WinForms.Guna2Button();
+            this.btnFlipVertical = new Guna.UI2.WinForms.Guna2Button();
+            this.btnFlipHorizontal = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRotateRight = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRotateLeft = new Guna.UI2.WinForms.Guna2Button();
             this.pbCurrentShape = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnLine = new Guna.UI2.WinForms.Guna2Button();
             this.btnCircle = new Guna.UI2.WinForms.Guna2Button();
@@ -140,7 +141,6 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.textBox1 = new System.Windows.Forms.RichTextBox();
             this.pnTool.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -182,7 +182,7 @@
             this.flowLayoutPanel1.Controls.Add(this.menuStrip1);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(179, 33);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(181, 33);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // menuStrip1
@@ -195,7 +195,7 @@
             this.viewToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(179, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(181, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -266,7 +266,7 @@
             // 
             this.guna2VSeparator1.BackColor = System.Drawing.SystemColors.Control;
             this.guna2VSeparator1.FillColor = System.Drawing.Color.Silver;
-            this.guna2VSeparator1.Location = new System.Drawing.Point(188, 3);
+            this.guna2VSeparator1.Location = new System.Drawing.Point(190, 3);
             this.guna2VSeparator1.Name = "guna2VSeparator1";
             this.guna2VSeparator1.Size = new System.Drawing.Size(5, 33);
             this.guna2VSeparator1.TabIndex = 1;
@@ -275,7 +275,7 @@
             // 
             this.guna2VSeparator2.BackColor = System.Drawing.SystemColors.Control;
             this.guna2VSeparator2.FillColor = System.Drawing.Color.Silver;
-            this.guna2VSeparator2.Location = new System.Drawing.Point(246, 3);
+            this.guna2VSeparator2.Location = new System.Drawing.Point(248, 3);
             this.guna2VSeparator2.Name = "guna2VSeparator2";
             this.guna2VSeparator2.Size = new System.Drawing.Size(5, 33);
             this.guna2VSeparator2.TabIndex = 3;
@@ -304,7 +304,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.label1);
-            this.guna2Panel1.Controls.Add(this.guna2Button6);
+            this.guna2Panel1.Controls.Add(this.btnSelection);
             this.guna2Panel1.Location = new System.Drawing.Point(3, 3);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(88, 150);
@@ -331,12 +331,12 @@
             // guna2Panel2
             // 
             this.guna2Panel2.Controls.Add(this.label2);
-            this.guna2Panel2.Controls.Add(this.guna2Button10);
-            this.guna2Panel2.Controls.Add(this.guna2Button11);
-            this.guna2Panel2.Controls.Add(this.guna2Button12);
-            this.guna2Panel2.Controls.Add(this.guna2Button13);
-            this.guna2Panel2.Controls.Add(this.guna2Button14);
-            this.guna2Panel2.Controls.Add(this.guna2Button15);
+            this.guna2Panel2.Controls.Add(this.btnZoom);
+            this.guna2Panel2.Controls.Add(this.btnColorPicker);
+            this.guna2Panel2.Controls.Add(this.btnEraser);
+            this.guna2Panel2.Controls.Add(this.btnText);
+            this.guna2Panel2.Controls.Add(this.btnFill);
+            this.guna2Panel2.Controls.Add(this.btnPencil);
             this.guna2Panel2.Location = new System.Drawing.Point(108, 3);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(147, 150);
@@ -362,12 +362,12 @@
             // 
             // guna2Panel3
             // 
-            this.guna2Panel3.Controls.Add(this.guna2Button4);
+            this.guna2Panel3.Controls.Add(this.btnImageEditor);
             this.guna2Panel3.Controls.Add(this.label3);
-            this.guna2Panel3.Controls.Add(this.guna2Button5);
-            this.guna2Panel3.Controls.Add(this.guna2Button7);
-            this.guna2Panel3.Controls.Add(this.guna2Button9);
-            this.guna2Panel3.Controls.Add(this.guna2Button16);
+            this.guna2Panel3.Controls.Add(this.btnFlipVertical);
+            this.guna2Panel3.Controls.Add(this.btnFlipHorizontal);
+            this.guna2Panel3.Controls.Add(this.btnRotateRight);
+            this.guna2Panel3.Controls.Add(this.btnRotateLeft);
             this.guna2Panel3.Location = new System.Drawing.Point(272, 3);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(185, 150);
@@ -992,15 +992,15 @@
             this.pnPaintRegion.Size = new System.Drawing.Size(1662, 761);
             this.pnPaintRegion.TabIndex = 4;
             // 
-            // TrackBarPen
+            // textBox1
             // 
-            this.TrackBarPen.Location = new System.Drawing.Point(19, 145);
-            this.TrackBarPen.Maximum = 40;
-            this.TrackBarPen.Name = "TrackBarPen";
-            this.TrackBarPen.Size = new System.Drawing.Size(23, 321);
-            this.TrackBarPen.TabIndex = 1;
-            this.TrackBarPen.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
-            this.TrackBarPen.Value = 39;
+            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(343, 169);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(597, 96);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.Text = "";
+            this.textBox1.Visible = false;
             // 
             // guna2ShadowPanel1
             // 
@@ -1019,6 +1019,23 @@
             this.guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.Dropped;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(487, 63);
             this.guna2ShadowPanel1.TabIndex = 2;
+            this.guna2ShadowPanel1.Visible = false;
+            // 
+            // cb_Size
+            // 
+            this.cb_Size.BackColor = System.Drawing.Color.Transparent;
+            this.cb_Size.BorderRadius = 5;
+            this.cb_Size.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cb_Size.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_Size.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_Size.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_Size.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cb_Size.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cb_Size.ItemHeight = 30;
+            this.cb_Size.Location = new System.Drawing.Point(254, 7);
+            this.cb_Size.Name = "cb_Size";
+            this.cb_Size.Size = new System.Drawing.Size(82, 36);
+            this.cb_Size.TabIndex = 1;
             // 
             // cb_Font
             // 
@@ -1038,21 +1055,17 @@
             this.cb_Font.Size = new System.Drawing.Size(233, 36);
             this.cb_Font.TabIndex = 0;
             // 
-            // cb_Size
+            // TrackBarPen
             // 
-            this.cb_Size.BackColor = System.Drawing.Color.Transparent;
-            this.cb_Size.BorderRadius = 5;
-            this.cb_Size.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cb_Size.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_Size.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_Size.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_Size.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cb_Size.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cb_Size.ItemHeight = 30;
-            this.cb_Size.Location = new System.Drawing.Point(254, 7);
-            this.cb_Size.Name = "cb_Size";
-            this.cb_Size.Size = new System.Drawing.Size(82, 36);
-            this.cb_Size.TabIndex = 1;
+            this.TrackBarPen.Location = new System.Drawing.Point(19, 145);
+            this.TrackBarPen.Maximum = 40;
+            this.TrackBarPen.Name = "TrackBarPen";
+            this.TrackBarPen.Size = new System.Drawing.Size(23, 321);
+            this.TrackBarPen.TabIndex = 1;
+            this.TrackBarPen.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
+            this.TrackBarPen.Value = 39;
+            this.TrackBarPen.Visible = false;
+            this.TrackBarPen.Scroll += new System.Windows.Forms.ScrollEventHandler(this.TrackBarPen_Scroll);
             // 
             // guna2Button18
             // 
@@ -1123,257 +1136,261 @@
             this.pb_mainScreen.TabIndex = 0;
             this.pb_mainScreen.TabStop = false;
             // 
-            // guna2Button6
+            // btnSelection
             // 
-            this.guna2Button6.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button6.BorderRadius = 5;
-            this.guna2Button6.BorderThickness = 1;
-            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button6.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button6.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2Button6.Image = global::RemakePaint.Properties.Resources.icons8_selection_32;
-            this.guna2Button6.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button6.Location = new System.Drawing.Point(16, 31);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(55, 55);
-            this.guna2Button6.TabIndex = 5;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button6, "Select");
+            this.btnSelection.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSelection.BorderRadius = 5;
+            this.btnSelection.BorderThickness = 1;
+            this.btnSelection.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSelection.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSelection.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSelection.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSelection.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSelection.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSelection.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSelection.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnSelection.Image = global::RemakePaint.Properties.Resources.icons8_selection_32;
+            this.btnSelection.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnSelection.Location = new System.Drawing.Point(16, 31);
+            this.btnSelection.Name = "btnSelection";
+            this.btnSelection.Size = new System.Drawing.Size(55, 55);
+            this.btnSelection.TabIndex = 5;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnSelection, "Select");
             // 
-            // guna2Button10
+            // btnZoom
             // 
-            this.guna2Button10.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button10.BorderRadius = 5;
-            this.guna2Button10.BorderThickness = 1;
-            this.guna2Button10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button10.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button10.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button10.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button10.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2Button10.Image = global::RemakePaint.Properties.Resources.icons8_magnifying_glass_50;
-            this.guna2Button10.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button10.Location = new System.Drawing.Point(103, 62);
-            this.guna2Button10.Name = "guna2Button10";
-            this.guna2Button10.Size = new System.Drawing.Size(40, 40);
-            this.guna2Button10.TabIndex = 8;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button10, "Magnifier");
+            this.btnZoom.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnZoom.BorderRadius = 5;
+            this.btnZoom.BorderThickness = 1;
+            this.btnZoom.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnZoom.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnZoom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnZoom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnZoom.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnZoom.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnZoom.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnZoom.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnZoom.Image = global::RemakePaint.Properties.Resources.icons8_magnifying_glass_50;
+            this.btnZoom.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnZoom.Location = new System.Drawing.Point(103, 62);
+            this.btnZoom.Name = "btnZoom";
+            this.btnZoom.Size = new System.Drawing.Size(40, 40);
+            this.btnZoom.TabIndex = 8;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnZoom, "Magnifier");
             // 
-            // guna2Button11
+            // btnColorPicker
             // 
-            this.guna2Button11.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button11.BorderRadius = 5;
-            this.guna2Button11.BorderThickness = 1;
-            this.guna2Button11.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button11.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button11.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button11.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button11.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button11.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2Button11.Image = global::RemakePaint.Properties.Resources.icons8_color_picker_48;
-            this.guna2Button11.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button11.Location = new System.Drawing.Point(56, 62);
-            this.guna2Button11.Name = "guna2Button11";
-            this.guna2Button11.Size = new System.Drawing.Size(40, 40);
-            this.guna2Button11.TabIndex = 7;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button11, "Color picker");
+            this.btnColorPicker.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnColorPicker.BorderRadius = 5;
+            this.btnColorPicker.BorderThickness = 1;
+            this.btnColorPicker.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnColorPicker.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnColorPicker.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnColorPicker.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnColorPicker.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnColorPicker.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnColorPicker.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnColorPicker.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnColorPicker.Image = global::RemakePaint.Properties.Resources.icons8_color_picker_48;
+            this.btnColorPicker.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnColorPicker.Location = new System.Drawing.Point(56, 62);
+            this.btnColorPicker.Name = "btnColorPicker";
+            this.btnColorPicker.Size = new System.Drawing.Size(40, 40);
+            this.btnColorPicker.TabIndex = 7;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnColorPicker, "Color picker");
+            this.btnColorPicker.Click += new System.EventHandler(this.btnColorPicker_Click);
             // 
-            // guna2Button12
+            // btnEraser
             // 
-            this.guna2Button12.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button12.BorderRadius = 5;
-            this.guna2Button12.BorderThickness = 1;
-            this.guna2Button12.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button12.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button12.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button12.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button12.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button12.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button12.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button12.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2Button12.Image = global::RemakePaint.Properties.Resources.icons8_eraser_100;
-            this.guna2Button12.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button12.Location = new System.Drawing.Point(9, 62);
-            this.guna2Button12.Name = "guna2Button12";
-            this.guna2Button12.Size = new System.Drawing.Size(40, 40);
-            this.guna2Button12.TabIndex = 6;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button12, "Eraser");
+            this.btnEraser.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnEraser.BorderRadius = 5;
+            this.btnEraser.BorderThickness = 1;
+            this.btnEraser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEraser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEraser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEraser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEraser.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnEraser.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEraser.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnEraser.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnEraser.Image = global::RemakePaint.Properties.Resources.icons8_eraser_100;
+            this.btnEraser.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnEraser.Location = new System.Drawing.Point(9, 62);
+            this.btnEraser.Name = "btnEraser";
+            this.btnEraser.Size = new System.Drawing.Size(40, 40);
+            this.btnEraser.TabIndex = 6;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnEraser, "Eraser");
+            this.btnEraser.Click += new System.EventHandler(this.btnEraser_Click);
             // 
-            // guna2Button13
+            // btnText
             // 
-            this.guna2Button13.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button13.BorderRadius = 5;
-            this.guna2Button13.BorderThickness = 1;
-            this.guna2Button13.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button13.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button13.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button13.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button13.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button13.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2Button13.Image = global::RemakePaint.Properties.Resources.icons8_text_30;
-            this.guna2Button13.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button13.Location = new System.Drawing.Point(103, 13);
-            this.guna2Button13.Name = "guna2Button13";
-            this.guna2Button13.Size = new System.Drawing.Size(40, 40);
-            this.guna2Button13.TabIndex = 5;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button13, "Text");
+            this.btnText.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnText.BorderRadius = 5;
+            this.btnText.BorderThickness = 1;
+            this.btnText.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnText.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnText.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnText.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnText.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnText.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnText.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnText.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnText.Image = global::RemakePaint.Properties.Resources.icons8_text_30;
+            this.btnText.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnText.Location = new System.Drawing.Point(103, 13);
+            this.btnText.Name = "btnText";
+            this.btnText.Size = new System.Drawing.Size(40, 40);
+            this.btnText.TabIndex = 5;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnText, "Text");
             // 
-            // guna2Button14
+            // btnFill
             // 
-            this.guna2Button14.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button14.BorderRadius = 5;
-            this.guna2Button14.BorderThickness = 1;
-            this.guna2Button14.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button14.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button14.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button14.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button14.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button14.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button14.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button14.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2Button14.Image = global::RemakePaint.Properties.Resources.icons8_fill_color_48;
-            this.guna2Button14.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button14.Location = new System.Drawing.Point(56, 13);
-            this.guna2Button14.Name = "guna2Button14";
-            this.guna2Button14.Size = new System.Drawing.Size(40, 40);
-            this.guna2Button14.TabIndex = 4;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button14, "Fill with color");
+            this.btnFill.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnFill.BorderRadius = 5;
+            this.btnFill.BorderThickness = 1;
+            this.btnFill.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnFill.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnFill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnFill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnFill.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnFill.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnFill.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnFill.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnFill.Image = global::RemakePaint.Properties.Resources.icons8_fill_color_48;
+            this.btnFill.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnFill.Location = new System.Drawing.Point(56, 13);
+            this.btnFill.Name = "btnFill";
+            this.btnFill.Size = new System.Drawing.Size(40, 40);
+            this.btnFill.TabIndex = 4;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnFill, "Fill with color");
+            this.btnFill.Click += new System.EventHandler(this.btnFill_Click);
             // 
-            // guna2Button15
+            // btnPencil
             // 
-            this.guna2Button15.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button15.BorderRadius = 5;
-            this.guna2Button15.BorderThickness = 1;
-            this.guna2Button15.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button15.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button15.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button15.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button15.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button15.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button15.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button15.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2Button15.Image = global::RemakePaint.Properties.Resources.icons8_pencil_30;
-            this.guna2Button15.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button15.Location = new System.Drawing.Point(9, 13);
-            this.guna2Button15.Name = "guna2Button15";
-            this.guna2Button15.Size = new System.Drawing.Size(40, 40);
-            this.guna2Button15.TabIndex = 3;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button15, "Pencil");
+            this.btnPencil.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnPencil.BorderRadius = 5;
+            this.btnPencil.BorderThickness = 1;
+            this.btnPencil.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPencil.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPencil.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPencil.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPencil.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnPencil.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPencil.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnPencil.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnPencil.Image = global::RemakePaint.Properties.Resources.icons8_pencil_30;
+            this.btnPencil.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnPencil.Location = new System.Drawing.Point(9, 13);
+            this.btnPencil.Name = "btnPencil";
+            this.btnPencil.Size = new System.Drawing.Size(40, 40);
+            this.btnPencil.TabIndex = 3;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnPencil, "Pencil");
+            this.btnPencil.Click += new System.EventHandler(this.btnPencil_Click);
             // 
-            // guna2Button4
+            // btnImageEditor
             // 
-            this.guna2Button4.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button4.BorderRadius = 5;
-            this.guna2Button4.BorderThickness = 1;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button4.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2Button4.Image = global::RemakePaint.Properties.Resources.icons8_image_editor_48;
-            this.guna2Button4.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button4.Location = new System.Drawing.Point(108, 31);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(60, 60);
-            this.guna2Button4.TabIndex = 10;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button4, "Image editor");
+            this.btnImageEditor.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnImageEditor.BorderRadius = 5;
+            this.btnImageEditor.BorderThickness = 1;
+            this.btnImageEditor.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnImageEditor.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnImageEditor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnImageEditor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnImageEditor.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnImageEditor.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnImageEditor.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnImageEditor.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnImageEditor.Image = global::RemakePaint.Properties.Resources.icons8_image_editor_48;
+            this.btnImageEditor.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnImageEditor.Location = new System.Drawing.Point(108, 31);
+            this.btnImageEditor.Name = "btnImageEditor";
+            this.btnImageEditor.Size = new System.Drawing.Size(60, 60);
+            this.btnImageEditor.TabIndex = 10;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnImageEditor, "Image editor");
             // 
-            // guna2Button5
+            // btnFlipVertical
             // 
-            this.guna2Button5.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button5.BorderRadius = 5;
-            this.guna2Button5.BorderThickness = 1;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button5.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2Button5.Image = global::RemakePaint.Properties.Resources.icons8_flip_vertical_40;
-            this.guna2Button5.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button5.Location = new System.Drawing.Point(56, 62);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(40, 40);
-            this.guna2Button5.TabIndex = 7;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button5, "Flip vertical");
+            this.btnFlipVertical.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnFlipVertical.BorderRadius = 5;
+            this.btnFlipVertical.BorderThickness = 1;
+            this.btnFlipVertical.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnFlipVertical.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnFlipVertical.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnFlipVertical.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnFlipVertical.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnFlipVertical.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnFlipVertical.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnFlipVertical.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnFlipVertical.Image = global::RemakePaint.Properties.Resources.icons8_flip_vertical_40;
+            this.btnFlipVertical.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnFlipVertical.Location = new System.Drawing.Point(56, 62);
+            this.btnFlipVertical.Name = "btnFlipVertical";
+            this.btnFlipVertical.Size = new System.Drawing.Size(40, 40);
+            this.btnFlipVertical.TabIndex = 7;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnFlipVertical, "Flip vertical");
             // 
-            // guna2Button7
+            // btnFlipHorizontal
             // 
-            this.guna2Button7.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button7.BorderRadius = 5;
-            this.guna2Button7.BorderThickness = 1;
-            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button7.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button7.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2Button7.Image = global::RemakePaint.Properties.Resources.icons8_flip_horizontal_40;
-            this.guna2Button7.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button7.Location = new System.Drawing.Point(9, 62);
-            this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.Size = new System.Drawing.Size(40, 40);
-            this.guna2Button7.TabIndex = 6;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button7, "Flip horizontal");
+            this.btnFlipHorizontal.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnFlipHorizontal.BorderRadius = 5;
+            this.btnFlipHorizontal.BorderThickness = 1;
+            this.btnFlipHorizontal.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnFlipHorizontal.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnFlipHorizontal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnFlipHorizontal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnFlipHorizontal.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnFlipHorizontal.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnFlipHorizontal.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnFlipHorizontal.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnFlipHorizontal.Image = global::RemakePaint.Properties.Resources.icons8_flip_horizontal_40;
+            this.btnFlipHorizontal.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnFlipHorizontal.Location = new System.Drawing.Point(9, 62);
+            this.btnFlipHorizontal.Name = "btnFlipHorizontal";
+            this.btnFlipHorizontal.Size = new System.Drawing.Size(40, 40);
+            this.btnFlipHorizontal.TabIndex = 6;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnFlipHorizontal, "Flip horizontal");
             // 
-            // guna2Button9
+            // btnRotateRight
             // 
-            this.guna2Button9.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button9.BorderRadius = 5;
-            this.guna2Button9.BorderThickness = 1;
-            this.guna2Button9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button9.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button9.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button9.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2Button9.Image = global::RemakePaint.Properties.Resources.icons8_rotate_right_50;
-            this.guna2Button9.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button9.Location = new System.Drawing.Point(56, 13);
-            this.guna2Button9.Name = "guna2Button9";
-            this.guna2Button9.Size = new System.Drawing.Size(40, 40);
-            this.guna2Button9.TabIndex = 4;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button9, "Rotate right 90*");
+            this.btnRotateRight.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnRotateRight.BorderRadius = 5;
+            this.btnRotateRight.BorderThickness = 1;
+            this.btnRotateRight.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRotateRight.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRotateRight.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRotateRight.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRotateRight.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnRotateRight.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRotateRight.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRotateRight.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnRotateRight.Image = global::RemakePaint.Properties.Resources.icons8_rotate_right_50;
+            this.btnRotateRight.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnRotateRight.Location = new System.Drawing.Point(56, 13);
+            this.btnRotateRight.Name = "btnRotateRight";
+            this.btnRotateRight.Size = new System.Drawing.Size(40, 40);
+            this.btnRotateRight.TabIndex = 4;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnRotateRight, "Rotate right 90*");
             // 
-            // guna2Button16
+            // btnRotateLeft
             // 
-            this.guna2Button16.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button16.BorderRadius = 5;
-            this.guna2Button16.BorderThickness = 1;
-            this.guna2Button16.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button16.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button16.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button16.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button16.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2Button16.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button16.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button16.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2Button16.Image = global::RemakePaint.Properties.Resources.icons8_rotate_left_50;
-            this.guna2Button16.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button16.Location = new System.Drawing.Point(9, 13);
-            this.guna2Button16.Name = "guna2Button16";
-            this.guna2Button16.Size = new System.Drawing.Size(40, 40);
-            this.guna2Button16.TabIndex = 3;
-            this.guna2HtmlToolTip1.SetToolTip(this.guna2Button16, "Rotate right 90*");
+            this.btnRotateLeft.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnRotateLeft.BorderRadius = 5;
+            this.btnRotateLeft.BorderThickness = 1;
+            this.btnRotateLeft.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRotateLeft.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRotateLeft.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRotateLeft.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRotateLeft.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnRotateLeft.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRotateLeft.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRotateLeft.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnRotateLeft.Image = global::RemakePaint.Properties.Resources.icons8_rotate_left_50;
+            this.btnRotateLeft.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnRotateLeft.Location = new System.Drawing.Point(9, 13);
+            this.btnRotateLeft.Name = "btnRotateLeft";
+            this.btnRotateLeft.Size = new System.Drawing.Size(40, 40);
+            this.btnRotateLeft.TabIndex = 3;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnRotateLeft, "Rotate right 90*");
             // 
             // pbCurrentShape
             // 
@@ -1814,7 +1831,7 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Button1.Image = global::RemakePaint.Properties.Resources.icons8_save_50__1_;
             this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button1.Location = new System.Drawing.Point(199, 3);
+            this.guna2Button1.Location = new System.Drawing.Point(201, 3);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(41, 33);
             this.guna2Button1.TabIndex = 2;
@@ -1831,7 +1848,7 @@
             this.guna2Button2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Button2.Image = global::RemakePaint.Properties.Resources.icons8_undo_50;
             this.guna2Button2.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button2.Location = new System.Drawing.Point(257, 3);
+            this.guna2Button2.Location = new System.Drawing.Point(259, 3);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(41, 33);
             this.guna2Button2.TabIndex = 4;
@@ -1848,20 +1865,10 @@
             this.guna2Button3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Button3.Image = global::RemakePaint.Properties.Resources.icons8_redo_50;
             this.guna2Button3.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button3.Location = new System.Drawing.Point(304, 3);
+            this.guna2Button3.Location = new System.Drawing.Point(306, 3);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(41, 33);
             this.guna2Button3.TabIndex = 5;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(343, 169);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(597, 96);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "";
-            this.textBox1.Visible = false;
             // 
             // Paint
             // 
@@ -1938,24 +1945,24 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private Guna.UI2.WinForms.Guna2Button btnSelection;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button10;
-        private Guna.UI2.WinForms.Guna2Button guna2Button11;
-        private Guna.UI2.WinForms.Guna2Button guna2Button12;
-        private Guna.UI2.WinForms.Guna2Button guna2Button13;
-        private Guna.UI2.WinForms.Guna2Button guna2Button14;
-        private Guna.UI2.WinForms.Guna2Button guna2Button15;
+        private Guna.UI2.WinForms.Guna2Button btnZoom;
+        private Guna.UI2.WinForms.Guna2Button btnColorPicker;
+        private Guna.UI2.WinForms.Guna2Button btnEraser;
+        private Guna.UI2.WinForms.Guna2Button btnText;
+        private Guna.UI2.WinForms.Guna2Button btnFill;
+        private Guna.UI2.WinForms.Guna2Button btnPencil;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button7;
-        private Guna.UI2.WinForms.Guna2Button guna2Button9;
-        private Guna.UI2.WinForms.Guna2Button guna2Button16;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2Button btnFlipVertical;
+        private Guna.UI2.WinForms.Guna2Button btnFlipHorizontal;
+        private Guna.UI2.WinForms.Guna2Button btnRotateRight;
+        private Guna.UI2.WinForms.Guna2Button btnRotateLeft;
+        private Guna.UI2.WinForms.Guna2Button btnImageEditor;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator5;
         private Guna.UI2.WinForms.Guna2HtmlToolTip guna2HtmlToolTip1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;

@@ -73,6 +73,16 @@ namespace RemakePaint.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IcEraserMainscreen {
+            get {
+                object obj = ResourceManager.GetObject("IcEraserMainscreen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_blank_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-blank-50", resourceCulture);
@@ -476,6 +486,16 @@ namespace RemakePaint.Properties {
         internal static System.Drawing.Bitmap icons8_zoom_out_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-zoom-out-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IcPencilMainscreen {
+            get {
+                object obj = ResourceManager.GetObject("IcPencilMainscreen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

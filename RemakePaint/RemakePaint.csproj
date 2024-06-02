@@ -240,5 +240,11 @@
   <ItemGroup>
     <None Include="Resources\icons8-bold-50.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IcPencilMainscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IcEraserMainscreen.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

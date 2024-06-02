@@ -21,7 +21,7 @@ namespace RemakePaint
         Pen eraser; // tẩy
         Point px, py;
         int SelectedMode; // mỗi giá trị là mỗi mode vẽ lên màn hình chính
-        bool AllowPaint; // nếu là true thì cho phép vẽ lên màn hình chính
+        bool AllowPaint = false; // nếu là true thì cho phép vẽ lên màn hình chính
         bool isPainted = false;
         Color currentColor = Color.Black;
         //VeHinh veHinh;
@@ -68,7 +68,9 @@ namespace RemakePaint
             InitBtncolorEvent();
             InitGraphic();
             LoadFontAndSize();
+            InitPaintEvent();
         }
+
 
         private void LoadFontAndSize()
         {
@@ -117,7 +119,6 @@ namespace RemakePaint
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             pb_mainScreen.Image = bm;
             p = new Pen(Color.Black, 1);
-
             eraser = new Pen(Color.White, 20);
             SelectedMode = 1; // chọn bút chì làm mặc định
         }
@@ -155,6 +156,139 @@ namespace RemakePaint
             Guna2CircleButton btn = sender as Guna2CircleButton;
             currentColor = btn.FillColor;   
             pbCurrentColor.FillColor = currentColor;
+            p.Color = currentColor;
+        }
+        #endregion
+        #region Init paint event
+        private void InitPaintEvent()
+        {
+            pb_mainScreen.MouseDown += Pb_mainScreen_MouseDown;
+            pb_mainScreen.MouseMove += Pb_mainScreen_MouseMove;
+            pb_mainScreen.MouseUp += Pb_mainScreen_MouseUp;
+            pb_mainScreen.Paint += Pb_mainScreen_Paint;
+        }
+
+        private void Pb_mainScreen_MouseDown(object sender, MouseEventArgs e)
+        {
+            AllowPaint = true;
+            px = e.Location;
+            if (SelectedMode == 3)
+            {
+                Fill(bm, e.X - 10, e.Y + 10, currentColor);
+                pb_mainScreen.Refresh();    
+            }
+            if (SelectedMode == 4)
+            {
+                if (pb_mainScreen.Cursor != Cursors.Default)
+                {
+                    currentColor = ((Bitmap)(pb_mainScreen.Image)).GetPixel(e.X - 10, e.Y + 10);
+                    p.Color = currentColor;
+                    pbCurrentColor.FillColor = currentColor;
+                    pb_mainScreen.Cursor = Cursors.Default;
+                }
+            }
+        }
+        private void Pb_mainScreen_MouseMove(object sender, MouseEventArgs e)
+        {
+            py = e.Location;    
+            if(AllowPaint == false) return;
+            if (SelectedMode == 1)
+            {
+                g.DrawLine(p, new Point(px.X - 10, px.Y + 10), new Point(py.X - 10, py.Y + 10));
+                px = py;
+            }
+            if(SelectedMode == 2)
+            {
+                g.DrawLine(eraser, new Point(px.X - 10, px.Y + 10), new Point(py.X - 10, py.Y + 10));
+                px = py;
+            }
+            pb_mainScreen.Refresh();
+        }
+        private void Pb_mainScreen_MouseUp(object sender, MouseEventArgs e)
+        {
+            AllowPaint = false;
+        }
+
+        private void Pb_mainScreen_Paint(object sender, PaintEventArgs e)
+        {
+            //
+        }
+
+        #endregion
+        #region Tools Event
+        private void btnPencil_Click(object sender, EventArgs e)
+        {
+            Bitmap temp = new Bitmap(RemakePaint.Properties.Resources.IcPencilMainscreen);
+            pb_mainScreen.Cursor = new Cursor(temp.GetHicon());
+            SelectedMode = 1;
+            TrackBarPen.Visible = true; 
+            TrackBarPen.Value = 40 - (int)p.Width;
+        }
+        private void btnEraser_Click(object sender, EventArgs e)
+        {
+            Bitmap temp = new Bitmap(RemakePaint.Properties.Resources.IcEraserMainscreen);
+            pb_mainScreen.Cursor = new Cursor(temp.GetHicon());
+            SelectedMode = 2;
+            TrackBarPen.Visible = true;
+            TrackBarPen.Value = 40 - (int)eraser.Width;
+        }
+        private void btnFill_Click(object sender, EventArgs e)
+        {
+            SelectedMode = 3;
+            TrackBarPen.Visible = false;
+            Bitmap bm = new Bitmap(RemakePaint.Properties.Resources.icons8_fill_color_48);
+            pb_mainScreen.Cursor = new Cursor(bm.GetHicon());
+        }
+        private void btnColorPicker_Click(object sender, EventArgs e)
+        {
+            SelectedMode = 4;
+            TrackBarPen.Visible = false;
+            Bitmap bm = new Bitmap(RemakePaint.Properties.Resources.icons8_color_picker_48);
+            pb_mainScreen.Cursor = new Cursor(bm.GetHicon());
+        }
+        private void TrackBarPen_Scroll(object sender, ScrollEventArgs e)
+        {
+            int size = 40 - TrackBarPen.Value;
+            if(SelectedMode == 1)
+            {
+                p = new Pen(currentColor, size);
+            }
+            else
+            {
+                eraser = new Pen(Color.White, size);
+            }
+        }
+        #endregion
+        #region Custom Function
+        private void Fill(Bitmap bm, int x, int y, Color newColor)
+        {
+            Color oldColor = bm.GetPixel(x, y);
+            Stack<Point> pixel = new Stack<Point>();
+            pixel.Push(new Point(x, y));
+            bm.SetPixel(x, y, newColor);
+            if (oldColor == newColor) { return; }
+
+            while (pixel.Count > 0)
+            {
+                Point pt = pixel.Pop();
+                if (pt.X > 0 && pt.Y > 0 && pt.X < bm.Width - 1 && pt.Y < bm.Height - 1)
+                {
+                    validate(bm, pixel, pt.X - 1, pt.Y, oldColor, newColor);
+                    validate(bm, pixel, pt.X, pt.Y - 1, oldColor, newColor);
+                    validate(bm, pixel, pt.X + 1, pt.Y, oldColor, newColor);
+                    validate(bm, pixel, pt.X, pt.Y + 1, oldColor, newColor);
+                }
+            }
+        }
+
+        private void validate(Bitmap bm, Stack<Point> sp, int x, int y, Color oldColor, Color newColor)
+        {
+            Color cx = bm.GetPixel(x, y);
+            if (cx == oldColor)
+            {
+                sp.Push(new Point(x, y));
+                bm.SetPixel(x, y, newColor);
+            }
         }
         #endregion
     }
