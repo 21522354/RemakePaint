@@ -1059,6 +1059,17 @@ namespace RemakePaint
             }
         }
 
+        private void statusBarItem_Click(object sender, EventArgs e)
+        {
+            if(statusBarItem.Checked == true)
+            {
+                statusStrip1.Visible = true;
+            }
+            else
+            {
+                statusStrip1.Visible = false;
+            }
+        }
 
         private void InitGraphic()
         {
