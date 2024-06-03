@@ -24,7 +24,7 @@ namespace RemakePaint
         bool AllowPaint = false; // nếu là true thì cho phép vẽ lên màn hình chính
         bool isPainted = false;
         Color currentColor = Color.Black;
-        //VeHinh veHinh;
+        VeHinh veHinh;
         //
         //
         //
@@ -72,8 +72,11 @@ namespace RemakePaint
             LoadFontAndSize();
             InitPaintEvent();
             InitSizeEvent();
+            InitBtnShapeEvent();
         }
 
+
+        #region Size Event
         private void InitSizeEvent()
         {
             // Left
@@ -196,7 +199,7 @@ namespace RemakePaint
             pnDown.Location = new Point(MainScreen_Location_X + pb_mainScreen.Width / 2, MainScreen_Location_Y + pb_mainScreen.Height);
             pnCorner.Location = new Point(MainScreen_Location_X + pb_mainScreen.Width, MainScreen_Location_Y + pb_mainScreen.Height);
         }
-
+        #endregion
         #region Init color event
         private void InitBtncolorEvent()
         {
@@ -281,11 +284,135 @@ namespace RemakePaint
         private void Pb_mainScreen_MouseUp(object sender, MouseEventArgs e)
         {
             AllowPaint = false;
+            if (SelectedMode == 5)
+            {
+                veHinh.DrawLine(p, g, px, py);
+            }
+            if (SelectedMode == 6)
+            {
+                veHinh.DrawEllipse(p, g, px, py);
+            }
+            if (SelectedMode == 7)
+            {
+                veHinh.DrawRect(p, g, px, py);
+            }
+            if (SelectedMode == 8)
+            {
+                veHinh.DrawTriangle(p, g, px, py);
+            }
+            if (SelectedMode == 9)
+            {
+                veHinh.DrawRightTriangle(p, g, px, py);
+            }
+            if (SelectedMode == 10)
+            {
+                veHinh.DrawRoundedRectangle(p, g, px, py);
+            }
+            if (SelectedMode == 11)
+            {
+                veHinh.DrawDiamond(p, g, px, py);
+            }
+            if (SelectedMode == 12)
+            {
+                veHinh.DrawPentagon(p, g, px, py);
+            }
+            if (SelectedMode == 13)
+            {
+                veHinh.DrawHexagon(p, g, px, py);
+            }
+            if (SelectedMode == 14)
+            {
+                veHinh.DrawUpArrow(p, g, px, py);
+            }
+            if (SelectedMode == 15)
+            {
+                veHinh.DrawLeftArrow(p, g, px, py);
+            }
+            if (SelectedMode == 16)
+            {
+                veHinh.DrawRightArrow(p, g, px, py);
+            }
+            if (SelectedMode == 17)
+            {
+                veHinh.DrawDownArrow(p, g, px, py);
+            }
+            if (SelectedMode == 18)
+            {
+                veHinh.MinhHoaPolygon(p, g, px, py);
+            }
+            if (SelectedMode == 19)
+            {
+                veHinh.DrawFivePointStar(p, g, px, py);
+            }
         }
 
         private void Pb_mainScreen_Paint(object sender, PaintEventArgs e)
         {
-            //
+            Graphics gx = e.Graphics;
+            gx.DrawImage(bm, new Point(0, 0));
+            if (AllowPaint)
+            {
+                if (SelectedMode == 5)
+                {
+                    veHinh.DrawLine(p, gx, px, py);
+                }
+                if (SelectedMode == 6)
+                {
+                    veHinh.DrawEllipse(p, gx, px, py);
+                }
+                if (SelectedMode == 7)
+                {
+                    veHinh.DrawRect(p, gx, px, py);
+                }
+                if (SelectedMode == 8)
+                {
+                    veHinh.DrawTriangle(p, gx, px, py);
+                }
+                if (SelectedMode == 9)
+                {
+                    veHinh.DrawRightTriangle(p, gx, px, py);
+                }
+                if (SelectedMode == 10)
+                {
+                    veHinh.DrawRoundedRectangle(p, gx, px, py);
+                }
+                if (SelectedMode == 11)
+                {
+                    veHinh.DrawDiamond(p, gx, px, py);
+                }
+                if (SelectedMode == 12)
+                {
+                    veHinh.DrawPentagon(p, gx, px, py);
+                }
+                if (SelectedMode == 13)
+                {
+                    veHinh.DrawHexagon(p, gx, px, py);
+                }
+                if (SelectedMode == 14)
+                {
+                    veHinh.DrawUpArrow(p, gx, px, py);
+                }
+                if (SelectedMode == 15)
+                {
+                    veHinh.DrawLeftArrow(p, gx, px, py);
+                }
+                if (SelectedMode == 16)
+                {
+                    veHinh.DrawRightArrow(p, gx, px, py);
+                }
+                if (SelectedMode == 17)
+                {
+                    veHinh.DrawDownArrow(p, gx, px, py);
+                }
+                if (SelectedMode == 18)
+                {
+                    veHinh.MinhHoaPolygon(p, gx, px, py);
+                }
+                if (SelectedMode == 19)
+                {
+                    veHinh.DrawFivePointStar(p, gx, px, py);
+                }
+            }
         }
 
         #endregion
@@ -409,6 +536,69 @@ namespace RemakePaint
             pb_mainScreen.Image = bm;
             ResetLocationSizeTool();
         }
+        private void InitBtnShapeEvent()
+        {
+            btnLine.Click += (sender, e) =>
+            {
+                SelectedMode = 5;
+            };
+            btnCircle.Click += (sender, e) =>
+            {
+                SelectedMode = 6;
+            };
+            btnRectangle.Click += (sender, e) =>
+            {
+                SelectedMode = 7;
+            };
+            btnTriangle.Click += (sender, e) =>
+            {
+                SelectedMode = 8;
+            };
+            btnRightTriangle.Click += (sender, e) =>
+            {
+                SelectedMode = 9;
+            };
+            btnRadiusRectangle.Click += (sender, e) =>
+            {
+                SelectedMode = 10;
+            };
+            btnRhombus.Click += (sender, e) =>
+            {
+                SelectedMode = 11;
+            };
+            btnPentagon.Click += (sender, e) =>
+            {
+                SelectedMode = 12;
+            };
+            btnHexagon.Click += (sender, e) =>
+            {
+                SelectedMode = 13;
+            };
+            btnArrowUp.Click += (sender, e) =>
+            {
+                SelectedMode = 14;
+            };
+            btnArrowDown.Click += (sender, e) =>
+            {
+                SelectedMode = 17;
+            };
+            btnArrowLeft.Click += (sender, e) =>
+            {
+                SelectedMode = 15;
+            };
+            btnArrowRight.Click += (sender, e) =>
+            {
+                SelectedMode = 16;
+            };
+            btnPolygon.Click += (sender, e) =>
+            {
+                SelectedMode = 18;
+            };
+            btnStar.Click += (sender, e) =>
+            {
+                SelectedMode = 19;
+            };
+        }
         #endregion
         #region Custom Function
         private void LoadFontAndSize()
@@ -434,7 +624,6 @@ namespace RemakePaint
             cb_Font.SelectedIndexChanged += Cb_Font_SelectedIndexChanged;
         }
 
-
         private void InitGraphic()
         {
             bm = new Bitmap(pb_mainScreen.Width, pb_mainScreen.Height);
@@ -445,6 +634,7 @@ namespace RemakePaint
             p = new Pen(Color.Black, 1);
             eraser = new Pen(Color.White, 20);
             SelectedMode = 1; // chọn bút chì làm mặc định
+            veHinh = new VeHinh();
         }
         private void Fill(Bitmap bm, int x, int y, Color newColor)
         {
