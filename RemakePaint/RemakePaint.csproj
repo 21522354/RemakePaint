@@ -247,5 +247,11 @@
   <ItemGroup>
     <None Include="Resources\IcEraserMainscreen.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-magnifying-glass-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cursor-80.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

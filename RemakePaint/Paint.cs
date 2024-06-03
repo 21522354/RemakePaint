@@ -60,6 +60,7 @@ namespace RemakePaint
 
         public const int MainScreen_Location_X = 120;
         public const int MainScreen_Location_Y = 60;
+        public Size MainScreenNormalSize = new Size(1000, 500);
 
         Guna2Panel pnLeft, pnDown, pnCorner;
 
@@ -74,6 +75,7 @@ namespace RemakePaint
             InitSizeEvent();
             InitBtnShapeEvent();
         }
+
 
 
         #region Size Event
@@ -190,6 +192,10 @@ namespace RemakePaint
             {
                 isDownPanel = false;
             };
+            pb_mainScreen.SizeChanged += (sender, e) =>
+            {
+                StatusPaintSize.Text = pb_mainScreen.Width + " x " + pb_mainScreen.Height + "px";
+            };
         }
 
 
@@ -248,11 +254,53 @@ namespace RemakePaint
         private void Pb_mainScreen_MouseDown(object sender, MouseEventArgs e)
         {
             AllowPaint = true;
+            if (textBox1.Visible == true)
+            {
+                UndoStack.Push(new Bitmap(bm));
+                textBox1.Visible = false;
+                g.DrawString(textBox1.Text, textBox1.Font, new SolidBrush(textBox1.ForeColor), new Point(textBox1.Location.X, textBox1.Location.Y + 3));
+                textBox1.Text = "";
+                pnTextTools.Visible = false;
+            }
+            if (pb_mainScreen.Cursor == Cursors.IBeam)
+            {
+                UndoStack.Push(new Bitmap(bm));
+                textBox1.Location = new Point(e.X - 10 , e.Y - 10);
+                textBox1.Visible = true;
+                textBox1.Focus();
+                pnTextTools.Visible = true;
+            }
+            if (SelectedMode == 25) 
+            {
+                if(e.Button == MouseButtons.Left)
+                {
+                    this.pb_mainScreen.Width = pb_mainScreen.Width + pb_mainScreen.Width / 3;
+                    this.pb_mainScreen.Height = pb_mainScreen.Height + pb_mainScreen.Height / 3;
+                    bm = new Bitmap(bm, pb_mainScreen.Width, pb_mainScreen.Height);
+                    g = Graphics.FromImage(bm);
+                    //g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+                    pb_mainScreen.Image = bm;
+                    ResetLocationSizeTool();
+                }
+                else
+                {
+                    this.pb_mainScreen.Width = pb_mainScreen.Width - pb_mainScreen.Width / 3;
+                    this.pb_mainScreen.Height = pb_mainScreen.Height - pb_mainScreen.Height / 3;
+                    bm = new Bitmap(bm, pb_mainScreen.Width, pb_mainScreen.Height);
+                    g = Graphics.FromImage(bm);
+                    //g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+                    pb_mainScreen.Image = bm;
+                    ResetLocationSizeTool();
+                }
+                return;
+            }
             px = e.Location;
             if (SelectedMode == 3)
             {
+                UndoStack.Push(new Bitmap(bm));
                 Fill(bm, e.X - 10, e.Y + 10, currentColor);
-                pb_mainScreen.Refresh();    
+                pb_mainScreen.Refresh();
+                return;
             }
             if (SelectedMode == 4)
             {
@@ -263,12 +311,15 @@ namespace RemakePaint
                     pbCurrentColor.FillColor = currentColor;
                     pb_mainScreen.Cursor = Cursors.Default;
                 }
+                return;
             }
+            UndoStack.Push(new Bitmap(bm)); 
         }
         private void Pb_mainScreen_MouseMove(object sender, MouseEventArgs e)
         {
             py = e.Location;    
-            if(AllowPaint == false) return;
+            StatusCursor.Text = e.X + " : " + e.Y + "px";
+            if (AllowPaint == false) return;
             if (SelectedMode == 1)
             {
                 g.DrawLine(p, new Point(px.X - 10, px.Y + 10), new Point(py.X - 10, py.Y + 10));
@@ -471,7 +522,7 @@ namespace RemakePaint
             }
             catch
             {
-                MessageBox.Show("Loi font chu");
+                MessageBox.Show("Lỗi font chữ");
             }
         }
         private void cb_Size_SelectedIndexChanged(object sender, EventArgs e)
@@ -486,7 +537,7 @@ namespace RemakePaint
             }
             catch
             {
-                MessageBox.Show("Loi font chu");
+                MessageBox.Show("Lỗi font chữ");
             }
         }
         private void btnRotateLeft_Click(object sender, EventArgs e)
@@ -541,64 +592,389 @@ namespace RemakePaint
             btnLine.Click += (sender, e) =>
             {
                 SelectedMode = 5;
+                pb_mainScreen.Cursor = Cursors.Default;
             };
             btnCircle.Click += (sender, e) =>
             {
                 SelectedMode = 6;
+                pb_mainScreen.Cursor = Cursors.Default;
             };
             btnRectangle.Click += (sender, e) =>
             {
                 SelectedMode = 7;
+                pb_mainScreen.Cursor = Cursors.Default;
             };
             btnTriangle.Click += (sender, e) =>
             {
                 SelectedMode = 8;
+                pb_mainScreen.Cursor = Cursors.Default;
             };
             btnRightTriangle.Click += (sender, e) =>
             {
                 SelectedMode = 9;
+                pb_mainScreen.Cursor = Cursors.Default;
             };
             btnRadiusRectangle.Click += (sender, e) =>
             {
                 SelectedMode = 10;
+                pb_mainScreen.Cursor = Cursors.Default;
             };
             btnRhombus.Click += (sender, e) =>
             {
                 SelectedMode = 11;
+                pb_mainScreen.Cursor = Cursors.Default;
             };
             btnPentagon.Click += (sender, e) =>
             {
                 SelectedMode = 12;
+                pb_mainScreen.Cursor = Cursors.Default;
             };
             btnHexagon.Click += (sender, e) =>
             {
                 SelectedMode = 13;
+                pb_mainScreen.Cursor = Cursors.Default;
             };
             btnArrowUp.Click += (sender, e) =>
             {
                 SelectedMode = 14;
+                pb_mainScreen.Cursor = Cursors.Default;
             };
             btnArrowDown.Click += (sender, e) =>
             {
                 SelectedMode = 17;
+                pb_mainScreen.Cursor = Cursors.Default;
             };
             btnArrowLeft.Click += (sender, e) =>
             {
                 SelectedMode = 15;
+                pb_mainScreen.Cursor = Cursors.Default;
             };
             btnArrowRight.Click += (sender, e) =>
             {
                 SelectedMode = 16;
+                pb_mainScreen.Cursor = Cursors.Default;
             };
             btnPolygon.Click += (sender, e) =>
             {
                 SelectedMode = 18;
+                pb_mainScreen.Cursor = Cursors.Default;
             };
             btnStar.Click += (sender, e) =>
             {
                 SelectedMode = 19;
+                pb_mainScreen.Cursor = Cursors.Default;
             };
         }
+        private void btnText_Click(object sender, EventArgs e)
+        {
+            SelectedMode = 24;
+            pb_mainScreen.Cursor = Cursors.IBeam;
+            TrackBarPen.Visible = false;    
+        }
+        private void btnZoom_Click(object sender, EventArgs e)
+        {
+            Bitmap bm = new Bitmap(RemakePaint.Properties.Resources.icons8_magnifying_glass_24);
+            pb_mainScreen.Cursor = new Cursor(bm.GetHicon());
+            SelectedMode = 25;
+            TrackBarPen.Visible = false;
+        }
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            switch (MessageBox.Show("Bạn có muốn lưu file với tên " + tenFileTieuDe + " không", "Thông Báo", MessageBoxButtons.YesNoCancel))
+            {
+                // truong hop nguoi dung muon luu anh dang ve lai va open file sau
+                case DialogResult.Yes:
+                    {
+                        saveToolStripMenuItem_Click(sender, e);
+                        tenFileTieuDe = "Untitled";
+                        isPainted = false;
+                        g.Clear(Color.White);
+                        pb_mainScreen.Refresh();
+                        pb_mainScreen.Image = bm;
+                        pb_mainScreen.Size = MainScreenNormalSize;
+                        break;
+                    }
+                // truong hop nguoi dung khong muon luu anh dang ve ma muon open file luon
+                case DialogResult.No:
+                    {
+                        tenFileTieuDe = "Untitled";
+                        isPainted = false;
+                        g.Clear(Color.White);
+                        pb_mainScreen.Refresh();
+                        pb_mainScreen.Image = bm;
+                        pb_mainScreen.Size = MainScreenNormalSize;
+                        break;
+                    }
+
+                case DialogResult.Cancel:
+                    return;
+            }
+            ResetLocationSizeTool();
+        }
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // truong hop chua save lan nao 
+            if (isSaved == false)
+            {
+                SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "File *.png, *jpg, *.bmp, *.gif|*.png; *.jpg; *.bmp; *.gif ", Title = "Save image" };
+                saveFileDialog.RestoreDirectory = true;
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    isSaved = true;
+                    path = saveFileDialog.FileName;
+
+                    pb_mainScreen.Image.Save(path);
+                }
+            }
+            // truong hop da save se goi ham saveas
+            else
+            {
+                saveAsToolStripMenuItem_Click(sender, e);
+            }
+            ResetLocationSizeTool();
+        }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (isSaved)
+            {
+                pb_mainScreen.Image.Save(path);
+                MessageBox.Show("Lưu thành công!", "TNT Paint");
+            }
+            else
+            {
+                saveToolStripMenuItem_Click(sender, e);
+            }
+            ResetLocationSizeTool();
+        }
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog() { Filter = "File *.png, *jpg, *.bmp, *.gif|*.png; *.jpg; *.bmp; *.gif ", Title = "Open image" };
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string fileName = openFileDialog.FileName;
+                tenFileTieuDe = openFileDialog.SafeFileName;
+                Image img = Image.FromFile(fileName);
+                bm = new Bitmap(img, new Size(img.Width, img.Height));
+                pb_mainScreen.Size = new Size(img.Width, img.Height);
+                pb_mainScreen.Refresh();
+                pb_mainScreen.Image = bm;
+                g = Graphics.FromImage(bm);
+                ResetLocationSizeTool();
+            }
+        }
+
+        private void btnBold_Click(object sender, EventArgs e)
+        {
+            if (isBold == false)
+            {
+                isBold = true;
+
+                //
+                if (isItalic == true)
+                {
+                    if (isUnderline == true)
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
+                    }
+                    else
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Bold | FontStyle.Italic);
+                    }
+                }
+                else if (isItalic == false)
+                {
+                    if (isUnderline == true)
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Bold | FontStyle.Underline);
+                    }
+                    else
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Bold);
+                    }
+                }
+            }
+            else
+            {
+                isBold = false;
+
+                if (isItalic == true)
+                {
+                    if (isUnderline == true)
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Italic | FontStyle.Underline);
+                    }
+                    else
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Italic);
+                    }
+                }
+                else if (isItalic == false)
+                {
+                    if (isUnderline == true)
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Underline);
+                    }
+                    else
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Regular);
+                    }
+                }
+            }
+        }
+
+        private void btnItalic_Click(object sender, EventArgs e)
+        {
+            if (isItalic == false)
+            {
+                isItalic = true;
+
+                //
+                if (isBold == true)
+                {
+                    if (isUnderline == true)
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
+                    }
+                    else
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Bold | FontStyle.Italic);
+                    }
+                }
+                else if (isBold == false)
+                {
+                    if (isUnderline == true)
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Italic | FontStyle.Underline);
+                    }
+                    else
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Italic);
+                    }
+                }
+            }
+            else
+            {
+                isItalic = false;
+
+                if (isBold == true)
+                {
+                    if (isUnderline == true)
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Bold | FontStyle.Underline);
+                    }
+                    else
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Italic);
+                    }
+                }
+                else if (isItalic == false)
+                {
+                    if (isUnderline == true)
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Underline);
+                    }
+                    else
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Regular);
+                    }
+                }
+            }
+        }
+
+        private void btnUnderline_Click(object sender, EventArgs e)
+        {
+            if (isUnderline == false)
+            {
+                isUnderline = true;
+
+                //
+                if (isBold == true)
+                {
+                    if (isItalic == true)
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
+                    }
+                    else
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Bold | FontStyle.Italic);
+                    }
+                }
+                else if (isBold == false)
+                {
+                    if (isItalic == true)
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Italic | FontStyle.Underline);
+                    }
+                    else
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Underline);
+                    }
+                }
+            }
+            else
+            {
+                isUnderline = false;
+
+                if (isBold == true)
+                {
+                    if (isItalic == true)
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Italic | FontStyle.Bold);
+                    }
+                    else
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Bold);
+                    }
+                }
+                else if (isBold == false)
+                {
+                    if (isItalic == true)
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Italic);
+                    }
+                    else
+                    {
+                        textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Regular);
+                    }
+                }
+            }
+        }
+
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            switch (MessageBox.Show("Bạn có muốn lưu file với tên " + tenFileTieuDe + " không", "Thông Báo", MessageBoxButtons.YesNoCancel))
+            {
+                // truong hop nguoi dung muon luu anh dang ve lai va open file sau
+                case DialogResult.Yes:
+                    {
+                        saveToolStripMenuItem_Click(sender, e);
+                        tenFileTieuDe = "Untitled";
+                        isPainted = false;
+                        g.Clear(Color.White);
+                        pb_mainScreen.Refresh();
+                        pb_mainScreen.Image = bm;
+                        pb_mainScreen.Size = MainScreenNormalSize;
+                        break;
+                    }
+                // truong hop nguoi dung khong muon luu anh dang ve ma muon open file luon
+                case DialogResult.No:
+                    {
+                        tenFileTieuDe = "Untitled";
+                        isPainted = false;
+                        g.Clear(Color.White);
+                        pb_mainScreen.Refresh();
+                        pb_mainScreen.Image = bm;
+                        pb_mainScreen.Size = MainScreenNormalSize;
+                        break;
+                    }
+
+                case DialogResult.Cancel:
+                    return;
+            }
+            this.Close();
+        }
+
         #endregion
         #region Custom Function
         private void LoadFontAndSize()
@@ -624,6 +1000,66 @@ namespace RemakePaint
             cb_Font.SelectedIndexChanged += Cb_Font_SelectedIndexChanged;
         }
 
+        private void zoomInToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.pb_mainScreen.Width = pb_mainScreen.Width + pb_mainScreen.Width / 3;
+            this.pb_mainScreen.Height = pb_mainScreen.Height + pb_mainScreen.Height / 3;
+            bm = new Bitmap(bm, pb_mainScreen.Width, pb_mainScreen.Height);
+            g = Graphics.FromImage(bm);
+            //g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            pb_mainScreen.Image = bm;
+            ResetLocationSizeTool();
+        }
+
+        private void zoomOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.pb_mainScreen.Width = pb_mainScreen.Width - pb_mainScreen.Width / 3;
+            this.pb_mainScreen.Height = pb_mainScreen.Height - pb_mainScreen.Height / 3;
+            bm = new Bitmap(bm, pb_mainScreen.Width, pb_mainScreen.Height);
+            g = Graphics.FromImage(bm);
+            //g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            pb_mainScreen.Image = bm;
+            ResetLocationSizeTool();
+        }
+
+        private void btnUndo_Click(object sender, EventArgs e)
+        {
+            if (UndoStack.Count > 0)
+            {
+                RedoStack.Push((Bitmap)pb_mainScreen.Image.Clone());
+                Image image = UndoStack.Pop();
+                bm = new Bitmap(image, new Size(image.Width, image.Height));
+                pb_mainScreen.Size = new Size(image.Width, image.Height);
+                pb_mainScreen.Image = bm;
+                g = Graphics.FromImage(bm);
+                ResetLocationSizeTool();
+            }
+            else
+            {
+                MessageBox.Show("Nothing to Undo");
+            }
+        }
+
+        private void btnRedo_Click(object sender, EventArgs e)
+        {
+            if (RedoStack.Count > 0)
+            {
+                UndoStack.Push((Bitmap)pb_mainScreen.Image.Clone());
+                Image image = RedoStack.Pop();
+                bm = new Bitmap(image, new Size(image.Width, image.Height));
+                pb_mainScreen.Size = new Size(image.Width, image.Height);
+                pb_mainScreen.Refresh();
+                pb_mainScreen.Image = bm;
+                g = Graphics.FromImage(bm);
+                ResetLocationSizeTool();
+            }
+            else
+            {
+                MessageBox.Show("Nothing to Redo");
+            }
+        }
+
+
         private void InitGraphic()
         {
             bm = new Bitmap(pb_mainScreen.Width, pb_mainScreen.Height);
@@ -633,8 +1069,11 @@ namespace RemakePaint
             pb_mainScreen.Image = bm;
             p = new Pen(Color.Black, 1);
             eraser = new Pen(Color.White, 20);
-            SelectedMode = 1; // chọn bút chì làm mặc định
+            SelectedMode = 0; // chọn bút chì làm mặc định
             veHinh = new VeHinh();
+            pb_mainScreen.Controls.Add(textBox1);
+            StatusPaintSize.Text = pb_mainScreen.Width + " x " + pb_mainScreen.Height + "px";
+            UndoStack.Push(new Bitmap(bm));
         }
         private void Fill(Bitmap bm, int x, int y, Color newColor)
         {
@@ -642,7 +1081,7 @@ namespace RemakePaint
             Stack<Point> pixel = new Stack<Point>();
             pixel.Push(new Point(x, y));
             bm.SetPixel(x, y, newColor);
-            if (oldColor == newColor) { return; }
+            if (oldColor.ToArgb() == newColor.ToArgb()) { return; }
 
             while (pixel.Count > 0)
             {
