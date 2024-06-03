@@ -28,7 +28,7 @@ namespace RemakePaint
         //
         //
         //
-        public bool isDown = false;// biến chỉ ra các dáu chấm thay đổi kích thước có nhấn ko
+        public bool isDownPanel = false;// biến chỉ ra các dáu chấm thay đổi kích thước có nhấn ko
         public Point oldPoint = new Point();
         public bool isSaved = false;
         public static string path = "";// bien string luu duong dan luu file
@@ -61,6 +61,8 @@ namespace RemakePaint
         public const int MainScreen_Location_X = 120;
         public const int MainScreen_Location_Y = 60;
 
+        Guna2Panel pnLeft, pnDown, pnCorner;
+
         public Paint()
         {
             instance = this;
@@ -69,8 +71,131 @@ namespace RemakePaint
             InitGraphic();
             LoadFontAndSize();
             InitPaintEvent();
+            InitSizeEvent();
         }
 
+        private void InitSizeEvent()
+        {
+            // Left
+            pnLeft = new Guna2Panel();
+            pnLeft.Size = new Size(8, 8);
+            pnLeft.Location = new Point(MainScreen_Location_X + pb_mainScreen.Width, MainScreen_Location_Y + pb_mainScreen.Height / 2);
+            pnLeft.BackColor = Color.White;
+            pnLeft.BorderColor = Color.Black;
+            pnLeft.BorderThickness = 1;
+            pnLeft.Cursor = Cursors.SizeWE; 
+            pnPaintRegion.Controls.Add(pnLeft);
+            pnLeft.MouseDown += (sender, e) =>
+            {
+                isDownPanel = true;
+                oldPoint = e.Location;
+            };
+            pnLeft.MouseMove += (sender, e) =>
+            {
+                if (isDownPanel)
+                {
+                    if (oldPoint != e.Location)
+                    {
+                        this.pb_mainScreen.Width = (e.X + pnLeft.Location.X - MainScreen_Location_X);
+                        Image temp = pb_mainScreen.Image;
+                        bm = new Bitmap(pb_mainScreen.Width, pb_mainScreen.Height);
+                        g = Graphics.FromImage(bm);
+                        g.Clear(Color.White);
+                        g.DrawImage(temp, new Point(0, 0));
+                        pb_mainScreen.Image = bm;
+                    }
+                    ResetLocationSizeTool();
+                }
+                oldPoint = e.Location;   
+            };
+            pnLeft.MouseUp += (sender, e) =>
+            {
+                isDownPanel = false;
+            };
+
+            // Down
+            pnDown = new Guna2Panel();
+            pnDown.Size = new Size(8, 8);
+            pnDown.Location = new Point(MainScreen_Location_X + pb_mainScreen.Width / 2, MainScreen_Location_Y + pb_mainScreen.Height);
+            pnDown.BackColor = Color.White;
+            pnDown.BorderColor = Color.Black;
+            pnDown.BorderThickness = 1;
+            pnDown.Cursor = Cursors.SizeNS;
+            pnPaintRegion.Controls.Add(pnDown);
+            pnDown.MouseDown += (sender, e) =>
+            {
+                isDownPanel = true;
+                oldPoint = e.Location;
+            };
+            pnDown.MouseMove += (sender, e) =>
+            {
+                if (isDownPanel)
+                {
+                    if (oldPoint != e.Location)
+                    {
+                        this.pb_mainScreen.Height = (e.Y + pnDown.Location.Y - MainScreen_Location_Y);
+                        Image temp = pb_mainScreen.Image;
+                        bm = new Bitmap(pb_mainScreen.Width, pb_mainScreen.Height);
+                        g = Graphics.FromImage(bm);
+                        g.Clear(Color.White);
+                        g.DrawImage(temp, new Point(0, 0));
+                        pb_mainScreen.Image = bm;
+                    }
+                    ResetLocationSizeTool();
+                }
+                oldPoint = e.Location;
+            };
+            pnDown.MouseUp += (sender, e) =>
+            {
+                isDownPanel = false;
+            };
+
+            // Corner
+            pnCorner = new Guna2Panel();
+            pnCorner.Size = new Size(8, 8);
+            pnCorner.Location = new Point(MainScreen_Location_X + pb_mainScreen.Width, MainScreen_Location_Y + pb_mainScreen.Height);
+            pnCorner.BackColor = Color.White;
+            pnCorner.BorderColor = Color.Black;
+            pnCorner.BorderThickness = 1;
+            pnCorner.Cursor = Cursors.SizeNWSE;
+            pnPaintRegion.Controls.Add(pnCorner);
+            pnCorner.MouseDown += (sender, e) =>
+            {
+                isDownPanel = true;
+                oldPoint = e.Location;
+            };
+            pnCorner.MouseMove += (sender, e) =>
+            {
+                if (isDownPanel)
+                {
+                    if (oldPoint != e.Location)
+                    {
+                        this.pb_mainScreen.Width = (e.X + pnLeft.Location.X - MainScreen_Location_X);
+                        this.pb_mainScreen.Height = (e.Y + pnDown.Location.Y - MainScreen_Location_Y);
+                        Image temp = pb_mainScreen.Image;
+                        bm = new Bitmap(pb_mainScreen.Width, pb_mainScreen.Height);
+                        g = Graphics.FromImage(bm);
+                        g.Clear(Color.White);
+                        g.DrawImage(temp, new Point(0, 0));
+                        pb_mainScreen.Image = bm;
+                    }
+                    ResetLocationSizeTool();
+                }
+                oldPoint = e.Location;
+            };
+            pnCorner.MouseUp += (sender, e) =>
+            {
+                isDownPanel = false;
+            };
+        }
+
+
+        private void ResetLocationSizeTool()
+        {
+            pnLeft.Location = new Point(MainScreen_Location_X + pb_mainScreen.Width, MainScreen_Location_Y + pb_mainScreen.Height / 2);
+            pnDown.Location = new Point(MainScreen_Location_X + pb_mainScreen.Width / 2, MainScreen_Location_Y + pb_mainScreen.Height);
+            pnCorner.Location = new Point(MainScreen_Location_X + pb_mainScreen.Width, MainScreen_Location_Y + pb_mainScreen.Height);
+        }
 
         #region Init color event
         private void InitBtncolorEvent()
@@ -237,6 +362,53 @@ namespace RemakePaint
                 MessageBox.Show("Loi font chu");
             }
         }
+        private void btnRotateLeft_Click(object sender, EventArgs e)
+        {
+            Image temp = pb_mainScreen.Image;
+            temp.RotateFlip(RotateFlipType.Rotate90FlipXY);
+            pb_mainScreen.Size = new Size(pb_mainScreen.Height, pb_mainScreen.Width);
+            bm = new Bitmap(pb_mainScreen.Width, pb_mainScreen.Height);
+            g = Graphics.FromImage(bm);
+            g.Clear(Color.White);
+            g.DrawImage(temp, new Point(0, 0));
+            pb_mainScreen.Image = bm;
+            ResetLocationSizeTool();
+        }
+
+        private void btnRotateRight_Click(object sender, EventArgs e)
+        {
+            Image temp = pb_mainScreen.Image;
+            temp.RotateFlip(RotateFlipType.Rotate90FlipNone);
+            pb_mainScreen.Size = new Size(pb_mainScreen.Height, pb_mainScreen.Width);
+            bm = new Bitmap(pb_mainScreen.Width, pb_mainScreen.Height);
+            g = Graphics.FromImage(bm);
+            g.Clear(Color.White);
+            g.DrawImage(temp, new Point(0, 0));
+            pb_mainScreen.Image = bm;
+            ResetLocationSizeTool();
+        }
+        private void btnFlipHorizontal_Click(object sender, EventArgs e)
+        {
+            Image temp = pb_mainScreen.Image;
+            temp.RotateFlip(RotateFlipType.Rotate180FlipX);
+            bm = new Bitmap(pb_mainScreen.Width, pb_mainScreen.Height);
+            g = Graphics.FromImage(bm);
+            g.Clear(Color.White);
+            g.DrawImage(temp, new Point(0, 0));
+            pb_mainScreen.Image = bm;
+            ResetLocationSizeTool();
+        }
+        private void btnFlipVertical_Click(object sender, EventArgs e)
+        {
+            Image temp = pb_mainScreen.Image;
+            temp.RotateFlip(RotateFlipType.Rotate180FlipY);
+            bm = new Bitmap(pb_mainScreen.Width, pb_mainScreen.Height);
+            g = Graphics.FromImage(bm);
+            g.Clear(Color.White);
+            g.DrawImage(temp, new Point(0, 0));
+            pb_mainScreen.Image = bm;
+            ResetLocationSizeTool();
+        }
         #endregion
         #region Custom Function
         private void LoadFontAndSize()
@@ -261,6 +433,8 @@ namespace RemakePaint
             cb_Font.SelectedItem = "Arial";
             cb_Font.SelectedIndexChanged += Cb_Font_SelectedIndexChanged;
         }
+
+
         private void InitGraphic()
         {
             bm = new Bitmap(pb_mainScreen.Width, pb_mainScreen.Height);
