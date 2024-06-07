@@ -105,13 +105,6 @@
             this.btnDialogColor = new Guna.UI2.WinForms.Guna2Button();
             this.pbCurrentColor = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnColor17 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnColor18 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnColor19 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnColor20 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnColor21 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnColor22 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnColor23 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnColor24 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnColor9 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnColor10 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnColor11 = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -145,6 +138,13 @@
             this.cb_Font = new Guna.UI2.WinForms.Guna2ComboBox();
             this.TrackBarPen = new Guna.UI2.WinForms.Guna2VTrackBar();
             this.pb_mainScreen = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnColor18 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnColor20 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnColor19 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnColor24 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnColor23 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnColor22 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnColor21 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.pnTool.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -1218,16 +1218,16 @@
             // 
             // guna2Panel8
             // 
+            this.guna2Panel8.Controls.Add(this.btnColor24);
+            this.guna2Panel8.Controls.Add(this.btnColor23);
+            this.guna2Panel8.Controls.Add(this.btnColor22);
+            this.guna2Panel8.Controls.Add(this.btnColor21);
+            this.guna2Panel8.Controls.Add(this.btnColor20);
+            this.guna2Panel8.Controls.Add(this.btnColor19);
+            this.guna2Panel8.Controls.Add(this.btnColor18);
             this.guna2Panel8.Controls.Add(this.btnDialogColor);
             this.guna2Panel8.Controls.Add(this.pbCurrentColor);
             this.guna2Panel8.Controls.Add(this.btnColor17);
-            this.guna2Panel8.Controls.Add(this.btnColor18);
-            this.guna2Panel8.Controls.Add(this.btnColor19);
-            this.guna2Panel8.Controls.Add(this.btnColor20);
-            this.guna2Panel8.Controls.Add(this.btnColor21);
-            this.guna2Panel8.Controls.Add(this.btnColor22);
-            this.guna2Panel8.Controls.Add(this.btnColor23);
-            this.guna2Panel8.Controls.Add(this.btnColor24);
             this.guna2Panel8.Controls.Add(this.btnColor9);
             this.guna2Panel8.Controls.Add(this.btnColor10);
             this.guna2Panel8.Controls.Add(this.btnColor11);
@@ -1286,147 +1286,22 @@
             // 
             // btnColor17
             // 
-            this.btnColor17.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnColor17.BorderThickness = 4;
+            this.btnColor17.BackColor = System.Drawing.Color.Transparent;
+            this.btnColor17.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnColor17.BorderThickness = 1;
             this.btnColor17.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnColor17.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnColor17.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnColor17.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnColor17.FillColor = System.Drawing.Color.SeaGreen;
+            this.btnColor17.FillColor = System.Drawing.Color.Transparent;
             this.btnColor17.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnColor17.ForeColor = System.Drawing.Color.White;
             this.btnColor17.HoverState.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnColor17.Location = new System.Drawing.Point(338, 80);
+            this.btnColor17.Location = new System.Drawing.Point(90, 83);
             this.btnColor17.Name = "btnColor17";
             this.btnColor17.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnColor17.Size = new System.Drawing.Size(30, 30);
-            this.btnColor17.TabIndex = 34;
-            // 
-            // btnColor18
-            // 
-            this.btnColor18.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnColor18.BorderThickness = 4;
-            this.btnColor18.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnColor18.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnColor18.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnColor18.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnColor18.FillColor = System.Drawing.Color.DarkTurquoise;
-            this.btnColor18.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnColor18.ForeColor = System.Drawing.Color.White;
-            this.btnColor18.HoverState.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnColor18.Location = new System.Drawing.Point(302, 80);
-            this.btnColor18.Name = "btnColor18";
-            this.btnColor18.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnColor18.Size = new System.Drawing.Size(30, 30);
-            this.btnColor18.TabIndex = 33;
-            // 
-            // btnColor19
-            // 
-            this.btnColor19.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnColor19.BorderThickness = 4;
-            this.btnColor19.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnColor19.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnColor19.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnColor19.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnColor19.FillColor = System.Drawing.Color.DodgerBlue;
-            this.btnColor19.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnColor19.ForeColor = System.Drawing.Color.White;
-            this.btnColor19.HoverState.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnColor19.Location = new System.Drawing.Point(266, 80);
-            this.btnColor19.Name = "btnColor19";
-            this.btnColor19.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnColor19.Size = new System.Drawing.Size(30, 30);
-            this.btnColor19.TabIndex = 32;
-            // 
-            // btnColor20
-            // 
-            this.btnColor20.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnColor20.BorderThickness = 4;
-            this.btnColor20.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnColor20.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnColor20.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnColor20.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnColor20.FillColor = System.Drawing.Color.MediumPurple;
-            this.btnColor20.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnColor20.ForeColor = System.Drawing.Color.White;
-            this.btnColor20.HoverState.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnColor20.Location = new System.Drawing.Point(230, 80);
-            this.btnColor20.Name = "btnColor20";
-            this.btnColor20.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnColor20.Size = new System.Drawing.Size(30, 30);
-            this.btnColor20.TabIndex = 31;
-            // 
-            // btnColor21
-            // 
-            this.btnColor21.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnColor21.BorderThickness = 4;
-            this.btnColor21.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnColor21.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnColor21.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnColor21.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnColor21.FillColor = System.Drawing.Color.Thistle;
-            this.btnColor21.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnColor21.ForeColor = System.Drawing.Color.White;
-            this.btnColor21.HoverState.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnColor21.Location = new System.Drawing.Point(194, 80);
-            this.btnColor21.Name = "btnColor21";
-            this.btnColor21.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnColor21.Size = new System.Drawing.Size(30, 30);
-            this.btnColor21.TabIndex = 30;
-            // 
-            // btnColor22
-            // 
-            this.btnColor22.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnColor22.BorderThickness = 4;
-            this.btnColor22.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnColor22.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnColor22.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnColor22.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnColor22.FillColor = System.Drawing.Color.MediumVioletRed;
-            this.btnColor22.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnColor22.ForeColor = System.Drawing.Color.White;
-            this.btnColor22.HoverState.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnColor22.Location = new System.Drawing.Point(158, 80);
-            this.btnColor22.Name = "btnColor22";
-            this.btnColor22.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnColor22.Size = new System.Drawing.Size(30, 30);
-            this.btnColor22.TabIndex = 29;
-            // 
-            // btnColor23
-            // 
-            this.btnColor23.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnColor23.BorderThickness = 4;
-            this.btnColor23.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnColor23.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnColor23.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnColor23.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnColor23.FillColor = System.Drawing.Color.Crimson;
-            this.btnColor23.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnColor23.ForeColor = System.Drawing.Color.White;
-            this.btnColor23.HoverState.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnColor23.Location = new System.Drawing.Point(122, 80);
-            this.btnColor23.Name = "btnColor23";
-            this.btnColor23.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnColor23.Size = new System.Drawing.Size(30, 30);
-            this.btnColor23.TabIndex = 28;
-            // 
-            // btnColor24
-            // 
-            this.btnColor24.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnColor24.BorderThickness = 4;
-            this.btnColor24.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnColor24.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnColor24.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnColor24.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnColor24.FillColor = System.Drawing.Color.LightPink;
-            this.btnColor24.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnColor24.ForeColor = System.Drawing.Color.White;
-            this.btnColor24.HoverState.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnColor24.Location = new System.Drawing.Point(86, 80);
-            this.btnColor24.Name = "btnColor24";
-            this.btnColor24.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnColor24.Size = new System.Drawing.Size(30, 30);
-            this.btnColor24.TabIndex = 27;
+            this.btnColor17.Size = new System.Drawing.Size(23, 23);
+            this.btnColor17.TabIndex = 27;
             // 
             // btnColor9
             // 
@@ -1934,6 +1809,139 @@
             this.pb_mainScreen.TabIndex = 0;
             this.pb_mainScreen.TabStop = false;
             // 
+            // btnColor18
+            // 
+            this.btnColor18.BackColor = System.Drawing.Color.Transparent;
+            this.btnColor18.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnColor18.BorderThickness = 1;
+            this.btnColor18.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnColor18.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnColor18.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnColor18.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnColor18.FillColor = System.Drawing.Color.Transparent;
+            this.btnColor18.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnColor18.ForeColor = System.Drawing.Color.White;
+            this.btnColor18.HoverState.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnColor18.Location = new System.Drawing.Point(126, 83);
+            this.btnColor18.Name = "btnColor18";
+            this.btnColor18.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnColor18.Size = new System.Drawing.Size(23, 23);
+            this.btnColor18.TabIndex = 37;
+            // 
+            // btnColor20
+            // 
+            this.btnColor20.BackColor = System.Drawing.Color.Transparent;
+            this.btnColor20.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnColor20.BorderThickness = 1;
+            this.btnColor20.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnColor20.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnColor20.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnColor20.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnColor20.FillColor = System.Drawing.Color.Transparent;
+            this.btnColor20.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnColor20.ForeColor = System.Drawing.Color.White;
+            this.btnColor20.HoverState.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnColor20.Location = new System.Drawing.Point(197, 83);
+            this.btnColor20.Name = "btnColor20";
+            this.btnColor20.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnColor20.Size = new System.Drawing.Size(23, 23);
+            this.btnColor20.TabIndex = 39;
+            // 
+            // btnColor19
+            // 
+            this.btnColor19.BackColor = System.Drawing.Color.Transparent;
+            this.btnColor19.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnColor19.BorderThickness = 1;
+            this.btnColor19.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnColor19.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnColor19.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnColor19.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnColor19.FillColor = System.Drawing.Color.Transparent;
+            this.btnColor19.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnColor19.ForeColor = System.Drawing.Color.White;
+            this.btnColor19.HoverState.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnColor19.Location = new System.Drawing.Point(162, 83);
+            this.btnColor19.Name = "btnColor19";
+            this.btnColor19.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnColor19.Size = new System.Drawing.Size(23, 23);
+            this.btnColor19.TabIndex = 38;
+            // 
+            // btnColor24
+            // 
+            this.btnColor24.BackColor = System.Drawing.Color.Transparent;
+            this.btnColor24.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnColor24.BorderThickness = 1;
+            this.btnColor24.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnColor24.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnColor24.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnColor24.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnColor24.FillColor = System.Drawing.Color.Transparent;
+            this.btnColor24.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnColor24.ForeColor = System.Drawing.Color.White;
+            this.btnColor24.HoverState.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnColor24.Location = new System.Drawing.Point(342, 83);
+            this.btnColor24.Name = "btnColor24";
+            this.btnColor24.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnColor24.Size = new System.Drawing.Size(23, 23);
+            this.btnColor24.TabIndex = 43;
+            // 
+            // btnColor23
+            // 
+            this.btnColor23.BackColor = System.Drawing.Color.Transparent;
+            this.btnColor23.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnColor23.BorderThickness = 1;
+            this.btnColor23.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnColor23.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnColor23.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnColor23.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnColor23.FillColor = System.Drawing.Color.Transparent;
+            this.btnColor23.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnColor23.ForeColor = System.Drawing.Color.White;
+            this.btnColor23.HoverState.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnColor23.Location = new System.Drawing.Point(306, 83);
+            this.btnColor23.Name = "btnColor23";
+            this.btnColor23.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnColor23.Size = new System.Drawing.Size(23, 23);
+            this.btnColor23.TabIndex = 42;
+            // 
+            // btnColor22
+            // 
+            this.btnColor22.BackColor = System.Drawing.Color.Transparent;
+            this.btnColor22.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnColor22.BorderThickness = 1;
+            this.btnColor22.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnColor22.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnColor22.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnColor22.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnColor22.FillColor = System.Drawing.Color.Transparent;
+            this.btnColor22.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnColor22.ForeColor = System.Drawing.Color.White;
+            this.btnColor22.HoverState.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnColor22.Location = new System.Drawing.Point(270, 83);
+            this.btnColor22.Name = "btnColor22";
+            this.btnColor22.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnColor22.Size = new System.Drawing.Size(23, 23);
+            this.btnColor22.TabIndex = 41;
+            // 
+            // btnColor21
+            // 
+            this.btnColor21.BackColor = System.Drawing.Color.Transparent;
+            this.btnColor21.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnColor21.BorderThickness = 1;
+            this.btnColor21.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnColor21.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnColor21.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnColor21.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnColor21.FillColor = System.Drawing.Color.Transparent;
+            this.btnColor21.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnColor21.ForeColor = System.Drawing.Color.White;
+            this.btnColor21.HoverState.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnColor21.Location = new System.Drawing.Point(233, 83);
+            this.btnColor21.Name = "btnColor21";
+            this.btnColor21.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnColor21.Size = new System.Drawing.Size(23, 23);
+            this.btnColor21.TabIndex = 40;
+            // 
             // Paint
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2070,13 +2078,6 @@
         private Guna.UI2.WinForms.Guna2Button btnDialogColor;
         private Guna.UI2.WinForms.Guna2CirclePictureBox pbCurrentColor;
         private Guna.UI2.WinForms.Guna2CircleButton btnColor17;
-        private Guna.UI2.WinForms.Guna2CircleButton btnColor18;
-        private Guna.UI2.WinForms.Guna2CircleButton btnColor19;
-        private Guna.UI2.WinForms.Guna2CircleButton btnColor20;
-        private Guna.UI2.WinForms.Guna2CircleButton btnColor21;
-        private Guna.UI2.WinForms.Guna2CircleButton btnColor22;
-        private Guna.UI2.WinForms.Guna2CircleButton btnColor23;
-        private Guna.UI2.WinForms.Guna2CircleButton btnColor24;
         private Guna.UI2.WinForms.Guna2CircleButton btnColor9;
         private Guna.UI2.WinForms.Guna2CircleButton btnColor10;
         private Guna.UI2.WinForms.Guna2CircleButton btnColor11;
@@ -2100,6 +2101,13 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel StatusPaintSize;
         private System.Windows.Forms.TextBox textBox1;
+        private Guna.UI2.WinForms.Guna2CircleButton btnColor24;
+        private Guna.UI2.WinForms.Guna2CircleButton btnColor23;
+        private Guna.UI2.WinForms.Guna2CircleButton btnColor22;
+        private Guna.UI2.WinForms.Guna2CircleButton btnColor21;
+        private Guna.UI2.WinForms.Guna2CircleButton btnColor20;
+        private Guna.UI2.WinForms.Guna2CircleButton btnColor19;
+        private Guna.UI2.WinForms.Guna2CircleButton btnColor18;
     }
 }
 

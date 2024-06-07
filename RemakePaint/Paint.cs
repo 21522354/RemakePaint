@@ -237,6 +237,18 @@ namespace RemakePaint
         private void BtnColor_Click(object sender, EventArgs e)
         {
             Guna2CircleButton btn = sender as Guna2CircleButton;
+            if(btn.FillColor == Color.Transparent)
+            {
+                ColorDialog colorDialog = new ColorDialog();
+                if (colorDialog.ShowDialog() == DialogResult.OK)
+                {
+                    btn.FillColor = colorDialog.Color;
+                    currentColor = btn.FillColor;
+                    pbCurrentColor.FillColor = currentColor;
+                    p.Color = currentColor;
+                }
+                return;
+            }
             currentColor = btn.FillColor;   
             pbCurrentColor.FillColor = currentColor;
             p.Color = currentColor;
