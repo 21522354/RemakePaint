@@ -254,13 +254,17 @@ namespace RemakePaint
         private void Pb_mainScreen_MouseDown(object sender, MouseEventArgs e)
         {
             AllowPaint = true;
+            textBox1.Width = 100;
+            textBox1.Height = 30;
+            px = e.Location;
             if (textBox1.Visible == true)
             {
                 UndoStack.Push(new Bitmap(bm));
                 textBox1.Visible = false;
-                g.DrawString(textBox1.Text, textBox1.Font, new SolidBrush(textBox1.ForeColor), new Point(textBox1.Location.X, textBox1.Location.Y + 3));
+                g.DrawString(textBox1.Text, textBox1.Font, new SolidBrush(textBox1.ForeColor), new Point(textBox1.Location.X - 3, textBox1.Location.Y));
                 textBox1.Text = "";
                 pnTextTools.Visible = false;
+                return;
             }
             if (pb_mainScreen.Cursor == Cursors.IBeam)
             {
@@ -269,6 +273,8 @@ namespace RemakePaint
                 textBox1.Visible = true;
                 textBox1.Focus();
                 pnTextTools.Visible = true;
+                pb_mainScreen.Cursor = Cursors.Default;
+                return;
             }
             if (SelectedMode == 25) 
             {
@@ -294,7 +300,6 @@ namespace RemakePaint
                 }
                 return;
             }
-            px = e.Location;
             if (SelectedMode == 3)
             {
                 UndoStack.Push(new Bitmap(bm));
@@ -313,7 +318,7 @@ namespace RemakePaint
                 }
                 return;
             }
-            UndoStack.Push(new Bitmap(bm)); 
+            UndoStack.Push(new Bitmap(bm));
         }
         private void Pb_mainScreen_MouseMove(object sender, MouseEventArgs e)
         {
@@ -471,6 +476,7 @@ namespace RemakePaint
         private void btnPencil_Click(object sender, EventArgs e)
         {
             Bitmap temp = new Bitmap(RemakePaint.Properties.Resources.IcPencilMainscreen);
+            temp = ResizeBitmap(temp, (int)p.Width + 30, (int)p.Width + 30);
             pb_mainScreen.Cursor = new Cursor(temp.GetHicon());
             SelectedMode = 1;
             TrackBarPen.Visible = true; 
@@ -479,11 +485,23 @@ namespace RemakePaint
         private void btnEraser_Click(object sender, EventArgs e)
         {
             Bitmap temp = new Bitmap(RemakePaint.Properties.Resources.IcEraserMainscreen);
+            temp = ResizeBitmap(temp, (int)eraser.Width + 20, (int) eraser.Width + 20);
             pb_mainScreen.Cursor = new Cursor(temp.GetHicon());
             SelectedMode = 2;
             TrackBarPen.Visible = true;
             TrackBarPen.Value = 40 - (int)eraser.Width;
         }
+        private Bitmap ResizeBitmap(Bitmap source, int width, int height)
+        {
+            Bitmap result = new Bitmap(width, height);
+            using (Graphics g = Graphics.FromImage(result))
+            {
+                g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                g.DrawImage(source, 0, 0, width, height);
+            }
+            return result;
+        }
+
         private void btnFill_Click(object sender, EventArgs e)
         {
             SelectedMode = 3;
@@ -504,10 +522,16 @@ namespace RemakePaint
             if(SelectedMode == 1)
             {
                 p = new Pen(currentColor, size);
+                Bitmap temp = new Bitmap(RemakePaint.Properties.Resources.IcPencilMainscreen);
+                temp = ResizeBitmap(temp, (int)p.Width + 30, (int)p.Width + 30);
+                pb_mainScreen.Cursor = new Cursor(temp.GetHicon());
             }
             else
             {
                 eraser = new Pen(Color.White, size);
+                Bitmap temp = new Bitmap(RemakePaint.Properties.Resources.IcEraserMainscreen);
+                temp = ResizeBitmap(temp, (int)eraser.Width + 20, (int)eraser.Width + 20);
+                pb_mainScreen.Cursor = new Cursor(temp.GetHicon());
             }
         }
         private void Cb_Font_SelectedIndexChanged(object sender, EventArgs e)
@@ -516,7 +540,7 @@ namespace RemakePaint
             {
                 int i = int.Parse(cb_Size.Text);
                 Font font = new Font(cb_Font.Text, i);
-                textBox1.SelectionColor = currentColor;
+                textBox1.ForeColor = currentColor;
                 textBox1.Font = font;
 
             }
@@ -531,7 +555,7 @@ namespace RemakePaint
             {
                 int i = int.Parse(cb_Size.Text);
                 Font font = new Font(cb_Font.Text, i);
-                textBox1.SelectionColor = currentColor;
+                textBox1.ForeColor = currentColor;
                 textBox1.Font = font;
 
             }
@@ -593,76 +617,91 @@ namespace RemakePaint
             {
                 SelectedMode = 5;
                 pb_mainScreen.Cursor = Cursors.Default;
+                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_line_50;
             };
             btnCircle.Click += (sender, e) =>
             {
                 SelectedMode = 6;
                 pb_mainScreen.Cursor = Cursors.Default;
+                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_circle_30;
             };
             btnRectangle.Click += (sender, e) =>
             {
                 SelectedMode = 7;
                 pb_mainScreen.Cursor = Cursors.Default;
+                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_rectangle_48;
             };
             btnTriangle.Click += (sender, e) =>
             {
                 SelectedMode = 8;
                 pb_mainScreen.Cursor = Cursors.Default;
+                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_triangle_30;
             };
             btnRightTriangle.Click += (sender, e) =>
             {
                 SelectedMode = 9;
                 pb_mainScreen.Cursor = Cursors.Default;
+                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_right_triangle_48;
             };
             btnRadiusRectangle.Click += (sender, e) =>
             {
                 SelectedMode = 10;
                 pb_mainScreen.Cursor = Cursors.Default;
+                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_rectangle_48__1_;
             };
             btnRhombus.Click += (sender, e) =>
             {
                 SelectedMode = 11;
                 pb_mainScreen.Cursor = Cursors.Default;
+                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_rhombus_48;
             };
             btnPentagon.Click += (sender, e) =>
             {
                 SelectedMode = 12;
                 pb_mainScreen.Cursor = Cursors.Default;
+                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_pentagon_48;
             };
             btnHexagon.Click += (sender, e) =>
             {
                 SelectedMode = 13;
                 pb_mainScreen.Cursor = Cursors.Default;
+                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_hexagon_48;
             };
             btnArrowUp.Click += (sender, e) =>
             {
                 SelectedMode = 14;
                 pb_mainScreen.Cursor = Cursors.Default;
+                pbCurrentShape.Image = RemakePaint.Properties.Resources.UpArrow1;
             };
             btnArrowDown.Click += (sender, e) =>
             {
                 SelectedMode = 17;
                 pb_mainScreen.Cursor = Cursors.Default;
+                pbCurrentShape.Image = RemakePaint.Properties.Resources.DownArrow;
             };
             btnArrowLeft.Click += (sender, e) =>
             {
                 SelectedMode = 15;
                 pb_mainScreen.Cursor = Cursors.Default;
+                pbCurrentShape.Image = RemakePaint.Properties.Resources.LeftArrow;
             };
             btnArrowRight.Click += (sender, e) =>
             {
                 SelectedMode = 16;
                 pb_mainScreen.Cursor = Cursors.Default;
+                pbCurrentShape.Image = RemakePaint.Properties.Resources.RightArrow;
             };
             btnPolygon.Click += (sender, e) =>
             {
                 SelectedMode = 18;
                 pb_mainScreen.Cursor = Cursors.Default;
+                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_polygon_30;
             };
             btnStar.Click += (sender, e) =>
             {
                 SelectedMode = 19;
                 pb_mainScreen.Cursor = Cursors.Default;
+                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_star_50;
             };
         }
         private void btnText_Click(object sender, EventArgs e)
@@ -974,54 +1013,16 @@ namespace RemakePaint
             }
             this.Close();
         }
-
-        #endregion
-        #region Custom Function
-        private void LoadFontAndSize()
+        private void btnDialogColor_Click(object sender, EventArgs e)
         {
-            InstalledFontCollection installedFont = new InstalledFontCollection();
-            FontFamily[] fontFamilies = installedFont.Families;
-            foreach (FontFamily ff in fontFamilies)
+            ColorDialog colorDialog = new ColorDialog();
+            if (colorDialog.ShowDialog() == DialogResult.OK)
             {
-                cb_Font.Items.Add(ff.Name);
+                currentColor = colorDialog.Color;
+                pbCurrentColor.FillColor = currentColor;
+                p.Color = currentColor;
             }
-            cb_Size.Items.Add("8");
-            cb_Size.Items.Add("10");
-            cb_Size.Items.Add("12");
-            cb_Size.Items.Add("15");
-            cb_Size.Items.Add("18");
-            cb_Size.Items.Add("22");
-            cb_Size.Items.Add("26");
-            cb_Size.Items.Add("30");
-            cb_Size.Items.Add("48");
-            cb_Size.Items.Add("72");
-            cb_Size.SelectedItem = "10";
-            cb_Font.SelectedItem = "Arial";
-            cb_Font.SelectedIndexChanged += Cb_Font_SelectedIndexChanged;
         }
-
-        private void zoomInToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.pb_mainScreen.Width = pb_mainScreen.Width + pb_mainScreen.Width / 3;
-            this.pb_mainScreen.Height = pb_mainScreen.Height + pb_mainScreen.Height / 3;
-            bm = new Bitmap(bm, pb_mainScreen.Width, pb_mainScreen.Height);
-            g = Graphics.FromImage(bm);
-            //g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            pb_mainScreen.Image = bm;
-            ResetLocationSizeTool();
-        }
-
-        private void zoomOutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.pb_mainScreen.Width = pb_mainScreen.Width - pb_mainScreen.Width / 3;
-            this.pb_mainScreen.Height = pb_mainScreen.Height - pb_mainScreen.Height / 3;
-            bm = new Bitmap(bm, pb_mainScreen.Width, pb_mainScreen.Height);
-            g = Graphics.FromImage(bm);
-            //g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            pb_mainScreen.Image = bm;
-            ResetLocationSizeTool();
-        }
-
         private void btnUndo_Click(object sender, EventArgs e)
         {
             if (UndoStack.Count > 0)
@@ -1061,7 +1062,7 @@ namespace RemakePaint
 
         private void statusBarItem_Click(object sender, EventArgs e)
         {
-            if(statusBarItem.Checked == true)
+            if (statusBarItem.Checked == true)
             {
                 statusStrip1.Visible = true;
             }
@@ -1070,6 +1071,64 @@ namespace RemakePaint
                 statusStrip1.Visible = false;
             }
         }
+
+        private void zoomInToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.pb_mainScreen.Width = pb_mainScreen.Width + pb_mainScreen.Width / 3;
+            this.pb_mainScreen.Height = pb_mainScreen.Height + pb_mainScreen.Height / 3;
+            bm = new Bitmap(bm, pb_mainScreen.Width, pb_mainScreen.Height);
+            g = Graphics.FromImage(bm);
+            //g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            pb_mainScreen.Image = bm;
+            ResetLocationSizeTool();
+        }
+
+        private void zoomOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.pb_mainScreen.Width = pb_mainScreen.Width - pb_mainScreen.Width / 3;
+            this.pb_mainScreen.Height = pb_mainScreen.Height - pb_mainScreen.Height / 3;
+            bm = new Bitmap(bm, pb_mainScreen.Width, pb_mainScreen.Height);
+            g = Graphics.FromImage(bm);
+            //g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            pb_mainScreen.Image = bm;
+            ResetLocationSizeTool();
+        }
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            using (Graphics g = this.textBox1.CreateGraphics())
+            {
+                SizeF size = g.MeasureString(this.textBox1.Text, this.textBox1.Font);
+                // Thêm một khoảng đệm để đảm bảo văn bản không bị cắt
+                this.textBox1.Width = (int)size.Width + 10;
+                this.textBox1.Height = (int)size.Height + 10;
+            }
+        }
+
+        #endregion
+        #region Custom Function
+        private void LoadFontAndSize()
+        {
+            InstalledFontCollection installedFont = new InstalledFontCollection();
+            FontFamily[] fontFamilies = installedFont.Families;
+            foreach (FontFamily ff in fontFamilies)
+            {
+                cb_Font.Items.Add(ff.Name);
+            }
+            cb_Size.Items.Add("8");
+            cb_Size.Items.Add("10");
+            cb_Size.Items.Add("12");
+            cb_Size.Items.Add("15");
+            cb_Size.Items.Add("18");
+            cb_Size.Items.Add("22");
+            cb_Size.Items.Add("26");
+            cb_Size.Items.Add("30");
+            cb_Size.Items.Add("48");
+            cb_Size.Items.Add("72");
+            cb_Size.SelectedItem = "10";
+            cb_Font.SelectedItem = "Arial";
+            cb_Font.SelectedIndexChanged += Cb_Font_SelectedIndexChanged;
+        }
+
 
         private void InitGraphic()
         {
