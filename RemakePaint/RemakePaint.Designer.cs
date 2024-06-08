@@ -1,6 +1,6 @@
 ﻿namespace RemakePaint
 {
-    partial class Paint
+    partial class RemakePaint
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Paint));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RemakePaint));
             this.pnTool = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -1831,9 +1831,8 @@
             // pbImgEditor
             // 
             this.pbImgEditor.Cursor = System.Windows.Forms.Cursors.SizeAll;
-            this.pbImgEditor.Image = global::RemakePaint.Properties.Resources.DownArrow;
             this.pbImgEditor.ImageRotate = 0F;
-            this.pbImgEditor.Location = new System.Drawing.Point(354, 167);
+            this.pbImgEditor.Location = new System.Drawing.Point(557, 171);
             this.pbImgEditor.Name = "pbImgEditor";
             this.pbImgEditor.Size = new System.Drawing.Size(418, 254);
             this.pbImgEditor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1959,7 +1958,7 @@
             this.pb_mainScreen.TabIndex = 0;
             this.pb_mainScreen.TabStop = false;
             // 
-            // Paint
+            // RemakePaint
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1969,9 +1968,10 @@
             this.Controls.Add(this.pnTool);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Paint";
+            this.Name = "RemakePaint";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paint";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnTool.ResumeLayout(false);
             this.pnTool.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);

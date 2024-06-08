@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace RemakePaint
 {
-    public partial class Paint : Form
+    public partial class RemakePaint : Form
     {
         public Graphics g; // đồ hoạ từ màn hình vẽ chính
         public Bitmap bm;
@@ -37,7 +37,7 @@ namespace RemakePaint
         public bool isGridLine = false;
         public bool isFullScreen = false;
         //
-        public static Paint instance;
+        public static RemakePaint instance;
 
         //stack
         public Stack<Bitmap> UndoStack = new Stack<Bitmap>();
@@ -69,7 +69,9 @@ namespace RemakePaint
         Guna2Panel pnPbLeft, pnPbDown, pnPbCorner;
         bool isDownPbPanel;
 
-        public Paint()
+        public Guna2PictureBox PbImgEditor { get => pbImgEditor; set => pbImgEditor = value; }
+
+        public RemakePaint()
         {
             instance = this;
             InitializeComponent();
@@ -178,7 +180,7 @@ namespace RemakePaint
 
         }
 
-        private void ResetLocationPbSizeTool()
+        public void ResetLocationPbSizeTool()
         {
             pnPbLeft.Location = new Point(pbImgEditor.Location.X + pbImgEditor.Width, pbImgEditor.Location.Y + pbImgEditor.Height / 2);
             pnPbDown.Location = new Point(pbImgEditor.Location.X + pbImgEditor.Width / 2, pbImgEditor.Location.Y + pbImgEditor.Height);
@@ -633,7 +635,7 @@ namespace RemakePaint
         #region Tools Event
         private void btnPencil_Click(object sender, EventArgs e)
         {
-            Bitmap temp = new Bitmap(RemakePaint.Properties.Resources.IcPencilMainscreen);
+            Bitmap temp = new Bitmap(global::RemakePaint.Properties.Resources.IcPencilMainscreen);
             temp = ResizeBitmap(temp, (int)p.Width + 30, (int)p.Width + 30);
             pb_mainScreen.Cursor = new Cursor(temp.GetHicon());
             SelectedMode = 1;
@@ -642,7 +644,7 @@ namespace RemakePaint
         }
         private void btnEraser_Click(object sender, EventArgs e)
         {
-            Bitmap temp = new Bitmap(RemakePaint.Properties.Resources.IcEraserMainscreen);
+            Bitmap temp = new Bitmap(global::RemakePaint.Properties.Resources.IcEraserMainscreen);
             temp = ResizeBitmap(temp, (int)eraser.Width + 20, (int) eraser.Width + 20);
             pb_mainScreen.Cursor = new Cursor(temp.GetHicon());
             SelectedMode = 2;
@@ -664,14 +666,14 @@ namespace RemakePaint
         {
             SelectedMode = 3;
             TrackBarPen.Visible = false;
-            Bitmap bm = new Bitmap(RemakePaint.Properties.Resources.icons8_fill_color_48);
+            Bitmap bm = new Bitmap(global::RemakePaint.Properties.Resources.icons8_fill_color_48);
             pb_mainScreen.Cursor = new Cursor(bm.GetHicon());
         }
         private void btnColorPicker_Click(object sender, EventArgs e)
         {
             SelectedMode = 4;
             TrackBarPen.Visible = false;
-            Bitmap bm = new Bitmap(RemakePaint.Properties.Resources.icons8_color_picker_48);
+            Bitmap bm = new Bitmap(global::RemakePaint.Properties.Resources.icons8_color_picker_48);
             pb_mainScreen.Cursor = new Cursor(bm.GetHicon());
         }
         private void TrackBarPen_Scroll(object sender, ScrollEventArgs e)
@@ -680,14 +682,14 @@ namespace RemakePaint
             if(SelectedMode == 1)
             {
                 p = new Pen(currentColor, size);
-                Bitmap temp = new Bitmap(RemakePaint.Properties.Resources.IcPencilMainscreen);
+                Bitmap temp = new Bitmap(global::RemakePaint.Properties.Resources.IcPencilMainscreen);
                 temp = ResizeBitmap(temp, (int)p.Width + 30, (int)p.Width + 30);
                 pb_mainScreen.Cursor = new Cursor(temp.GetHicon());
             }
             else
             {
                 eraser = new Pen(Color.White, size);
-                Bitmap temp = new Bitmap(RemakePaint.Properties.Resources.IcEraserMainscreen);
+                Bitmap temp = new Bitmap(global::RemakePaint.Properties.Resources.IcEraserMainscreen);
                 temp = ResizeBitmap(temp, (int)eraser.Width + 20, (int)eraser.Width + 20);
                 pb_mainScreen.Cursor = new Cursor(temp.GetHicon());
             }
@@ -775,91 +777,91 @@ namespace RemakePaint
             {
                 SelectedMode = 5;
                 pb_mainScreen.Cursor = Cursors.Default;
-                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_line_50;
+                pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_line_50;
             };
             btnCircle.Click += (sender, e) =>
             {
                 SelectedMode = 6;
                 pb_mainScreen.Cursor = Cursors.Default;
-                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_circle_30;
+                pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_circle_30;
             };
             btnRectangle.Click += (sender, e) =>
             {
                 SelectedMode = 7;
                 pb_mainScreen.Cursor = Cursors.Default;
-                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_rectangle_48;
+                pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_rectangle_48;
             };
             btnTriangle.Click += (sender, e) =>
             {
                 SelectedMode = 8;
                 pb_mainScreen.Cursor = Cursors.Default;
-                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_triangle_30;
+                pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_triangle_30;
             };
             btnRightTriangle.Click += (sender, e) =>
             {
                 SelectedMode = 9;
                 pb_mainScreen.Cursor = Cursors.Default;
-                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_right_triangle_48;
+                pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_right_triangle_48;
             };
             btnRadiusRectangle.Click += (sender, e) =>
             {
                 SelectedMode = 10;
                 pb_mainScreen.Cursor = Cursors.Default;
-                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_rectangle_48__1_;
+                pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_rectangle_48__1_;
             };
             btnRhombus.Click += (sender, e) =>
             {
                 SelectedMode = 11;
                 pb_mainScreen.Cursor = Cursors.Default;
-                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_rhombus_48;
+                pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_rhombus_48;
             };
             btnPentagon.Click += (sender, e) =>
             {
                 SelectedMode = 12;
                 pb_mainScreen.Cursor = Cursors.Default;
-                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_pentagon_48;
+                pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_pentagon_48;
             };
             btnHexagon.Click += (sender, e) =>
             {
                 SelectedMode = 13;
                 pb_mainScreen.Cursor = Cursors.Default;
-                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_hexagon_48;
+                pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_hexagon_48;
             };
             btnArrowUp.Click += (sender, e) =>
             {
                 SelectedMode = 14;
                 pb_mainScreen.Cursor = Cursors.Default;
-                pbCurrentShape.Image = RemakePaint.Properties.Resources.UpArrow1;
+                pbCurrentShape.Image = global::RemakePaint.Properties.Resources.UpArrow1;
             };
             btnArrowDown.Click += (sender, e) =>
             {
                 SelectedMode = 17;
                 pb_mainScreen.Cursor = Cursors.Default;
-                pbCurrentShape.Image = RemakePaint.Properties.Resources.DownArrow;
+                pbCurrentShape.Image = global::RemakePaint.Properties.Resources.DownArrow;
             };
             btnArrowLeft.Click += (sender, e) =>
             {
                 SelectedMode = 15;
                 pb_mainScreen.Cursor = Cursors.Default;
-                pbCurrentShape.Image = RemakePaint.Properties.Resources.LeftArrow;
+                pbCurrentShape.Image = global::RemakePaint.Properties.Resources.LeftArrow;
             };
             btnArrowRight.Click += (sender, e) =>
             {
                 SelectedMode = 16;
                 pb_mainScreen.Cursor = Cursors.Default;
-                pbCurrentShape.Image = RemakePaint.Properties.Resources.RightArrow;
+                pbCurrentShape.Image = global::RemakePaint.Properties.Resources.RightArrow;
             };
             btnPolygon.Click += (sender, e) =>
             {
                 SelectedMode = 18;
                 pb_mainScreen.Cursor = Cursors.Default;
-                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_polygon_30;
+                pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_polygon_30;
             };
             btnStar.Click += (sender, e) =>
             {
                 SelectedMode = 19;
                 pb_mainScreen.Cursor = Cursors.Default;
-                pbCurrentShape.Image = RemakePaint.Properties.Resources.icons8_star_50;
+                pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_star_50;
             };
         }
         private void btnText_Click(object sender, EventArgs e)
@@ -870,7 +872,7 @@ namespace RemakePaint
         }
         private void btnZoom_Click(object sender, EventArgs e)
         {
-            Bitmap bm = new Bitmap(RemakePaint.Properties.Resources.icons8_magnifying_glass_24);
+            Bitmap bm = new Bitmap(global::RemakePaint.Properties.Resources.icons8_magnifying_glass_24);
             pb_mainScreen.Cursor = new Cursor(bm.GetHicon());
             SelectedMode = 25;
             TrackBarPen.Visible = false;
@@ -1280,6 +1282,8 @@ namespace RemakePaint
                 pbImgEditor.Visible = true;
                 pbImgEditor.Location = new Point(30, 30);
                 ResetLocationPbSizeTool();
+                ImageEditor imageEditor = new ImageEditor();
+                imageEditor.ShowDialog();
             }
         }
 
