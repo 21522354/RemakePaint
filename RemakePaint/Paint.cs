@@ -63,6 +63,11 @@ namespace RemakePaint
         public Size MainScreenNormalSize = new Size(1000, 500);
 
         Guna2Panel pnLeft, pnDown, pnCorner;
+        private bool isDragging = false;
+        private Point dragStartPoint;
+        private Point pictureBoxStartPoint;
+        Guna2Panel pnPbLeft, pnPbDown, pnPbCorner;
+        bool isDownPbPanel;
 
         public Paint()
         {
@@ -74,9 +79,142 @@ namespace RemakePaint
             InitPaintEvent();
             InitSizeEvent();
             InitBtnShapeEvent();
+            InitImage();
+        }
+        #region Init Image
+        private void InitImage()
+        {
+            pbImgEditor.MouseDown += new MouseEventHandler(PictureBox_MouseDown);
+            pbImgEditor.MouseMove += new MouseEventHandler(PictureBox_MouseMove);
+            pbImgEditor.MouseUp += new MouseEventHandler(PictureBox_MouseUp);
+            InitSizePbEvent();
+            pbImgEditor.VisibleChanged += pbImgEditor_VisibleChanged;
+            pbImgEditor.Visible = false;    
+            pnPbLeft.Visible = false;
+            pnPbDown.Visible = false;
+            pnPbCorner.Visible = false;
         }
 
+        private void InitSizePbEvent()
+        {
+            // Left
+            pnPbLeft = new Guna2Panel();
+            pnPbLeft.Size = new Size(8, 8);
+            pnPbLeft.Location = new Point(pbImgEditor.Location.X + pbImgEditor.Width, pbImgEditor.Location.Y + pbImgEditor.Height / 2);
+            pnPbLeft.BackColor = Color.White;
+            pnPbLeft.BorderColor = Color.Black;
+            pnPbLeft.BorderThickness = 1;
+            pnPbLeft.Cursor = Cursors.SizeWE;
+            pb_mainScreen.Controls.Add(pnPbLeft);
+            pnPbLeft.MouseDown += (sender, e) =>
+            {
+                isDownPbPanel = true;
+            };
+            pnPbLeft.MouseMove += (sender, e) =>
+            {
+                if (isDownPbPanel)
+                {
+                    pbImgEditor.Width = e.X + pnPbLeft.Location.X - pbImgEditor.Location.X;
+                }
+                ResetLocationPbSizeTool();
+            };
+            pnPbLeft.MouseUp += (sender, e) =>
+            {
+                isDownPbPanel = false;
+            };
 
+            // Down
+            pnPbDown = new Guna2Panel();
+            pnPbDown.Size = new Size(8, 8);
+            pnPbDown.Location = new Point(pbImgEditor.Location.X + pbImgEditor.Width / 2, pbImgEditor.Location.Y + pbImgEditor.Height);
+            pnPbDown.BackColor = Color.White;
+            pnPbDown.BorderColor = Color.Black;
+            pnPbDown.BorderThickness = 1;
+            pnPbDown.Cursor = Cursors.SizeNS;
+            pb_mainScreen.Controls.Add(pnPbDown);
+            pnPbDown.MouseDown += (sender, e) =>
+            {
+                isDownPbPanel = true;
+            };
+            pnPbDown.MouseMove += (sender, e) =>
+            {
+                if (isDownPbPanel)
+                {
+                    pbImgEditor.Height = e.Y + pnPbDown.Location.Y - pbImgEditor.Location.Y;
+                }
+                ResetLocationPbSizeTool();
+            };
+            pnPbDown.MouseUp += (sender, e) =>
+            {
+                isDownPbPanel = false;
+            };
+
+            // Corner
+            pnPbCorner = new Guna2Panel();
+            pnPbCorner.Size = new Size(8, 8);
+            pnPbCorner.Location = new Point(pbImgEditor.Location.X + pbImgEditor.Width, pbImgEditor.Location.Y + pbImgEditor.Height);
+            pnPbCorner.BackColor = Color.White;
+            pnPbCorner.BorderColor = Color.Black;
+            pnPbCorner.BorderThickness = 1;
+            pnPbCorner.Cursor = Cursors.SizeNWSE;
+            pb_mainScreen.Controls.Add(pnPbCorner);
+            pnPbCorner.MouseDown += (sender, e) =>
+            {
+                isDownPbPanel = true;
+            };
+            pnPbCorner.MouseMove += (sender, e) =>
+            {
+                if (isDownPbPanel)
+                {
+                    pbImgEditor.Width = e.X + pnPbCorner.Location.X - pbImgEditor.Location.X;
+                    pbImgEditor.Height = e.Y + pnPbCorner.Location.Y - pbImgEditor.Location.Y;
+                }
+                ResetLocationPbSizeTool();
+            };
+            pnPbCorner.MouseUp += (sender, e) =>
+            {
+                isDownPbPanel = false;
+            };
+
+        }
+
+        private void ResetLocationPbSizeTool()
+        {
+            pnPbLeft.Location = new Point(pbImgEditor.Location.X + pbImgEditor.Width, pbImgEditor.Location.Y + pbImgEditor.Height / 2);
+            pnPbDown.Location = new Point(pbImgEditor.Location.X + pbImgEditor.Width / 2, pbImgEditor.Location.Y + pbImgEditor.Height);
+            pnPbCorner.Location = new Point(pbImgEditor.Location.X + pbImgEditor.Width, pbImgEditor.Location.Y + pbImgEditor.Height);
+        }
+
+        private void PictureBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                isDragging = true;
+            }
+        }
+        private void PictureBox_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isDragging)
+            {
+                pbImgEditor.Location = new Point(pbImgEditor.Location.X + e.X - 50, pbImgEditor.Location.Y + e.Y - 50);
+                ResetLocationPbSizeTool();
+            }
+        }
+        private void PictureBox_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                isDragging = false;
+            }
+        }
+
+        private void pbImgEditor_VisibleChanged(object sender, EventArgs e)
+        {
+           pnPbLeft.Visible = pbImgEditor.Visible;
+            pnPbDown.Visible = pbImgEditor.Visible;
+            pnPbCorner.Visible = pbImgEditor.Visible;
+        }
+        #endregion
 
         #region Size Event
         private void InitSizeEvent()
@@ -286,6 +424,14 @@ namespace RemakePaint
                 textBox1.Focus();
                 pnTextTools.Visible = true;
                 pb_mainScreen.Cursor = Cursors.Default;
+                return;
+            }
+            if (pbImgEditor.Visible == true)
+            {
+                UndoStack.Push(new Bitmap(bm));
+                pbImgEditor.Visible = false;
+                Bitmap bm1 = new Bitmap(pbImgEditor.Image, new Size(pbImgEditor.Width, pbImgEditor.Height));
+                g.DrawImage(bm1, new Point(pbImgEditor.Location.X, pbImgEditor.Location.Y));
                 return;
             }
             if (SelectedMode == 25) 
@@ -1105,6 +1251,7 @@ namespace RemakePaint
             pb_mainScreen.Image = bm;
             ResetLocationSizeTool();
         }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             using (Graphics g = this.textBox1.CreateGraphics())
@@ -1113,6 +1260,26 @@ namespace RemakePaint
                 // Thêm một khoảng đệm để đảm bảo văn bản không bị cắt
                 this.textBox1.Width = (int)size.Width + 10;
                 this.textBox1.Height = (int)size.Height + 10;
+            }
+        }
+        private void btnImageEditor_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog() { Filter = "File *.png, *jpg, *.bmp, *.gif|*.png; *.jpg; *.bmp; *.gif ", Title = "Open image" };
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string fileName = openFileDialog.FileName;
+                tenFileTieuDe = openFileDialog.SafeFileName;
+                Image img = Image.FromFile(fileName);
+                Bitmap bm = new Bitmap(img, new Size(img.Width, img.Height));
+                if(img.Width >= 1000 || img.Height >= 1000)
+                {
+                    bm = new Bitmap(bm, new Size(bm.Width / 3, bm.Height / 3));
+                }
+                pbImgEditor.Size = new Size(bm.Width, bm.Height);
+                pbImgEditor.Image = bm;
+                pbImgEditor.Visible = true;
+                pbImgEditor.Location = new Point(30, 30);
+                ResetLocationPbSizeTool();
             }
         }
 
@@ -1154,6 +1321,7 @@ namespace RemakePaint
             SelectedMode = 0; // chọn bút chì làm mặc định
             veHinh = new VeHinh();
             pb_mainScreen.Controls.Add(textBox1);
+            pb_mainScreen.Controls.Add(pbImgEditor);
             StatusPaintSize.Text = pb_mainScreen.Width + " x " + pb_mainScreen.Height + "px";
             UndoStack.Push(new Bitmap(bm));
         }
