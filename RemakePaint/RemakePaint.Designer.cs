@@ -288,7 +288,7 @@
             this.cutToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_cut_48;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(202, 30);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
             this.cutToolStripMenuItem.Text = "Cut";
             // 
             // copyToolStripMenuItem
@@ -296,7 +296,7 @@
             this.copyToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_copy_48;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(202, 30);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
             this.copyToolStripMenuItem.Text = "Copy";
             // 
             // pasteToolStripMenuItem
@@ -304,7 +304,7 @@
             this.pasteToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_paste_48;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(202, 30);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
             this.pasteToolStripMenuItem.Text = "Paste";
             // 
             // viewToolStripMenuItem
@@ -324,7 +324,7 @@
             // 
             this.zoomInToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_zoom_in_50;
             this.zoomInToolStripMenuItem.Name = "zoomInToolStripMenuItem";
-            this.zoomInToolStripMenuItem.Size = new System.Drawing.Size(178, 30);
+            this.zoomInToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
             this.zoomInToolStripMenuItem.Text = "Zoom in";
             this.zoomInToolStripMenuItem.Click += new System.EventHandler(this.zoomInToolStripMenuItem_Click);
             // 
@@ -332,20 +332,20 @@
             // 
             this.zoomOutToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_zoom_out_50;
             this.zoomOutToolStripMenuItem.Name = "zoomOutToolStripMenuItem";
-            this.zoomOutToolStripMenuItem.Size = new System.Drawing.Size(178, 30);
+            this.zoomOutToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
             this.zoomOutToolStripMenuItem.Text = "Zoom out";
             this.zoomOutToolStripMenuItem.Click += new System.EventHandler(this.zoomOutToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(175, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(221, 6);
             // 
             // gridlToolStripMenuItem
             // 
             this.gridlToolStripMenuItem.CheckOnClick = true;
             this.gridlToolStripMenuItem.Name = "gridlToolStripMenuItem";
-            this.gridlToolStripMenuItem.Size = new System.Drawing.Size(178, 30);
+            this.gridlToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
             this.gridlToolStripMenuItem.Text = "Gridlines";
             this.gridlToolStripMenuItem.Visible = false;
             // 
@@ -355,7 +355,7 @@
             this.statusBarItem.CheckOnClick = true;
             this.statusBarItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.statusBarItem.Name = "statusBarItem";
-            this.statusBarItem.Size = new System.Drawing.Size(178, 30);
+            this.statusBarItem.Size = new System.Drawing.Size(224, 30);
             this.statusBarItem.Text = "Status Bar";
             this.statusBarItem.Click += new System.EventHandler(this.statusBarItem_Click);
             // 
