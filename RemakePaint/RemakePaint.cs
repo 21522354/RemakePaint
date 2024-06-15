@@ -70,7 +70,7 @@ namespace RemakePaint
         bool isDownPbPanel;
 
         public Guna2PictureBox PbImgEditor { get => pbImgEditor; set => pbImgEditor = value; }
-
+        public Guna2PictureBox pbMainScreen { get => pb_mainScreen; set => pb_mainScreen = value; }
         public RemakePaint()
         {
             instance = this;
@@ -1264,6 +1264,41 @@ namespace RemakePaint
                 this.textBox1.Height = (int)size.Height + 10;
             }
         }
+
+        private void btnShareFB_Click(object sender, EventArgs e)
+        {
+            ShareFBForm shareFBForm = new ShareFBForm();
+            shareFBForm.ShowDialog();
+        }
+
+        private void cutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetImage(pb_mainScreen.Image);
+            g.Clear(Color.White);
+            pb_mainScreen.Refresh();
+            pb_mainScreen.Image = bm;// xoa hinh anh dang co o trong pb_mainScreen
+            isPainted = false;
+        }
+
+        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetImage(pb_mainScreen.Image);    
+        }
+
+        private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                g.Clear(Color.White);
+                g.DrawImage(Clipboard.GetImage(), pb_mainScreen.Location.X, pb_mainScreen.Location.Y, Clipboard.GetImage().Width, Clipboard.GetImage().Height);
+                pb_mainScreen.Refresh();    
+            }
+            catch
+            {
+                MessageBox.Show("Nothing to paste");
+            }
+        }
+
         private void btnImageEditor_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog() { Filter = "File *.png, *jpg, *.bmp, *.gif|*.png; *.jpg; *.bmp; *.gif ", Title = "Open image" };

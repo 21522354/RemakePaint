@@ -130,6 +130,10 @@
             this.btnColor1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2VSeparator8 = new Guna.UI2.WinForms.Guna2VSeparator();
+            this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnShareFB = new Guna.UI2.WinForms.Guna2Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.guna2VSeparator9 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2HtmlToolTip1 = new Guna.UI2.WinForms.Guna2HtmlToolTip();
             this.btnUnderline = new Guna.UI2.WinForms.Guna2Button();
             this.btnItalic = new Guna.UI2.WinForms.Guna2Button();
@@ -161,6 +165,7 @@
             this.flowLayoutPanel3.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCurrentColor)).BeginInit();
+            this.guna2Panel9.SuspendLayout();
             this.pnPaintRegion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImgEditor)).BeginInit();
             this.statusStrip1.SuspendLayout();
@@ -189,7 +194,7 @@
             this.flowLayoutPanel1.Controls.Add(this.menuStrip1);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(179, 33);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(329, 33);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // menuStrip1
@@ -202,7 +207,7 @@
             this.viewToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(179, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(329, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -290,6 +295,7 @@
             this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
             this.cutToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
             this.cutToolStripMenuItem.Text = "Cut";
+            this.cutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);
             // 
             // copyToolStripMenuItem
             // 
@@ -298,6 +304,7 @@
             this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
             this.copyToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
             this.copyToolStripMenuItem.Text = "Copy";
+            this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
             // pasteToolStripMenuItem
             // 
@@ -306,6 +313,7 @@
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
             this.pasteToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
             this.pasteToolStripMenuItem.Text = "Paste";
+            this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
             // 
@@ -324,7 +332,7 @@
             // 
             this.zoomInToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_zoom_in_50;
             this.zoomInToolStripMenuItem.Name = "zoomInToolStripMenuItem";
-            this.zoomInToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
+            this.zoomInToolStripMenuItem.Size = new System.Drawing.Size(178, 30);
             this.zoomInToolStripMenuItem.Text = "Zoom in";
             this.zoomInToolStripMenuItem.Click += new System.EventHandler(this.zoomInToolStripMenuItem_Click);
             // 
@@ -332,20 +340,20 @@
             // 
             this.zoomOutToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_zoom_out_50;
             this.zoomOutToolStripMenuItem.Name = "zoomOutToolStripMenuItem";
-            this.zoomOutToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
+            this.zoomOutToolStripMenuItem.Size = new System.Drawing.Size(178, 30);
             this.zoomOutToolStripMenuItem.Text = "Zoom out";
             this.zoomOutToolStripMenuItem.Click += new System.EventHandler(this.zoomOutToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(175, 6);
             // 
             // gridlToolStripMenuItem
             // 
             this.gridlToolStripMenuItem.CheckOnClick = true;
             this.gridlToolStripMenuItem.Name = "gridlToolStripMenuItem";
-            this.gridlToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
+            this.gridlToolStripMenuItem.Size = new System.Drawing.Size(178, 30);
             this.gridlToolStripMenuItem.Text = "Gridlines";
             this.gridlToolStripMenuItem.Visible = false;
             // 
@@ -355,7 +363,7 @@
             this.statusBarItem.CheckOnClick = true;
             this.statusBarItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.statusBarItem.Name = "statusBarItem";
-            this.statusBarItem.Size = new System.Drawing.Size(224, 30);
+            this.statusBarItem.Size = new System.Drawing.Size(178, 30);
             this.statusBarItem.Text = "Status Bar";
             this.statusBarItem.Click += new System.EventHandler(this.statusBarItem_Click);
             // 
@@ -363,7 +371,7 @@
             // 
             this.guna2VSeparator1.BackColor = System.Drawing.SystemColors.Control;
             this.guna2VSeparator1.FillColor = System.Drawing.Color.Silver;
-            this.guna2VSeparator1.Location = new System.Drawing.Point(188, 3);
+            this.guna2VSeparator1.Location = new System.Drawing.Point(338, 3);
             this.guna2VSeparator1.Name = "guna2VSeparator1";
             this.guna2VSeparator1.Size = new System.Drawing.Size(5, 33);
             this.guna2VSeparator1.TabIndex = 1;
@@ -380,7 +388,7 @@
             this.btnSave.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnSave.Image = global::RemakePaint.Properties.Resources.icons8_save_50__1_;
             this.btnSave.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSave.Location = new System.Drawing.Point(199, 3);
+            this.btnSave.Location = new System.Drawing.Point(349, 3);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(41, 33);
             this.btnSave.TabIndex = 2;
@@ -389,7 +397,7 @@
             // 
             this.guna2VSeparator2.BackColor = System.Drawing.SystemColors.Control;
             this.guna2VSeparator2.FillColor = System.Drawing.Color.Silver;
-            this.guna2VSeparator2.Location = new System.Drawing.Point(246, 3);
+            this.guna2VSeparator2.Location = new System.Drawing.Point(396, 3);
             this.guna2VSeparator2.Name = "guna2VSeparator2";
             this.guna2VSeparator2.Size = new System.Drawing.Size(5, 33);
             this.guna2VSeparator2.TabIndex = 3;
@@ -406,7 +414,7 @@
             this.btnUndo.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnUndo.Image = global::RemakePaint.Properties.Resources.icons8_undo_50;
             this.btnUndo.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnUndo.Location = new System.Drawing.Point(257, 3);
+            this.btnUndo.Location = new System.Drawing.Point(407, 3);
             this.btnUndo.Name = "btnUndo";
             this.btnUndo.Size = new System.Drawing.Size(41, 33);
             this.btnUndo.TabIndex = 4;
@@ -424,7 +432,7 @@
             this.btnRedo.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnRedo.Image = global::RemakePaint.Properties.Resources.icons8_redo_50;
             this.btnRedo.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnRedo.Location = new System.Drawing.Point(304, 3);
+            this.btnRedo.Location = new System.Drawing.Point(454, 3);
             this.btnRedo.Name = "btnRedo";
             this.btnRedo.Size = new System.Drawing.Size(41, 33);
             this.btnRedo.TabIndex = 5;
@@ -445,6 +453,8 @@
             this.flowLayoutPanel2.Controls.Add(this.guna2VSeparator7);
             this.flowLayoutPanel2.Controls.Add(this.guna2Panel8);
             this.flowLayoutPanel2.Controls.Add(this.guna2VSeparator8);
+            this.flowLayoutPanel2.Controls.Add(this.guna2Panel9);
+            this.flowLayoutPanel2.Controls.Add(this.guna2VSeparator9);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 39);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
@@ -1745,6 +1755,55 @@
             this.guna2VSeparator8.Size = new System.Drawing.Size(5, 156);
             this.guna2VSeparator8.TabIndex = 11;
             // 
+            // guna2Panel9
+            // 
+            this.guna2Panel9.Controls.Add(this.btnShareFB);
+            this.guna2Panel9.Controls.Add(this.label3);
+            this.guna2Panel9.Location = new System.Drawing.Point(1369, 3);
+            this.guna2Panel9.Name = "guna2Panel9";
+            this.guna2Panel9.Size = new System.Drawing.Size(153, 150);
+            this.guna2Panel9.TabIndex = 12;
+            // 
+            // btnShareFB
+            // 
+            this.btnShareFB.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnShareFB.BorderRadius = 5;
+            this.btnShareFB.BorderThickness = 1;
+            this.btnShareFB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnShareFB.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnShareFB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnShareFB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnShareFB.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnShareFB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnShareFB.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnShareFB.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnShareFB.Image = global::RemakePaint.Properties.Resources.icons8_facebook_40;
+            this.btnShareFB.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnShareFB.Location = new System.Drawing.Point(44, 31);
+            this.btnShareFB.Name = "btnShareFB";
+            this.btnShareFB.Size = new System.Drawing.Size(60, 60);
+            this.btnShareFB.TabIndex = 12;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnShareFB, "Share on Facebook");
+            this.btnShareFB.Click += new System.EventHandler(this.btnShareFB_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label3.Location = new System.Drawing.Point(46, 107);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 20);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Share";
+            // 
+            // guna2VSeparator9
+            // 
+            this.guna2VSeparator9.Location = new System.Drawing.Point(1528, 3);
+            this.guna2VSeparator9.Name = "guna2VSeparator9";
+            this.guna2VSeparator9.Size = new System.Drawing.Size(5, 156);
+            this.guna2VSeparator9.TabIndex = 13;
+            // 
             // guna2HtmlToolTip1
             // 
             this.guna2HtmlToolTip1.AllowLinksHandling = true;
@@ -1996,6 +2055,8 @@
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCurrentColor)).EndInit();
+            this.guna2Panel9.ResumeLayout(false);
+            this.guna2Panel9.PerformLayout();
             this.pnPaintRegion.ResumeLayout(false);
             this.pnPaintRegion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImgEditor)).EndInit();
@@ -2127,6 +2188,10 @@
         private Guna.UI2.WinForms.Guna2CircleButton btnColor19;
         private Guna.UI2.WinForms.Guna2CircleButton btnColor18;
         private Guna.UI2.WinForms.Guna2PictureBox pbImgEditor;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
+        private Guna.UI2.WinForms.Guna2Button btnShareFB;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator9;
     }
 }
 

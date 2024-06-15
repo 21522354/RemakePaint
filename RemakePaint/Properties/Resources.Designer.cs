@@ -183,6 +183,16 @@ namespace RemakePaint.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_facebook_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-facebook-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_fill_color_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-fill-color-48", resourceCulture);
@@ -436,6 +446,16 @@ namespace RemakePaint.Properties {
         internal static System.Drawing.Bitmap icons8_selection_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-selection-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_share_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-share-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
