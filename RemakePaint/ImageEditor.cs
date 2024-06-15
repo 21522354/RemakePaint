@@ -258,5 +258,6 @@ namespace RemakePaint
             RemakePaint.instance.PbImgEditor.Image = temp;
             RemakePaint.instance.ResetLocationPbSizeTool();
         }
+
     }
 }

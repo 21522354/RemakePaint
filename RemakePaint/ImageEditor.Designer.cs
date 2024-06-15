@@ -270,7 +270,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(503, 385);
+            this.ClientSize = new System.Drawing.Size(512, 397);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.TrackBarBrightness);
             this.Controls.Add(this.btnXacNhan);
