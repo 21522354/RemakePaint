@@ -217,7 +217,6 @@ namespace RemakePaint
             pnPbCorner.Visible = pbImgEditor.Visible;
         }
         #endregion
-
         #region Size Event
         private void InitSizeEvent()
         {
@@ -339,7 +338,7 @@ namespace RemakePaint
         }
 
 
-        private void ResetLocationSizeTool()
+        public void ResetLocationSizeTool()
         {
             pnLeft.Location = new Point(MainScreen_Location_X + pb_mainScreen.Width, MainScreen_Location_Y + pb_mainScreen.Height / 2);
             pnDown.Location = new Point(MainScreen_Location_X + pb_mainScreen.Width / 2, MainScreen_Location_Y + pb_mainScreen.Height);
@@ -1297,6 +1296,12 @@ namespace RemakePaint
             {
                 MessageBox.Show("Nothing to paste");
             }
+        }
+
+        private void btnAskAI_Click(object sender, EventArgs e)
+        {
+            AskAIForm askAIForm = new AskAIForm();
+            askAIForm.ShowDialog();
         }
 
         private void btnImageEditor_Click(object sender, EventArgs e)

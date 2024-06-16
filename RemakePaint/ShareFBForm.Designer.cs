@@ -103,7 +103,7 @@
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(109, 45);
             this.btnXacNhan.TabIndex = 15;
-            this.btnXacNhan.Text = "Xác nhận";
+            this.btnXacNhan.Text = "Confirm";
             this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
             // 
             // ShareFBForm
@@ -116,6 +116,7 @@
             this.Controls.Add(this.pbLoading);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.tbCaption);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ShareFBForm";
             this.Text = "Share on Facebook";
             ((System.ComponentModel.ISupportInitialize)(this.pbLoading)).EndInit();
