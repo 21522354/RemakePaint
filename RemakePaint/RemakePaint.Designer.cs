@@ -33,28 +33,68 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zoomInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zoomOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.gridlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusBarItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
+            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.guna2VSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
+            this.btnUndo = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRedo = new Guna.UI2.WinForms.Guna2Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnZoom = new Guna.UI2.WinForms.Guna2Button();
+            this.btnColorPicker = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEraser = new Guna.UI2.WinForms.Guna2Button();
+            this.btnText = new Guna.UI2.WinForms.Guna2Button();
+            this.btnFill = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPencil = new Guna.UI2.WinForms.Guna2Button();
             this.guna2VSeparator4 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.lb3 = new System.Windows.Forms.Label();
+            this.btnFlipVertical = new Guna.UI2.WinForms.Guna2Button();
+            this.btnFlipHorizontal = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRotateRight = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRotateLeft = new Guna.UI2.WinForms.Guna2Button();
             this.guna2VSeparator5 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnImageEditor = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2VSeparator6 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pbCurrentShape = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnLine = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCircle = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRectangle = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPolygon = new Guna.UI2.WinForms.Guna2Button();
+            this.btnTriangle = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRightTriangle = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRadiusRectangle = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRhombus = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPentagon = new Guna.UI2.WinForms.Guna2Button();
+            this.btnHexagon = new Guna.UI2.WinForms.Guna2Button();
+            this.btnArrowUp = new Guna.UI2.WinForms.Guna2Button();
+            this.btnArrowDown = new Guna.UI2.WinForms.Guna2Button();
+            this.btnArrowLeft = new Guna.UI2.WinForms.Guna2Button();
+            this.btnArrowRight = new Guna.UI2.WinForms.Guna2Button();
+            this.btnStar = new Guna.UI2.WinForms.Guna2Button();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2VSeparator7 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
@@ -65,6 +105,8 @@
             this.btnColor20 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnColor19 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnColor18 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnDialogColor = new Guna.UI2.WinForms.Guna2Button();
+            this.pbCurrentColor = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnColor17 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnColor9 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnColor10 = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -85,71 +127,29 @@
             this.label6 = new System.Windows.Forms.Label();
             this.guna2VSeparator8 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnShareFB = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2VSeparator9 = new Guna.UI2.WinForms.Guna2VSeparator();
+            this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnAskAI = new Guna.UI2.WinForms.Guna2Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.guna2VSeparator10 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2HtmlToolTip1 = new Guna.UI2.WinForms.Guna2HtmlToolTip();
+            this.btnUnderline = new Guna.UI2.WinForms.Guna2Button();
+            this.btnItalic = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBold = new Guna.UI2.WinForms.Guna2Button();
             this.pnPaintRegion = new Guna.UI2.WinForms.Guna2Panel();
+            this.pbImgEditor = new Guna.UI2.WinForms.Guna2PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.StatusCursor = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.StatusPaintSize = new System.Windows.Forms.ToolStripStatusLabel();
             this.pnTextTools = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.cb_Size = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cb_Font = new Guna.UI2.WinForms.Guna2ComboBox();
             this.TrackBarPen = new Guna.UI2.WinForms.Guna2VTrackBar();
-            this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.guna2VSeparator10 = new Guna.UI2.WinForms.Guna2VSeparator();
-            this.pbImgEditor = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.StatusCursor = new System.Windows.Forms.ToolStripStatusLabel();
-            this.StatusPaintSize = new System.Windows.Forms.ToolStripStatusLabel();
-            this.btnUnderline = new Guna.UI2.WinForms.Guna2Button();
-            this.btnItalic = new Guna.UI2.WinForms.Guna2Button();
-            this.btnBold = new Guna.UI2.WinForms.Guna2Button();
             this.pb_mainScreen = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnZoom = new Guna.UI2.WinForms.Guna2Button();
-            this.btnColorPicker = new Guna.UI2.WinForms.Guna2Button();
-            this.btnEraser = new Guna.UI2.WinForms.Guna2Button();
-            this.btnText = new Guna.UI2.WinForms.Guna2Button();
-            this.btnFill = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPencil = new Guna.UI2.WinForms.Guna2Button();
-            this.btnFlipVertical = new Guna.UI2.WinForms.Guna2Button();
-            this.btnFlipHorizontal = new Guna.UI2.WinForms.Guna2Button();
-            this.btnRotateRight = new Guna.UI2.WinForms.Guna2Button();
-            this.btnRotateLeft = new Guna.UI2.WinForms.Guna2Button();
-            this.btnImageEditor = new Guna.UI2.WinForms.Guna2Button();
-            this.pbCurrentShape = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnLine = new Guna.UI2.WinForms.Guna2Button();
-            this.btnCircle = new Guna.UI2.WinForms.Guna2Button();
-            this.btnRectangle = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPolygon = new Guna.UI2.WinForms.Guna2Button();
-            this.btnTriangle = new Guna.UI2.WinForms.Guna2Button();
-            this.btnRightTriangle = new Guna.UI2.WinForms.Guna2Button();
-            this.btnRadiusRectangle = new Guna.UI2.WinForms.Guna2Button();
-            this.btnRhombus = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPentagon = new Guna.UI2.WinForms.Guna2Button();
-            this.btnHexagon = new Guna.UI2.WinForms.Guna2Button();
-            this.btnArrowUp = new Guna.UI2.WinForms.Guna2Button();
-            this.btnArrowDown = new Guna.UI2.WinForms.Guna2Button();
-            this.btnArrowLeft = new Guna.UI2.WinForms.Guna2Button();
-            this.btnArrowRight = new Guna.UI2.WinForms.Guna2Button();
-            this.btnStar = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDialogColor = new Guna.UI2.WinForms.Guna2Button();
-            this.pbCurrentColor = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.btnShareFB = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAskAI = new Guna.UI2.WinForms.Guna2Button();
-            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.zoomInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.zoomOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
-            this.btnUndo = new Guna.UI2.WinForms.Guna2Button();
-            this.btnRedo = new Guna.UI2.WinForms.Guna2Button();
             this.pnTool.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -159,18 +159,18 @@
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCurrentShape)).BeginInit();
             this.guna2Panel6.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCurrentColor)).BeginInit();
             this.guna2Panel9.SuspendLayout();
+            this.guna2Panel10.SuspendLayout();
             this.pnPaintRegion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImgEditor)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.pnTextTools.SuspendLayout();
-            this.guna2Panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImgEditor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_mainScreen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCurrentShape)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCurrentColor)).BeginInit();
             this.SuspendLayout();
             // 
             // pnTool
@@ -225,10 +225,56 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(52, 29);
             this.fileToolStripMenuItem.Text = "File";
             // 
+            // newToolStripMenuItem
+            // 
+            this.newToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_blank_50;
+            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
+            this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(269, 30);
+            this.newToolStripMenuItem.Text = "New";
+            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
+            // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_folder_50;
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(269, 30);
+            this.openToolStripMenuItem.Text = "Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_save_50__1_;
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(269, 30);
+            this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            // 
+            // saveAsToolStripMenuItem
+            // 
+            this.saveAsToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_save_as_50;
+            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            this.saveAsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.S)));
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(269, 30);
+            this.saveAsToolStripMenuItem.Text = "Save As";
+            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(266, 6);
+            // 
+            // closeToolStripMenuItem
+            // 
+            this.closeToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_close_50;
+            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            this.closeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(269, 30);
+            this.closeToolStripMenuItem.Text = "Exit";
+            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -242,6 +288,33 @@
             this.editToolStripMenuItem.Size = new System.Drawing.Size(56, 29);
             this.editToolStripMenuItem.Text = "Edit";
             // 
+            // cutToolStripMenuItem
+            // 
+            this.cutToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_cut_48;
+            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
+            this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(202, 30);
+            this.cutToolStripMenuItem.Text = "Cut";
+            this.cutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);
+            // 
+            // copyToolStripMenuItem
+            // 
+            this.copyToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_copy_48;
+            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
+            this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(202, 30);
+            this.copyToolStripMenuItem.Text = "Copy";
+            this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
+            // 
+            // pasteToolStripMenuItem
+            // 
+            this.pasteToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_paste_48;
+            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
+            this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(202, 30);
+            this.pasteToolStripMenuItem.Text = "Paste";
+            this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
+            // 
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -254,6 +327,22 @@
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(63, 29);
             this.viewToolStripMenuItem.Text = "View";
+            // 
+            // zoomInToolStripMenuItem
+            // 
+            this.zoomInToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_zoom_in_50;
+            this.zoomInToolStripMenuItem.Name = "zoomInToolStripMenuItem";
+            this.zoomInToolStripMenuItem.Size = new System.Drawing.Size(178, 30);
+            this.zoomInToolStripMenuItem.Text = "Zoom in";
+            this.zoomInToolStripMenuItem.Click += new System.EventHandler(this.zoomInToolStripMenuItem_Click);
+            // 
+            // zoomOutToolStripMenuItem
+            // 
+            this.zoomOutToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_zoom_out_50;
+            this.zoomOutToolStripMenuItem.Name = "zoomOutToolStripMenuItem";
+            this.zoomOutToolStripMenuItem.Size = new System.Drawing.Size(178, 30);
+            this.zoomOutToolStripMenuItem.Text = "Zoom out";
+            this.zoomOutToolStripMenuItem.Click += new System.EventHandler(this.zoomOutToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
@@ -287,6 +376,24 @@
             this.guna2VSeparator1.Size = new System.Drawing.Size(5, 33);
             this.guna2VSeparator1.TabIndex = 1;
             // 
+            // btnSave
+            // 
+            this.btnSave.BorderRadius = 5;
+            this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSave.FillColor = System.Drawing.SystemColors.Control;
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSave.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSave.Image = global::RemakePaint.Properties.Resources.icons8_save_50__1_;
+            this.btnSave.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSave.Location = new System.Drawing.Point(199, 3);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(41, 33);
+            this.btnSave.TabIndex = 2;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // guna2VSeparator2
             // 
             this.guna2VSeparator2.BackColor = System.Drawing.SystemColors.Control;
@@ -295,6 +402,42 @@
             this.guna2VSeparator2.Name = "guna2VSeparator2";
             this.guna2VSeparator2.Size = new System.Drawing.Size(5, 33);
             this.guna2VSeparator2.TabIndex = 3;
+            // 
+            // btnUndo
+            // 
+            this.btnUndo.BorderRadius = 5;
+            this.btnUndo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUndo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUndo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUndo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUndo.FillColor = System.Drawing.SystemColors.Control;
+            this.btnUndo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnUndo.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnUndo.Image = global::RemakePaint.Properties.Resources.icons8_undo_50;
+            this.btnUndo.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnUndo.Location = new System.Drawing.Point(257, 3);
+            this.btnUndo.Name = "btnUndo";
+            this.btnUndo.Size = new System.Drawing.Size(41, 33);
+            this.btnUndo.TabIndex = 4;
+            this.btnUndo.Click += new System.EventHandler(this.btnUndo_Click);
+            // 
+            // btnRedo
+            // 
+            this.btnRedo.BorderRadius = 5;
+            this.btnRedo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRedo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRedo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRedo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRedo.FillColor = System.Drawing.SystemColors.Control;
+            this.btnRedo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRedo.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRedo.Image = global::RemakePaint.Properties.Resources.icons8_redo_50;
+            this.btnRedo.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnRedo.Location = new System.Drawing.Point(304, 3);
+            this.btnRedo.Name = "btnRedo";
+            this.btnRedo.Size = new System.Drawing.Size(41, 33);
+            this.btnRedo.TabIndex = 5;
+            this.btnRedo.Click += new System.EventHandler(this.btnRedo_Click);
             // 
             // flowLayoutPanel2
             // 
@@ -344,6 +487,138 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Tools";
             // 
+            // btnZoom
+            // 
+            this.btnZoom.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnZoom.BorderRadius = 5;
+            this.btnZoom.BorderThickness = 1;
+            this.btnZoom.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnZoom.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnZoom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnZoom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnZoom.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnZoom.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnZoom.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnZoom.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnZoom.Image = global::RemakePaint.Properties.Resources.icons8_magnifying_glass_50;
+            this.btnZoom.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnZoom.Location = new System.Drawing.Point(103, 62);
+            this.btnZoom.Name = "btnZoom";
+            this.btnZoom.Size = new System.Drawing.Size(40, 40);
+            this.btnZoom.TabIndex = 8;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnZoom, "Magnifier");
+            this.btnZoom.Click += new System.EventHandler(this.btnZoom_Click);
+            // 
+            // btnColorPicker
+            // 
+            this.btnColorPicker.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnColorPicker.BorderRadius = 5;
+            this.btnColorPicker.BorderThickness = 1;
+            this.btnColorPicker.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnColorPicker.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnColorPicker.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnColorPicker.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnColorPicker.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnColorPicker.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnColorPicker.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnColorPicker.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnColorPicker.Image = global::RemakePaint.Properties.Resources.icons8_color_picker_48;
+            this.btnColorPicker.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnColorPicker.Location = new System.Drawing.Point(56, 62);
+            this.btnColorPicker.Name = "btnColorPicker";
+            this.btnColorPicker.Size = new System.Drawing.Size(40, 40);
+            this.btnColorPicker.TabIndex = 7;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnColorPicker, "Color picker");
+            this.btnColorPicker.Click += new System.EventHandler(this.btnColorPicker_Click);
+            // 
+            // btnEraser
+            // 
+            this.btnEraser.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnEraser.BorderRadius = 5;
+            this.btnEraser.BorderThickness = 1;
+            this.btnEraser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEraser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEraser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEraser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEraser.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnEraser.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEraser.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnEraser.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnEraser.Image = global::RemakePaint.Properties.Resources.icons8_eraser_100;
+            this.btnEraser.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnEraser.Location = new System.Drawing.Point(9, 62);
+            this.btnEraser.Name = "btnEraser";
+            this.btnEraser.Size = new System.Drawing.Size(40, 40);
+            this.btnEraser.TabIndex = 6;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnEraser, "Eraser");
+            this.btnEraser.Click += new System.EventHandler(this.btnEraser_Click);
+            // 
+            // btnText
+            // 
+            this.btnText.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnText.BorderRadius = 5;
+            this.btnText.BorderThickness = 1;
+            this.btnText.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnText.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnText.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnText.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnText.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnText.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnText.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnText.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnText.Image = global::RemakePaint.Properties.Resources.icons8_text_30;
+            this.btnText.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnText.Location = new System.Drawing.Point(103, 13);
+            this.btnText.Name = "btnText";
+            this.btnText.Size = new System.Drawing.Size(40, 40);
+            this.btnText.TabIndex = 5;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnText, "Text");
+            this.btnText.Click += new System.EventHandler(this.btnText_Click);
+            // 
+            // btnFill
+            // 
+            this.btnFill.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnFill.BorderRadius = 5;
+            this.btnFill.BorderThickness = 1;
+            this.btnFill.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnFill.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnFill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnFill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnFill.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnFill.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnFill.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnFill.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnFill.Image = global::RemakePaint.Properties.Resources.icons8_fill_color_48;
+            this.btnFill.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnFill.Location = new System.Drawing.Point(56, 13);
+            this.btnFill.Name = "btnFill";
+            this.btnFill.Size = new System.Drawing.Size(40, 40);
+            this.btnFill.TabIndex = 4;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnFill, "Fill with color");
+            this.btnFill.Click += new System.EventHandler(this.btnFill_Click);
+            // 
+            // btnPencil
+            // 
+            this.btnPencil.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnPencil.BorderRadius = 5;
+            this.btnPencil.BorderThickness = 1;
+            this.btnPencil.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPencil.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPencil.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPencil.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPencil.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnPencil.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPencil.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnPencil.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnPencil.Image = global::RemakePaint.Properties.Resources.icons8_pencil_30;
+            this.btnPencil.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnPencil.Location = new System.Drawing.Point(9, 13);
+            this.btnPencil.Name = "btnPencil";
+            this.btnPencil.Size = new System.Drawing.Size(40, 40);
+            this.btnPencil.TabIndex = 3;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnPencil, "Pencil");
+            this.btnPencil.Click += new System.EventHandler(this.btnPencil_Click);
+            // 
             // guna2VSeparator4
             // 
             this.guna2VSeparator4.Location = new System.Drawing.Point(156, 3);
@@ -374,6 +649,94 @@
             this.lb3.TabIndex = 9;
             this.lb3.Text = "Rotate and Flip";
             // 
+            // btnFlipVertical
+            // 
+            this.btnFlipVertical.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnFlipVertical.BorderRadius = 5;
+            this.btnFlipVertical.BorderThickness = 1;
+            this.btnFlipVertical.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnFlipVertical.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnFlipVertical.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnFlipVertical.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnFlipVertical.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnFlipVertical.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnFlipVertical.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnFlipVertical.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnFlipVertical.Image = global::RemakePaint.Properties.Resources.icons8_flip_vertical_40;
+            this.btnFlipVertical.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnFlipVertical.Location = new System.Drawing.Point(82, 62);
+            this.btnFlipVertical.Name = "btnFlipVertical";
+            this.btnFlipVertical.Size = new System.Drawing.Size(40, 40);
+            this.btnFlipVertical.TabIndex = 7;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnFlipVertical, "Flip vertical");
+            this.btnFlipVertical.Click += new System.EventHandler(this.btnFlipVertical_Click);
+            // 
+            // btnFlipHorizontal
+            // 
+            this.btnFlipHorizontal.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnFlipHorizontal.BorderRadius = 5;
+            this.btnFlipHorizontal.BorderThickness = 1;
+            this.btnFlipHorizontal.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnFlipHorizontal.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnFlipHorizontal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnFlipHorizontal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnFlipHorizontal.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnFlipHorizontal.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnFlipHorizontal.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnFlipHorizontal.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnFlipHorizontal.Image = global::RemakePaint.Properties.Resources.icons8_flip_horizontal_40;
+            this.btnFlipHorizontal.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnFlipHorizontal.Location = new System.Drawing.Point(35, 62);
+            this.btnFlipHorizontal.Name = "btnFlipHorizontal";
+            this.btnFlipHorizontal.Size = new System.Drawing.Size(40, 40);
+            this.btnFlipHorizontal.TabIndex = 6;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnFlipHorizontal, "Flip horizontal");
+            this.btnFlipHorizontal.Click += new System.EventHandler(this.btnFlipHorizontal_Click);
+            // 
+            // btnRotateRight
+            // 
+            this.btnRotateRight.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnRotateRight.BorderRadius = 5;
+            this.btnRotateRight.BorderThickness = 1;
+            this.btnRotateRight.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRotateRight.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRotateRight.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRotateRight.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRotateRight.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnRotateRight.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRotateRight.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRotateRight.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnRotateRight.Image = global::RemakePaint.Properties.Resources.icons8_rotate_right_50;
+            this.btnRotateRight.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnRotateRight.Location = new System.Drawing.Point(82, 13);
+            this.btnRotateRight.Name = "btnRotateRight";
+            this.btnRotateRight.Size = new System.Drawing.Size(40, 40);
+            this.btnRotateRight.TabIndex = 4;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnRotateRight, "Rotate right 90*");
+            this.btnRotateRight.Click += new System.EventHandler(this.btnRotateRight_Click);
+            // 
+            // btnRotateLeft
+            // 
+            this.btnRotateLeft.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnRotateLeft.BorderRadius = 5;
+            this.btnRotateLeft.BorderThickness = 1;
+            this.btnRotateLeft.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRotateLeft.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRotateLeft.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRotateLeft.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRotateLeft.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnRotateLeft.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRotateLeft.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRotateLeft.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnRotateLeft.Image = global::RemakePaint.Properties.Resources.icons8_rotate_left_50;
+            this.btnRotateLeft.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnRotateLeft.Location = new System.Drawing.Point(35, 13);
+            this.btnRotateLeft.Name = "btnRotateLeft";
+            this.btnRotateLeft.Size = new System.Drawing.Size(40, 40);
+            this.btnRotateLeft.TabIndex = 3;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnRotateLeft, "Rotate right 90*");
+            this.btnRotateLeft.Click += new System.EventHandler(this.btnRotateLeft_Click);
+            // 
             // guna2VSeparator5
             // 
             this.guna2VSeparator5.Location = new System.Drawing.Point(333, 3);
@@ -389,6 +752,28 @@
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(130, 150);
             this.guna2Panel4.TabIndex = 6;
+            // 
+            // btnImageEditor
+            // 
+            this.btnImageEditor.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnImageEditor.BorderRadius = 5;
+            this.btnImageEditor.BorderThickness = 1;
+            this.btnImageEditor.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnImageEditor.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnImageEditor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnImageEditor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnImageEditor.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnImageEditor.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnImageEditor.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnImageEditor.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnImageEditor.Image = global::RemakePaint.Properties.Resources.icons8_image_editor_48;
+            this.btnImageEditor.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnImageEditor.Location = new System.Drawing.Point(32, 31);
+            this.btnImageEditor.Name = "btnImageEditor";
+            this.btnImageEditor.Size = new System.Drawing.Size(60, 60);
+            this.btnImageEditor.TabIndex = 10;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnImageEditor, "Image editor");
+            this.btnImageEditor.Click += new System.EventHandler(this.btnImageEditor_Click);
             // 
             // label4
             // 
@@ -429,6 +814,21 @@
             this.guna2Panel7.Size = new System.Drawing.Size(45, 45);
             this.guna2Panel7.TabIndex = 13;
             // 
+            // pbCurrentShape
+            // 
+            this.pbCurrentShape.BackColor = System.Drawing.Color.Transparent;
+            this.pbCurrentShape.BorderRadius = 5;
+            this.pbCurrentShape.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_line_50;
+            this.pbCurrentShape.ImageRotate = 0F;
+            this.pbCurrentShape.Location = new System.Drawing.Point(0, 0);
+            this.pbCurrentShape.Name = "pbCurrentShape";
+            this.pbCurrentShape.Size = new System.Drawing.Size(45, 45);
+            this.pbCurrentShape.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbCurrentShape.TabIndex = 12;
+            this.pbCurrentShape.TabStop = false;
+            this.guna2HtmlToolTip1.SetToolTip(this.pbCurrentShape, "Current shape");
+            // 
             // guna2Panel6
             // 
             this.guna2Panel6.BorderColor = System.Drawing.Color.Silver;
@@ -463,6 +863,306 @@
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(174, 101);
             this.flowLayoutPanel3.TabIndex = 0;
+            // 
+            // btnLine
+            // 
+            this.btnLine.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnLine.BorderRadius = 5;
+            this.btnLine.BorderThickness = 1;
+            this.btnLine.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLine.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLine.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLine.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLine.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnLine.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLine.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnLine.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnLine.Image = global::RemakePaint.Properties.Resources.icons8_line_50;
+            this.btnLine.Location = new System.Drawing.Point(3, 3);
+            this.btnLine.Name = "btnLine";
+            this.btnLine.Size = new System.Drawing.Size(25, 25);
+            this.btnLine.TabIndex = 7;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnLine, "Line");
+            // 
+            // btnCircle
+            // 
+            this.btnCircle.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnCircle.BorderRadius = 5;
+            this.btnCircle.BorderThickness = 1;
+            this.btnCircle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCircle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCircle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCircle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCircle.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnCircle.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCircle.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCircle.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnCircle.Image = global::RemakePaint.Properties.Resources.icons8_circle_30;
+            this.btnCircle.Location = new System.Drawing.Point(34, 3);
+            this.btnCircle.Name = "btnCircle";
+            this.btnCircle.Size = new System.Drawing.Size(25, 25);
+            this.btnCircle.TabIndex = 8;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnCircle, "Circle");
+            // 
+            // btnRectangle
+            // 
+            this.btnRectangle.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnRectangle.BorderRadius = 5;
+            this.btnRectangle.BorderThickness = 1;
+            this.btnRectangle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRectangle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRectangle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRectangle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRectangle.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnRectangle.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRectangle.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRectangle.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnRectangle.Image = global::RemakePaint.Properties.Resources.icons8_rectangle_48;
+            this.btnRectangle.Location = new System.Drawing.Point(65, 3);
+            this.btnRectangle.Name = "btnRectangle";
+            this.btnRectangle.Size = new System.Drawing.Size(25, 25);
+            this.btnRectangle.TabIndex = 9;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnRectangle, "Rectangle");
+            // 
+            // btnPolygon
+            // 
+            this.btnPolygon.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnPolygon.BorderRadius = 5;
+            this.btnPolygon.BorderThickness = 1;
+            this.btnPolygon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPolygon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPolygon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPolygon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPolygon.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnPolygon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPolygon.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnPolygon.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnPolygon.Image = global::RemakePaint.Properties.Resources.icons8_polygon_30;
+            this.btnPolygon.Location = new System.Drawing.Point(96, 3);
+            this.btnPolygon.Name = "btnPolygon";
+            this.btnPolygon.Size = new System.Drawing.Size(25, 25);
+            this.btnPolygon.TabIndex = 10;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnPolygon, "Polygon");
+            // 
+            // btnTriangle
+            // 
+            this.btnTriangle.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnTriangle.BorderRadius = 5;
+            this.btnTriangle.BorderThickness = 1;
+            this.btnTriangle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTriangle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTriangle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTriangle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTriangle.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnTriangle.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnTriangle.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnTriangle.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnTriangle.Image = global::RemakePaint.Properties.Resources.icons8_triangle_30;
+            this.btnTriangle.Location = new System.Drawing.Point(127, 3);
+            this.btnTriangle.Name = "btnTriangle";
+            this.btnTriangle.Size = new System.Drawing.Size(25, 25);
+            this.btnTriangle.TabIndex = 11;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnTriangle, "Triangle");
+            // 
+            // btnRightTriangle
+            // 
+            this.btnRightTriangle.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnRightTriangle.BorderRadius = 5;
+            this.btnRightTriangle.BorderThickness = 1;
+            this.btnRightTriangle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRightTriangle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRightTriangle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRightTriangle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRightTriangle.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnRightTriangle.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRightTriangle.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRightTriangle.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnRightTriangle.Image = global::RemakePaint.Properties.Resources.icons8_right_triangle_48;
+            this.btnRightTriangle.Location = new System.Drawing.Point(3, 34);
+            this.btnRightTriangle.Name = "btnRightTriangle";
+            this.btnRightTriangle.Size = new System.Drawing.Size(25, 25);
+            this.btnRightTriangle.TabIndex = 12;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnRightTriangle, "Right Triangle");
+            // 
+            // btnRadiusRectangle
+            // 
+            this.btnRadiusRectangle.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnRadiusRectangle.BorderRadius = 5;
+            this.btnRadiusRectangle.BorderThickness = 1;
+            this.btnRadiusRectangle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRadiusRectangle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRadiusRectangle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRadiusRectangle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRadiusRectangle.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnRadiusRectangle.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRadiusRectangle.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRadiusRectangle.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnRadiusRectangle.Image = global::RemakePaint.Properties.Resources.icons8_rectangle_48__1_;
+            this.btnRadiusRectangle.Location = new System.Drawing.Point(34, 34);
+            this.btnRadiusRectangle.Name = "btnRadiusRectangle";
+            this.btnRadiusRectangle.Size = new System.Drawing.Size(25, 25);
+            this.btnRadiusRectangle.TabIndex = 13;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnRadiusRectangle, "Radius Rectangle");
+            // 
+            // btnRhombus
+            // 
+            this.btnRhombus.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnRhombus.BorderRadius = 5;
+            this.btnRhombus.BorderThickness = 1;
+            this.btnRhombus.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRhombus.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRhombus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRhombus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRhombus.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnRhombus.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRhombus.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRhombus.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnRhombus.Image = global::RemakePaint.Properties.Resources.icons8_rhombus_48;
+            this.btnRhombus.Location = new System.Drawing.Point(65, 34);
+            this.btnRhombus.Name = "btnRhombus";
+            this.btnRhombus.Size = new System.Drawing.Size(25, 25);
+            this.btnRhombus.TabIndex = 14;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnRhombus, "Rhombus");
+            // 
+            // btnPentagon
+            // 
+            this.btnPentagon.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnPentagon.BorderRadius = 5;
+            this.btnPentagon.BorderThickness = 1;
+            this.btnPentagon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPentagon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPentagon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPentagon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPentagon.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnPentagon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPentagon.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnPentagon.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnPentagon.Image = global::RemakePaint.Properties.Resources.icons8_pentagon_48;
+            this.btnPentagon.Location = new System.Drawing.Point(96, 34);
+            this.btnPentagon.Name = "btnPentagon";
+            this.btnPentagon.Size = new System.Drawing.Size(25, 25);
+            this.btnPentagon.TabIndex = 15;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnPentagon, "Pentagon");
+            // 
+            // btnHexagon
+            // 
+            this.btnHexagon.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnHexagon.BorderRadius = 5;
+            this.btnHexagon.BorderThickness = 1;
+            this.btnHexagon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHexagon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHexagon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHexagon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHexagon.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnHexagon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnHexagon.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnHexagon.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnHexagon.Image = global::RemakePaint.Properties.Resources.icons8_hexagon_48;
+            this.btnHexagon.Location = new System.Drawing.Point(127, 34);
+            this.btnHexagon.Name = "btnHexagon";
+            this.btnHexagon.Size = new System.Drawing.Size(25, 25);
+            this.btnHexagon.TabIndex = 16;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnHexagon, "Hexagon");
+            // 
+            // btnArrowUp
+            // 
+            this.btnArrowUp.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnArrowUp.BorderRadius = 5;
+            this.btnArrowUp.BorderThickness = 1;
+            this.btnArrowUp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnArrowUp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnArrowUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnArrowUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnArrowUp.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnArrowUp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnArrowUp.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnArrowUp.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnArrowUp.Image = global::RemakePaint.Properties.Resources.UpArrow1;
+            this.btnArrowUp.Location = new System.Drawing.Point(3, 65);
+            this.btnArrowUp.Name = "btnArrowUp";
+            this.btnArrowUp.Size = new System.Drawing.Size(25, 25);
+            this.btnArrowUp.TabIndex = 17;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnArrowUp, "Arrow up");
+            // 
+            // btnArrowDown
+            // 
+            this.btnArrowDown.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnArrowDown.BorderRadius = 5;
+            this.btnArrowDown.BorderThickness = 1;
+            this.btnArrowDown.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnArrowDown.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnArrowDown.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnArrowDown.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnArrowDown.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnArrowDown.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnArrowDown.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnArrowDown.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnArrowDown.Image = global::RemakePaint.Properties.Resources.DownArrow;
+            this.btnArrowDown.Location = new System.Drawing.Point(34, 65);
+            this.btnArrowDown.Name = "btnArrowDown";
+            this.btnArrowDown.Size = new System.Drawing.Size(25, 25);
+            this.btnArrowDown.TabIndex = 18;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnArrowDown, "Arrow down");
+            // 
+            // btnArrowLeft
+            // 
+            this.btnArrowLeft.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnArrowLeft.BorderRadius = 5;
+            this.btnArrowLeft.BorderThickness = 1;
+            this.btnArrowLeft.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnArrowLeft.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnArrowLeft.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnArrowLeft.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnArrowLeft.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnArrowLeft.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnArrowLeft.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnArrowLeft.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnArrowLeft.Image = global::RemakePaint.Properties.Resources.LeftArrow;
+            this.btnArrowLeft.Location = new System.Drawing.Point(65, 65);
+            this.btnArrowLeft.Name = "btnArrowLeft";
+            this.btnArrowLeft.Size = new System.Drawing.Size(25, 25);
+            this.btnArrowLeft.TabIndex = 19;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnArrowLeft, "Arrow left");
+            // 
+            // btnArrowRight
+            // 
+            this.btnArrowRight.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnArrowRight.BorderRadius = 5;
+            this.btnArrowRight.BorderThickness = 1;
+            this.btnArrowRight.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnArrowRight.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnArrowRight.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnArrowRight.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnArrowRight.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnArrowRight.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnArrowRight.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnArrowRight.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnArrowRight.Image = global::RemakePaint.Properties.Resources.RightArrow;
+            this.btnArrowRight.Location = new System.Drawing.Point(96, 65);
+            this.btnArrowRight.Name = "btnArrowRight";
+            this.btnArrowRight.Size = new System.Drawing.Size(25, 25);
+            this.btnArrowRight.TabIndex = 20;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnArrowRight, "Arrow right");
+            // 
+            // btnStar
+            // 
+            this.btnStar.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnStar.BorderRadius = 5;
+            this.btnStar.BorderThickness = 1;
+            this.btnStar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnStar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnStar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnStar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnStar.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnStar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnStar.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnStar.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnStar.Image = global::RemakePaint.Properties.Resources.icons8_star_50;
+            this.btnStar.Location = new System.Drawing.Point(127, 65);
+            this.btnStar.Name = "btnStar";
+            this.btnStar.Size = new System.Drawing.Size(25, 25);
+            this.btnStar.TabIndex = 21;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnStar, "Star");
             // 
             // label5
             // 
@@ -648,6 +1348,40 @@
             this.btnColor18.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnColor18.Size = new System.Drawing.Size(23, 23);
             this.btnColor18.TabIndex = 37;
+            // 
+            // btnDialogColor
+            // 
+            this.btnDialogColor.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnDialogColor.BorderRadius = 5;
+            this.btnDialogColor.BorderThickness = 1;
+            this.btnDialogColor.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDialogColor.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDialogColor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDialogColor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDialogColor.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnDialogColor.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDialogColor.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnDialogColor.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnDialogColor.Image = global::RemakePaint.Properties.Resources.icons8_color_48;
+            this.btnDialogColor.ImageSize = new System.Drawing.Size(45, 45);
+            this.btnDialogColor.Location = new System.Drawing.Point(384, 32);
+            this.btnDialogColor.Name = "btnDialogColor";
+            this.btnDialogColor.Size = new System.Drawing.Size(60, 60);
+            this.btnDialogColor.TabIndex = 36;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnDialogColor, "Image editor");
+            this.btnDialogColor.Click += new System.EventHandler(this.btnDialogColor_Click);
+            // 
+            // pbCurrentColor
+            // 
+            this.pbCurrentColor.FillColor = System.Drawing.Color.Black;
+            this.pbCurrentColor.ImageRotate = 0F;
+            this.pbCurrentColor.Location = new System.Drawing.Point(14, 38);
+            this.pbCurrentColor.Name = "pbCurrentColor";
+            this.pbCurrentColor.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pbCurrentColor.Size = new System.Drawing.Size(45, 45);
+            this.pbCurrentColor.TabIndex = 35;
+            this.pbCurrentColor.TabStop = false;
+            this.guna2HtmlToolTip1.SetToolTip(this.pbCurrentColor, "Current color");
             // 
             // btnColor17
             // 
@@ -983,6 +1717,28 @@
             this.guna2Panel9.Size = new System.Drawing.Size(153, 150);
             this.guna2Panel9.TabIndex = 12;
             // 
+            // btnShareFB
+            // 
+            this.btnShareFB.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnShareFB.BorderRadius = 5;
+            this.btnShareFB.BorderThickness = 1;
+            this.btnShareFB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnShareFB.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnShareFB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnShareFB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnShareFB.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnShareFB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnShareFB.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnShareFB.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnShareFB.Image = global::RemakePaint.Properties.Resources.icons8_facebook_40;
+            this.btnShareFB.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnShareFB.Location = new System.Drawing.Point(44, 31);
+            this.btnShareFB.Name = "btnShareFB";
+            this.btnShareFB.Size = new System.Drawing.Size(60, 60);
+            this.btnShareFB.TabIndex = 12;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnShareFB, "Share on Facebook");
+            this.btnShareFB.Click += new System.EventHandler(this.btnShareFB_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -1001,10 +1757,122 @@
             this.guna2VSeparator9.Size = new System.Drawing.Size(5, 156);
             this.guna2VSeparator9.TabIndex = 13;
             // 
+            // guna2Panel10
+            // 
+            this.guna2Panel10.Controls.Add(this.btnAskAI);
+            this.guna2Panel10.Controls.Add(this.label7);
+            this.guna2Panel10.Location = new System.Drawing.Point(1434, 3);
+            this.guna2Panel10.Name = "guna2Panel10";
+            this.guna2Panel10.Size = new System.Drawing.Size(153, 150);
+            this.guna2Panel10.TabIndex = 14;
+            // 
+            // btnAskAI
+            // 
+            this.btnAskAI.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnAskAI.BorderRadius = 5;
+            this.btnAskAI.BorderThickness = 1;
+            this.btnAskAI.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAskAI.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAskAI.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAskAI.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAskAI.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnAskAI.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAskAI.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAskAI.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnAskAI.Image = global::RemakePaint.Properties.Resources.icons8_ai_48;
+            this.btnAskAI.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnAskAI.Location = new System.Drawing.Point(44, 31);
+            this.btnAskAI.Name = "btnAskAI";
+            this.btnAskAI.Size = new System.Drawing.Size(60, 60);
+            this.btnAskAI.TabIndex = 12;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnAskAI, "Share on Facebook");
+            this.btnAskAI.Click += new System.EventHandler(this.btnAskAI_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label7.Location = new System.Drawing.Point(46, 107);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(57, 20);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Ask AI";
+            // 
+            // guna2VSeparator10
+            // 
+            this.guna2VSeparator10.Location = new System.Drawing.Point(1593, 3);
+            this.guna2VSeparator10.Name = "guna2VSeparator10";
+            this.guna2VSeparator10.Size = new System.Drawing.Size(5, 156);
+            this.guna2VSeparator10.TabIndex = 15;
+            // 
             // guna2HtmlToolTip1
             // 
             this.guna2HtmlToolTip1.AllowLinksHandling = true;
             this.guna2HtmlToolTip1.MaximumSize = new System.Drawing.Size(0, 0);
+            // 
+            // btnUnderline
+            // 
+            this.btnUnderline.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnUnderline.BorderRadius = 5;
+            this.btnUnderline.BorderThickness = 1;
+            this.btnUnderline.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUnderline.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUnderline.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUnderline.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUnderline.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnUnderline.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnUnderline.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnUnderline.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnUnderline.Image = global::RemakePaint.Properties.Resources.icons8_underline_30;
+            this.btnUnderline.Location = new System.Drawing.Point(435, 7);
+            this.btnUnderline.Name = "btnUnderline";
+            this.btnUnderline.Size = new System.Drawing.Size(40, 36);
+            this.btnUnderline.TabIndex = 6;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnUnderline, "Rotate right 90*");
+            this.btnUnderline.Click += new System.EventHandler(this.btnUnderline_Click);
+            // 
+            // btnItalic
+            // 
+            this.btnItalic.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnItalic.BorderRadius = 5;
+            this.btnItalic.BorderThickness = 1;
+            this.btnItalic.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnItalic.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnItalic.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnItalic.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnItalic.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnItalic.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnItalic.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnItalic.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnItalic.Image = global::RemakePaint.Properties.Resources.icons8_italic_48;
+            this.btnItalic.Location = new System.Drawing.Point(389, 7);
+            this.btnItalic.Name = "btnItalic";
+            this.btnItalic.Size = new System.Drawing.Size(40, 36);
+            this.btnItalic.TabIndex = 5;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnItalic, "Rotate right 90*");
+            this.btnItalic.Click += new System.EventHandler(this.btnItalic_Click);
+            // 
+            // btnBold
+            // 
+            this.btnBold.BorderColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnBold.BorderRadius = 5;
+            this.btnBold.BorderThickness = 1;
+            this.btnBold.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBold.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBold.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBold.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBold.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnBold.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBold.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBold.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.btnBold.Image = global::RemakePaint.Properties.Resources.icons8_bold_50;
+            this.btnBold.Location = new System.Drawing.Point(343, 7);
+            this.btnBold.Name = "btnBold";
+            this.btnBold.Size = new System.Drawing.Size(40, 36);
+            this.btnBold.TabIndex = 4;
+            this.guna2HtmlToolTip1.SetToolTip(this.btnBold, "Rotate right 90*");
+            this.btnBold.Click += new System.EventHandler(this.btnBold_Click);
             // 
             // pnPaintRegion
             // 
@@ -1021,9 +1889,19 @@
             this.pnPaintRegion.Size = new System.Drawing.Size(1762, 761);
             this.pnPaintRegion.TabIndex = 4;
             // 
+            // pbImgEditor
+            // 
+            this.pbImgEditor.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.pbImgEditor.ImageRotate = 0F;
+            this.pbImgEditor.Location = new System.Drawing.Point(557, 171);
+            this.pbImgEditor.Name = "pbImgEditor";
+            this.pbImgEditor.Size = new System.Drawing.Size(418, 254);
+            this.pbImgEditor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbImgEditor.TabIndex = 6;
+            this.pbImgEditor.TabStop = false;
+            // 
             // textBox1
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Location = new System.Drawing.Point(272, 222);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -1045,11 +1923,25 @@
             this.statusStrip1.TabIndex = 4;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // StatusCursor
+            // 
+            this.StatusCursor.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StatusCursor.Image = global::RemakePaint.Properties.Resources.icons8_cursor_80;
+            this.StatusCursor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.StatusCursor.Name = "StatusCursor";
+            this.StatusCursor.Size = new System.Drawing.Size(20, 20);
+            // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(241, 20);
             this.toolStripStatusLabel1.Text = "                                                          ";
+            // 
+            // StatusPaintSize
+            // 
+            this.StatusPaintSize.Image = global::RemakePaint.Properties.Resources.icons8_rectangle_48;
+            this.StatusPaintSize.Name = "StatusPaintSize";
+            this.StatusPaintSize.Size = new System.Drawing.Size(20, 20);
             // 
             // pnTextTools
             // 
@@ -1117,121 +2009,6 @@
             this.TrackBarPen.Visible = false;
             this.TrackBarPen.Scroll += new System.Windows.Forms.ScrollEventHandler(this.TrackBarPen_Scroll);
             // 
-            // guna2Panel10
-            // 
-            this.guna2Panel10.Controls.Add(this.btnAskAI);
-            this.guna2Panel10.Controls.Add(this.label7);
-            this.guna2Panel10.Location = new System.Drawing.Point(1434, 3);
-            this.guna2Panel10.Name = "guna2Panel10";
-            this.guna2Panel10.Size = new System.Drawing.Size(153, 150);
-            this.guna2Panel10.TabIndex = 14;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label7.Location = new System.Drawing.Point(46, 107);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 20);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Ask AI";
-            // 
-            // guna2VSeparator10
-            // 
-            this.guna2VSeparator10.Location = new System.Drawing.Point(1593, 3);
-            this.guna2VSeparator10.Name = "guna2VSeparator10";
-            this.guna2VSeparator10.Size = new System.Drawing.Size(5, 156);
-            this.guna2VSeparator10.TabIndex = 15;
-            // 
-            // pbImgEditor
-            // 
-            this.pbImgEditor.Cursor = System.Windows.Forms.Cursors.SizeAll;
-            this.pbImgEditor.ImageRotate = 0F;
-            this.pbImgEditor.Location = new System.Drawing.Point(557, 171);
-            this.pbImgEditor.Name = "pbImgEditor";
-            this.pbImgEditor.Size = new System.Drawing.Size(418, 254);
-            this.pbImgEditor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbImgEditor.TabIndex = 6;
-            this.pbImgEditor.TabStop = false;
-            // 
-            // StatusCursor
-            // 
-            this.StatusCursor.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusCursor.Image = global::RemakePaint.Properties.Resources.icons8_cursor_80;
-            this.StatusCursor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.StatusCursor.Name = "StatusCursor";
-            this.StatusCursor.Size = new System.Drawing.Size(20, 20);
-            // 
-            // StatusPaintSize
-            // 
-            this.StatusPaintSize.Image = global::RemakePaint.Properties.Resources.icons8_rectangle_48;
-            this.StatusPaintSize.Name = "StatusPaintSize";
-            this.StatusPaintSize.Size = new System.Drawing.Size(20, 20);
-            // 
-            // btnUnderline
-            // 
-            this.btnUnderline.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnUnderline.BorderRadius = 5;
-            this.btnUnderline.BorderThickness = 1;
-            this.btnUnderline.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUnderline.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUnderline.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUnderline.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUnderline.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnUnderline.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnUnderline.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnUnderline.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnUnderline.Image = global::RemakePaint.Properties.Resources.icons8_underline_30;
-            this.btnUnderline.Location = new System.Drawing.Point(435, 7);
-            this.btnUnderline.Name = "btnUnderline";
-            this.btnUnderline.Size = new System.Drawing.Size(40, 36);
-            this.btnUnderline.TabIndex = 6;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnUnderline, "Rotate right 90*");
-            this.btnUnderline.Click += new System.EventHandler(this.btnUnderline_Click);
-            // 
-            // btnItalic
-            // 
-            this.btnItalic.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnItalic.BorderRadius = 5;
-            this.btnItalic.BorderThickness = 1;
-            this.btnItalic.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnItalic.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnItalic.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnItalic.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnItalic.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnItalic.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnItalic.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnItalic.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnItalic.Image = global::RemakePaint.Properties.Resources.icons8_italic_48;
-            this.btnItalic.Location = new System.Drawing.Point(389, 7);
-            this.btnItalic.Name = "btnItalic";
-            this.btnItalic.Size = new System.Drawing.Size(40, 36);
-            this.btnItalic.TabIndex = 5;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnItalic, "Rotate right 90*");
-            this.btnItalic.Click += new System.EventHandler(this.btnItalic_Click);
-            // 
-            // btnBold
-            // 
-            this.btnBold.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnBold.BorderRadius = 5;
-            this.btnBold.BorderThickness = 1;
-            this.btnBold.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBold.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBold.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBold.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBold.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnBold.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnBold.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnBold.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnBold.Image = global::RemakePaint.Properties.Resources.icons8_bold_50;
-            this.btnBold.Location = new System.Drawing.Point(343, 7);
-            this.btnBold.Name = "btnBold";
-            this.btnBold.Size = new System.Drawing.Size(40, 36);
-            this.btnBold.TabIndex = 4;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnBold, "Rotate right 90*");
-            this.btnBold.Click += new System.EventHandler(this.btnBold_Click);
-            // 
             // pb_mainScreen
             // 
             this.pb_mainScreen.ImageRotate = 0F;
@@ -1240,783 +2017,6 @@
             this.pb_mainScreen.Size = new System.Drawing.Size(1000, 500);
             this.pb_mainScreen.TabIndex = 0;
             this.pb_mainScreen.TabStop = false;
-            // 
-            // btnZoom
-            // 
-            this.btnZoom.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnZoom.BorderRadius = 5;
-            this.btnZoom.BorderThickness = 1;
-            this.btnZoom.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnZoom.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnZoom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnZoom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnZoom.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnZoom.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnZoom.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnZoom.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnZoom.Image = global::RemakePaint.Properties.Resources.icons8_magnifying_glass_50;
-            this.btnZoom.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnZoom.Location = new System.Drawing.Point(103, 62);
-            this.btnZoom.Name = "btnZoom";
-            this.btnZoom.Size = new System.Drawing.Size(40, 40);
-            this.btnZoom.TabIndex = 8;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnZoom, "Magnifier");
-            this.btnZoom.Click += new System.EventHandler(this.btnZoom_Click);
-            // 
-            // btnColorPicker
-            // 
-            this.btnColorPicker.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnColorPicker.BorderRadius = 5;
-            this.btnColorPicker.BorderThickness = 1;
-            this.btnColorPicker.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnColorPicker.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnColorPicker.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnColorPicker.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnColorPicker.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnColorPicker.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnColorPicker.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnColorPicker.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnColorPicker.Image = global::RemakePaint.Properties.Resources.icons8_color_picker_48;
-            this.btnColorPicker.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnColorPicker.Location = new System.Drawing.Point(56, 62);
-            this.btnColorPicker.Name = "btnColorPicker";
-            this.btnColorPicker.Size = new System.Drawing.Size(40, 40);
-            this.btnColorPicker.TabIndex = 7;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnColorPicker, "Color picker");
-            this.btnColorPicker.Click += new System.EventHandler(this.btnColorPicker_Click);
-            // 
-            // btnEraser
-            // 
-            this.btnEraser.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnEraser.BorderRadius = 5;
-            this.btnEraser.BorderThickness = 1;
-            this.btnEraser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEraser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEraser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEraser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEraser.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnEraser.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnEraser.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnEraser.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnEraser.Image = global::RemakePaint.Properties.Resources.icons8_eraser_100;
-            this.btnEraser.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEraser.Location = new System.Drawing.Point(9, 62);
-            this.btnEraser.Name = "btnEraser";
-            this.btnEraser.Size = new System.Drawing.Size(40, 40);
-            this.btnEraser.TabIndex = 6;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnEraser, "Eraser");
-            this.btnEraser.Click += new System.EventHandler(this.btnEraser_Click);
-            // 
-            // btnText
-            // 
-            this.btnText.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnText.BorderRadius = 5;
-            this.btnText.BorderThickness = 1;
-            this.btnText.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnText.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnText.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnText.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnText.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnText.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnText.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnText.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnText.Image = global::RemakePaint.Properties.Resources.icons8_text_30;
-            this.btnText.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnText.Location = new System.Drawing.Point(103, 13);
-            this.btnText.Name = "btnText";
-            this.btnText.Size = new System.Drawing.Size(40, 40);
-            this.btnText.TabIndex = 5;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnText, "Text");
-            this.btnText.Click += new System.EventHandler(this.btnText_Click);
-            // 
-            // btnFill
-            // 
-            this.btnFill.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnFill.BorderRadius = 5;
-            this.btnFill.BorderThickness = 1;
-            this.btnFill.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnFill.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnFill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnFill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnFill.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnFill.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnFill.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnFill.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnFill.Image = global::RemakePaint.Properties.Resources.icons8_fill_color_48;
-            this.btnFill.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnFill.Location = new System.Drawing.Point(56, 13);
-            this.btnFill.Name = "btnFill";
-            this.btnFill.Size = new System.Drawing.Size(40, 40);
-            this.btnFill.TabIndex = 4;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnFill, "Fill with color");
-            this.btnFill.Click += new System.EventHandler(this.btnFill_Click);
-            // 
-            // btnPencil
-            // 
-            this.btnPencil.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPencil.BorderRadius = 5;
-            this.btnPencil.BorderThickness = 1;
-            this.btnPencil.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPencil.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnPencil.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnPencil.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPencil.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPencil.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnPencil.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnPencil.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnPencil.Image = global::RemakePaint.Properties.Resources.icons8_pencil_30;
-            this.btnPencil.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnPencil.Location = new System.Drawing.Point(9, 13);
-            this.btnPencil.Name = "btnPencil";
-            this.btnPencil.Size = new System.Drawing.Size(40, 40);
-            this.btnPencil.TabIndex = 3;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnPencil, "Pencil");
-            this.btnPencil.Click += new System.EventHandler(this.btnPencil_Click);
-            // 
-            // btnFlipVertical
-            // 
-            this.btnFlipVertical.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnFlipVertical.BorderRadius = 5;
-            this.btnFlipVertical.BorderThickness = 1;
-            this.btnFlipVertical.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnFlipVertical.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnFlipVertical.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnFlipVertical.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnFlipVertical.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnFlipVertical.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnFlipVertical.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnFlipVertical.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnFlipVertical.Image = global::RemakePaint.Properties.Resources.icons8_flip_vertical_40;
-            this.btnFlipVertical.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnFlipVertical.Location = new System.Drawing.Point(82, 62);
-            this.btnFlipVertical.Name = "btnFlipVertical";
-            this.btnFlipVertical.Size = new System.Drawing.Size(40, 40);
-            this.btnFlipVertical.TabIndex = 7;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnFlipVertical, "Flip vertical");
-            this.btnFlipVertical.Click += new System.EventHandler(this.btnFlipVertical_Click);
-            // 
-            // btnFlipHorizontal
-            // 
-            this.btnFlipHorizontal.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnFlipHorizontal.BorderRadius = 5;
-            this.btnFlipHorizontal.BorderThickness = 1;
-            this.btnFlipHorizontal.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnFlipHorizontal.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnFlipHorizontal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnFlipHorizontal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnFlipHorizontal.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnFlipHorizontal.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnFlipHorizontal.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnFlipHorizontal.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnFlipHorizontal.Image = global::RemakePaint.Properties.Resources.icons8_flip_horizontal_40;
-            this.btnFlipHorizontal.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnFlipHorizontal.Location = new System.Drawing.Point(35, 62);
-            this.btnFlipHorizontal.Name = "btnFlipHorizontal";
-            this.btnFlipHorizontal.Size = new System.Drawing.Size(40, 40);
-            this.btnFlipHorizontal.TabIndex = 6;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnFlipHorizontal, "Flip horizontal");
-            this.btnFlipHorizontal.Click += new System.EventHandler(this.btnFlipHorizontal_Click);
-            // 
-            // btnRotateRight
-            // 
-            this.btnRotateRight.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnRotateRight.BorderRadius = 5;
-            this.btnRotateRight.BorderThickness = 1;
-            this.btnRotateRight.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnRotateRight.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnRotateRight.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRotateRight.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRotateRight.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnRotateRight.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRotateRight.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRotateRight.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnRotateRight.Image = global::RemakePaint.Properties.Resources.icons8_rotate_right_50;
-            this.btnRotateRight.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnRotateRight.Location = new System.Drawing.Point(82, 13);
-            this.btnRotateRight.Name = "btnRotateRight";
-            this.btnRotateRight.Size = new System.Drawing.Size(40, 40);
-            this.btnRotateRight.TabIndex = 4;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnRotateRight, "Rotate right 90*");
-            this.btnRotateRight.Click += new System.EventHandler(this.btnRotateRight_Click);
-            // 
-            // btnRotateLeft
-            // 
-            this.btnRotateLeft.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnRotateLeft.BorderRadius = 5;
-            this.btnRotateLeft.BorderThickness = 1;
-            this.btnRotateLeft.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnRotateLeft.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnRotateLeft.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRotateLeft.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRotateLeft.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnRotateLeft.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRotateLeft.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRotateLeft.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnRotateLeft.Image = global::RemakePaint.Properties.Resources.icons8_rotate_left_50;
-            this.btnRotateLeft.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnRotateLeft.Location = new System.Drawing.Point(35, 13);
-            this.btnRotateLeft.Name = "btnRotateLeft";
-            this.btnRotateLeft.Size = new System.Drawing.Size(40, 40);
-            this.btnRotateLeft.TabIndex = 3;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnRotateLeft, "Rotate right 90*");
-            this.btnRotateLeft.Click += new System.EventHandler(this.btnRotateLeft_Click);
-            // 
-            // btnImageEditor
-            // 
-            this.btnImageEditor.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnImageEditor.BorderRadius = 5;
-            this.btnImageEditor.BorderThickness = 1;
-            this.btnImageEditor.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnImageEditor.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnImageEditor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnImageEditor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnImageEditor.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnImageEditor.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnImageEditor.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnImageEditor.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnImageEditor.Image = global::RemakePaint.Properties.Resources.icons8_image_editor_48;
-            this.btnImageEditor.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnImageEditor.Location = new System.Drawing.Point(32, 31);
-            this.btnImageEditor.Name = "btnImageEditor";
-            this.btnImageEditor.Size = new System.Drawing.Size(60, 60);
-            this.btnImageEditor.TabIndex = 10;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnImageEditor, "Image editor");
-            this.btnImageEditor.Click += new System.EventHandler(this.btnImageEditor_Click);
-            // 
-            // pbCurrentShape
-            // 
-            this.pbCurrentShape.BackColor = System.Drawing.Color.Transparent;
-            this.pbCurrentShape.BorderRadius = 5;
-            this.pbCurrentShape.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_line_50;
-            this.pbCurrentShape.ImageRotate = 0F;
-            this.pbCurrentShape.Location = new System.Drawing.Point(0, 0);
-            this.pbCurrentShape.Name = "pbCurrentShape";
-            this.pbCurrentShape.Size = new System.Drawing.Size(45, 45);
-            this.pbCurrentShape.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbCurrentShape.TabIndex = 12;
-            this.pbCurrentShape.TabStop = false;
-            this.guna2HtmlToolTip1.SetToolTip(this.pbCurrentShape, "Current shape");
-            // 
-            // btnLine
-            // 
-            this.btnLine.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLine.BorderRadius = 5;
-            this.btnLine.BorderThickness = 1;
-            this.btnLine.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLine.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLine.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLine.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLine.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLine.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnLine.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnLine.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnLine.Image = global::RemakePaint.Properties.Resources.icons8_line_50;
-            this.btnLine.Location = new System.Drawing.Point(3, 3);
-            this.btnLine.Name = "btnLine";
-            this.btnLine.Size = new System.Drawing.Size(25, 25);
-            this.btnLine.TabIndex = 7;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnLine, "Line");
-            // 
-            // btnCircle
-            // 
-            this.btnCircle.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCircle.BorderRadius = 5;
-            this.btnCircle.BorderThickness = 1;
-            this.btnCircle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCircle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCircle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCircle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCircle.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCircle.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCircle.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCircle.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnCircle.Image = global::RemakePaint.Properties.Resources.icons8_circle_30;
-            this.btnCircle.Location = new System.Drawing.Point(34, 3);
-            this.btnCircle.Name = "btnCircle";
-            this.btnCircle.Size = new System.Drawing.Size(25, 25);
-            this.btnCircle.TabIndex = 8;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnCircle, "Circle");
-            // 
-            // btnRectangle
-            // 
-            this.btnRectangle.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnRectangle.BorderRadius = 5;
-            this.btnRectangle.BorderThickness = 1;
-            this.btnRectangle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnRectangle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnRectangle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRectangle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRectangle.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnRectangle.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRectangle.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRectangle.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnRectangle.Image = global::RemakePaint.Properties.Resources.icons8_rectangle_48;
-            this.btnRectangle.Location = new System.Drawing.Point(65, 3);
-            this.btnRectangle.Name = "btnRectangle";
-            this.btnRectangle.Size = new System.Drawing.Size(25, 25);
-            this.btnRectangle.TabIndex = 9;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnRectangle, "Rectangle");
-            // 
-            // btnPolygon
-            // 
-            this.btnPolygon.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPolygon.BorderRadius = 5;
-            this.btnPolygon.BorderThickness = 1;
-            this.btnPolygon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPolygon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnPolygon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnPolygon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPolygon.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPolygon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnPolygon.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnPolygon.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnPolygon.Image = global::RemakePaint.Properties.Resources.icons8_polygon_30;
-            this.btnPolygon.Location = new System.Drawing.Point(96, 3);
-            this.btnPolygon.Name = "btnPolygon";
-            this.btnPolygon.Size = new System.Drawing.Size(25, 25);
-            this.btnPolygon.TabIndex = 10;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnPolygon, "Polygon");
-            // 
-            // btnTriangle
-            // 
-            this.btnTriangle.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnTriangle.BorderRadius = 5;
-            this.btnTriangle.BorderThickness = 1;
-            this.btnTriangle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTriangle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTriangle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTriangle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTriangle.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnTriangle.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTriangle.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnTriangle.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnTriangle.Image = global::RemakePaint.Properties.Resources.icons8_triangle_30;
-            this.btnTriangle.Location = new System.Drawing.Point(127, 3);
-            this.btnTriangle.Name = "btnTriangle";
-            this.btnTriangle.Size = new System.Drawing.Size(25, 25);
-            this.btnTriangle.TabIndex = 11;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnTriangle, "Triangle");
-            // 
-            // btnRightTriangle
-            // 
-            this.btnRightTriangle.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnRightTriangle.BorderRadius = 5;
-            this.btnRightTriangle.BorderThickness = 1;
-            this.btnRightTriangle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnRightTriangle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnRightTriangle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRightTriangle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRightTriangle.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnRightTriangle.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRightTriangle.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRightTriangle.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnRightTriangle.Image = global::RemakePaint.Properties.Resources.icons8_right_triangle_48;
-            this.btnRightTriangle.Location = new System.Drawing.Point(3, 34);
-            this.btnRightTriangle.Name = "btnRightTriangle";
-            this.btnRightTriangle.Size = new System.Drawing.Size(25, 25);
-            this.btnRightTriangle.TabIndex = 12;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnRightTriangle, "Right Triangle");
-            // 
-            // btnRadiusRectangle
-            // 
-            this.btnRadiusRectangle.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnRadiusRectangle.BorderRadius = 5;
-            this.btnRadiusRectangle.BorderThickness = 1;
-            this.btnRadiusRectangle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnRadiusRectangle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnRadiusRectangle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRadiusRectangle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRadiusRectangle.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnRadiusRectangle.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRadiusRectangle.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRadiusRectangle.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnRadiusRectangle.Image = global::RemakePaint.Properties.Resources.icons8_rectangle_48__1_;
-            this.btnRadiusRectangle.Location = new System.Drawing.Point(34, 34);
-            this.btnRadiusRectangle.Name = "btnRadiusRectangle";
-            this.btnRadiusRectangle.Size = new System.Drawing.Size(25, 25);
-            this.btnRadiusRectangle.TabIndex = 13;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnRadiusRectangle, "Radius Rectangle");
-            // 
-            // btnRhombus
-            // 
-            this.btnRhombus.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnRhombus.BorderRadius = 5;
-            this.btnRhombus.BorderThickness = 1;
-            this.btnRhombus.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnRhombus.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnRhombus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRhombus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRhombus.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnRhombus.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRhombus.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRhombus.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnRhombus.Image = global::RemakePaint.Properties.Resources.icons8_rhombus_48;
-            this.btnRhombus.Location = new System.Drawing.Point(65, 34);
-            this.btnRhombus.Name = "btnRhombus";
-            this.btnRhombus.Size = new System.Drawing.Size(25, 25);
-            this.btnRhombus.TabIndex = 14;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnRhombus, "Rhombus");
-            // 
-            // btnPentagon
-            // 
-            this.btnPentagon.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPentagon.BorderRadius = 5;
-            this.btnPentagon.BorderThickness = 1;
-            this.btnPentagon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnPentagon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnPentagon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnPentagon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPentagon.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPentagon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnPentagon.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnPentagon.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnPentagon.Image = global::RemakePaint.Properties.Resources.icons8_pentagon_48;
-            this.btnPentagon.Location = new System.Drawing.Point(96, 34);
-            this.btnPentagon.Name = "btnPentagon";
-            this.btnPentagon.Size = new System.Drawing.Size(25, 25);
-            this.btnPentagon.TabIndex = 15;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnPentagon, "Pentagon");
-            // 
-            // btnHexagon
-            // 
-            this.btnHexagon.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnHexagon.BorderRadius = 5;
-            this.btnHexagon.BorderThickness = 1;
-            this.btnHexagon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnHexagon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnHexagon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHexagon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnHexagon.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnHexagon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnHexagon.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnHexagon.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnHexagon.Image = global::RemakePaint.Properties.Resources.icons8_hexagon_48;
-            this.btnHexagon.Location = new System.Drawing.Point(127, 34);
-            this.btnHexagon.Name = "btnHexagon";
-            this.btnHexagon.Size = new System.Drawing.Size(25, 25);
-            this.btnHexagon.TabIndex = 16;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnHexagon, "Hexagon");
-            // 
-            // btnArrowUp
-            // 
-            this.btnArrowUp.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnArrowUp.BorderRadius = 5;
-            this.btnArrowUp.BorderThickness = 1;
-            this.btnArrowUp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnArrowUp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnArrowUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnArrowUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnArrowUp.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnArrowUp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnArrowUp.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnArrowUp.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnArrowUp.Image = global::RemakePaint.Properties.Resources.UpArrow1;
-            this.btnArrowUp.Location = new System.Drawing.Point(3, 65);
-            this.btnArrowUp.Name = "btnArrowUp";
-            this.btnArrowUp.Size = new System.Drawing.Size(25, 25);
-            this.btnArrowUp.TabIndex = 17;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnArrowUp, "Arrow up");
-            // 
-            // btnArrowDown
-            // 
-            this.btnArrowDown.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnArrowDown.BorderRadius = 5;
-            this.btnArrowDown.BorderThickness = 1;
-            this.btnArrowDown.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnArrowDown.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnArrowDown.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnArrowDown.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnArrowDown.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnArrowDown.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnArrowDown.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnArrowDown.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnArrowDown.Image = global::RemakePaint.Properties.Resources.DownArrow;
-            this.btnArrowDown.Location = new System.Drawing.Point(34, 65);
-            this.btnArrowDown.Name = "btnArrowDown";
-            this.btnArrowDown.Size = new System.Drawing.Size(25, 25);
-            this.btnArrowDown.TabIndex = 18;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnArrowDown, "Arrow down");
-            // 
-            // btnArrowLeft
-            // 
-            this.btnArrowLeft.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnArrowLeft.BorderRadius = 5;
-            this.btnArrowLeft.BorderThickness = 1;
-            this.btnArrowLeft.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnArrowLeft.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnArrowLeft.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnArrowLeft.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnArrowLeft.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnArrowLeft.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnArrowLeft.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnArrowLeft.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnArrowLeft.Image = global::RemakePaint.Properties.Resources.LeftArrow;
-            this.btnArrowLeft.Location = new System.Drawing.Point(65, 65);
-            this.btnArrowLeft.Name = "btnArrowLeft";
-            this.btnArrowLeft.Size = new System.Drawing.Size(25, 25);
-            this.btnArrowLeft.TabIndex = 19;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnArrowLeft, "Arrow left");
-            // 
-            // btnArrowRight
-            // 
-            this.btnArrowRight.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnArrowRight.BorderRadius = 5;
-            this.btnArrowRight.BorderThickness = 1;
-            this.btnArrowRight.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnArrowRight.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnArrowRight.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnArrowRight.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnArrowRight.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnArrowRight.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnArrowRight.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnArrowRight.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnArrowRight.Image = global::RemakePaint.Properties.Resources.RightArrow;
-            this.btnArrowRight.Location = new System.Drawing.Point(96, 65);
-            this.btnArrowRight.Name = "btnArrowRight";
-            this.btnArrowRight.Size = new System.Drawing.Size(25, 25);
-            this.btnArrowRight.TabIndex = 20;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnArrowRight, "Arrow right");
-            // 
-            // btnStar
-            // 
-            this.btnStar.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnStar.BorderRadius = 5;
-            this.btnStar.BorderThickness = 1;
-            this.btnStar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnStar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnStar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnStar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnStar.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnStar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnStar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnStar.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnStar.Image = global::RemakePaint.Properties.Resources.icons8_star_50;
-            this.btnStar.Location = new System.Drawing.Point(127, 65);
-            this.btnStar.Name = "btnStar";
-            this.btnStar.Size = new System.Drawing.Size(25, 25);
-            this.btnStar.TabIndex = 21;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnStar, "Star");
-            // 
-            // btnDialogColor
-            // 
-            this.btnDialogColor.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnDialogColor.BorderRadius = 5;
-            this.btnDialogColor.BorderThickness = 1;
-            this.btnDialogColor.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDialogColor.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDialogColor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDialogColor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDialogColor.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnDialogColor.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDialogColor.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnDialogColor.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnDialogColor.Image = global::RemakePaint.Properties.Resources.icons8_color_48;
-            this.btnDialogColor.ImageSize = new System.Drawing.Size(45, 45);
-            this.btnDialogColor.Location = new System.Drawing.Point(384, 32);
-            this.btnDialogColor.Name = "btnDialogColor";
-            this.btnDialogColor.Size = new System.Drawing.Size(60, 60);
-            this.btnDialogColor.TabIndex = 36;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnDialogColor, "Image editor");
-            this.btnDialogColor.Click += new System.EventHandler(this.btnDialogColor_Click);
-            // 
-            // pbCurrentColor
-            // 
-            this.pbCurrentColor.FillColor = System.Drawing.Color.Black;
-            this.pbCurrentColor.ImageRotate = 0F;
-            this.pbCurrentColor.Location = new System.Drawing.Point(14, 38);
-            this.pbCurrentColor.Name = "pbCurrentColor";
-            this.pbCurrentColor.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.pbCurrentColor.Size = new System.Drawing.Size(45, 45);
-            this.pbCurrentColor.TabIndex = 35;
-            this.pbCurrentColor.TabStop = false;
-            this.guna2HtmlToolTip1.SetToolTip(this.pbCurrentColor, "Current color");
-            // 
-            // btnShareFB
-            // 
-            this.btnShareFB.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnShareFB.BorderRadius = 5;
-            this.btnShareFB.BorderThickness = 1;
-            this.btnShareFB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnShareFB.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnShareFB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnShareFB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnShareFB.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnShareFB.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnShareFB.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnShareFB.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnShareFB.Image = global::RemakePaint.Properties.Resources.icons8_facebook_40;
-            this.btnShareFB.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnShareFB.Location = new System.Drawing.Point(44, 31);
-            this.btnShareFB.Name = "btnShareFB";
-            this.btnShareFB.Size = new System.Drawing.Size(60, 60);
-            this.btnShareFB.TabIndex = 12;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnShareFB, "Share on Facebook");
-            this.btnShareFB.Click += new System.EventHandler(this.btnShareFB_Click);
-            // 
-            // btnAskAI
-            // 
-            this.btnAskAI.BorderColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAskAI.BorderRadius = 5;
-            this.btnAskAI.BorderThickness = 1;
-            this.btnAskAI.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAskAI.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAskAI.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAskAI.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAskAI.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAskAI.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnAskAI.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAskAI.HoverState.BorderColor = System.Drawing.Color.DimGray;
-            this.btnAskAI.Image = global::RemakePaint.Properties.Resources.icons8_ai_48;
-            this.btnAskAI.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnAskAI.Location = new System.Drawing.Point(44, 31);
-            this.btnAskAI.Name = "btnAskAI";
-            this.btnAskAI.Size = new System.Drawing.Size(60, 60);
-            this.btnAskAI.TabIndex = 12;
-            this.guna2HtmlToolTip1.SetToolTip(this.btnAskAI, "Share on Facebook");
-            this.btnAskAI.Click += new System.EventHandler(this.btnAskAI_Click);
-            // 
-            // newToolStripMenuItem
-            // 
-            this.newToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_blank_50;
-            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(269, 30);
-            this.newToolStripMenuItem.Text = "New";
-            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
-            // 
-            // openToolStripMenuItem
-            // 
-            this.openToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_folder_50;
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(269, 30);
-            this.openToolStripMenuItem.Text = "Open";
-            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_save_50__1_;
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(269, 30);
-            this.saveToolStripMenuItem.Text = "Save";
-            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
-            // 
-            // saveAsToolStripMenuItem
-            // 
-            this.saveAsToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_save_as_50;
-            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.S)));
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(269, 30);
-            this.saveAsToolStripMenuItem.Text = "Save As";
-            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
-            // 
-            // closeToolStripMenuItem
-            // 
-            this.closeToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_close_50;
-            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(269, 30);
-            this.closeToolStripMenuItem.Text = "Exit";
-            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
-            // 
-            // cutToolStripMenuItem
-            // 
-            this.cutToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_cut_48;
-            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(202, 30);
-            this.cutToolStripMenuItem.Text = "Cut";
-            this.cutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);
-            // 
-            // copyToolStripMenuItem
-            // 
-            this.copyToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_copy_48;
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(202, 30);
-            this.copyToolStripMenuItem.Text = "Copy";
-            this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
-            // 
-            // pasteToolStripMenuItem
-            // 
-            this.pasteToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_paste_48;
-            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(202, 30);
-            this.pasteToolStripMenuItem.Text = "Paste";
-            this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
-            // 
-            // zoomInToolStripMenuItem
-            // 
-            this.zoomInToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_zoom_in_50;
-            this.zoomInToolStripMenuItem.Name = "zoomInToolStripMenuItem";
-            this.zoomInToolStripMenuItem.Size = new System.Drawing.Size(178, 30);
-            this.zoomInToolStripMenuItem.Text = "Zoom in";
-            this.zoomInToolStripMenuItem.Click += new System.EventHandler(this.zoomInToolStripMenuItem_Click);
-            // 
-            // zoomOutToolStripMenuItem
-            // 
-            this.zoomOutToolStripMenuItem.Image = global::RemakePaint.Properties.Resources.icons8_zoom_out_50;
-            this.zoomOutToolStripMenuItem.Name = "zoomOutToolStripMenuItem";
-            this.zoomOutToolStripMenuItem.Size = new System.Drawing.Size(178, 30);
-            this.zoomOutToolStripMenuItem.Text = "Zoom out";
-            this.zoomOutToolStripMenuItem.Click += new System.EventHandler(this.zoomOutToolStripMenuItem_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.BorderRadius = 5;
-            this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSave.FillColor = System.Drawing.SystemColors.Control;
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSave.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSave.Image = global::RemakePaint.Properties.Resources.icons8_save_50__1_;
-            this.btnSave.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSave.Location = new System.Drawing.Point(199, 3);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(41, 33);
-            this.btnSave.TabIndex = 2;
-            // 
-            // btnUndo
-            // 
-            this.btnUndo.BorderRadius = 5;
-            this.btnUndo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUndo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUndo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUndo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUndo.FillColor = System.Drawing.SystemColors.Control;
-            this.btnUndo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnUndo.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnUndo.Image = global::RemakePaint.Properties.Resources.icons8_undo_50;
-            this.btnUndo.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnUndo.Location = new System.Drawing.Point(257, 3);
-            this.btnUndo.Name = "btnUndo";
-            this.btnUndo.Size = new System.Drawing.Size(41, 33);
-            this.btnUndo.TabIndex = 4;
-            this.btnUndo.Click += new System.EventHandler(this.btnUndo_Click);
-            // 
-            // btnRedo
-            // 
-            this.btnRedo.BorderRadius = 5;
-            this.btnRedo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnRedo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnRedo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRedo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRedo.FillColor = System.Drawing.SystemColors.Control;
-            this.btnRedo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRedo.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRedo.Image = global::RemakePaint.Properties.Resources.icons8_redo_50;
-            this.btnRedo.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnRedo.Location = new System.Drawing.Point(304, 3);
-            this.btnRedo.Name = "btnRedo";
-            this.btnRedo.Size = new System.Drawing.Size(41, 33);
-            this.btnRedo.TabIndex = 5;
-            this.btnRedo.Click += new System.EventHandler(this.btnRedo_Click);
             // 
             // RemakePaint
             // 
@@ -2048,23 +2048,23 @@
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel5.PerformLayout();
             this.guna2Panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbCurrentShape)).EndInit();
             this.guna2Panel6.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCurrentColor)).EndInit();
             this.guna2Panel9.ResumeLayout(false);
             this.guna2Panel9.PerformLayout();
+            this.guna2Panel10.ResumeLayout(false);
+            this.guna2Panel10.PerformLayout();
             this.pnPaintRegion.ResumeLayout(false);
             this.pnPaintRegion.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImgEditor)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.pnTextTools.ResumeLayout(false);
-            this.guna2Panel10.ResumeLayout(false);
-            this.guna2Panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImgEditor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_mainScreen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCurrentShape)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCurrentColor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

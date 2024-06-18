@@ -412,7 +412,7 @@ namespace RemakePaint
             {
                 UndoStack.Push(new Bitmap(bm));
                 textBox1.Visible = false;
-                g.DrawString(textBox1.Text, textBox1.Font, new SolidBrush(textBox1.ForeColor), new Point(textBox1.Location.X - 3, textBox1.Location.Y));
+                g.DrawString(textBox1.Text, textBox1.Font, new SolidBrush(textBox1.ForeColor), new Point(textBox1.Location.X + 1, textBox1.Location.Y + 4));
                 textBox1.Text = "";
                 pnTextTools.Visible = false;
                 return;
@@ -632,6 +632,15 @@ namespace RemakePaint
 
         #endregion
         #region Tools Event
+        private void ResetBGBtn()
+        {
+            btnPencil.BorderColor = Color.White;
+            btnEraser.BorderColor = Color.White;
+            btnFill.BorderColor = Color.White;
+            btnColorPicker.BorderColor = Color.White;
+            btnText.BorderColor = Color.White;
+            btnZoom.BorderColor = Color.White;
+        }
         private void btnPencil_Click(object sender, EventArgs e)
         {
             Bitmap temp = new Bitmap(global::RemakePaint.Properties.Resources.IcPencilMainscreen);
@@ -640,6 +649,8 @@ namespace RemakePaint
             SelectedMode = 1;
             TrackBarPen.Visible = true; 
             TrackBarPen.Value = 40 - (int)p.Width;
+            ResetBGBtn();
+            btnPencil.BorderColor = Color.Black;
         }
         private void btnEraser_Click(object sender, EventArgs e)
         {
@@ -649,6 +660,8 @@ namespace RemakePaint
             SelectedMode = 2;
             TrackBarPen.Visible = true;
             TrackBarPen.Value = 40 - (int)eraser.Width;
+            ResetBGBtn();
+            btnEraser.BorderColor = Color.Black;
         }
         private Bitmap ResizeBitmap(Bitmap source, int width, int height)
         {
@@ -667,6 +680,8 @@ namespace RemakePaint
             TrackBarPen.Visible = false;
             Bitmap bm = new Bitmap(global::RemakePaint.Properties.Resources.icons8_fill_color_48);
             pb_mainScreen.Cursor = new Cursor(bm.GetHicon());
+            ResetBGBtn();
+            btnFill.BorderColor = Color.Black;
         }
         private void btnColorPicker_Click(object sender, EventArgs e)
         {
@@ -674,6 +689,8 @@ namespace RemakePaint
             TrackBarPen.Visible = false;
             Bitmap bm = new Bitmap(global::RemakePaint.Properties.Resources.icons8_color_picker_48);
             pb_mainScreen.Cursor = new Cursor(bm.GetHicon());
+            ResetBGBtn();
+            btnColorPicker.BorderColor = Color.Black;
         }
         private void TrackBarPen_Scroll(object sender, ScrollEventArgs e)
         {
@@ -701,7 +718,13 @@ namespace RemakePaint
                 Font font = new Font(cb_Font.Text, i);
                 textBox1.ForeColor = currentColor;
                 textBox1.Font = font;
-
+                using (Graphics g = this.textBox1.CreateGraphics())
+                {
+                    SizeF size = g.MeasureString(this.textBox1.Text, this.textBox1.Font);
+                    // Thêm một khoảng đệm để đảm bảo văn bản không bị cắt
+                    this.textBox1.Width = (int)size.Width + 10;
+                    this.textBox1.Height = (int)size.Height + 10;
+                }
             }
             catch
             {
@@ -716,6 +739,13 @@ namespace RemakePaint
                 Font font = new Font(cb_Font.Text, i);
                 textBox1.ForeColor = currentColor;
                 textBox1.Font = font;
+                using (Graphics g = this.textBox1.CreateGraphics())
+                {
+                    SizeF size = g.MeasureString(this.textBox1.Text, this.textBox1.Font);
+                    // Thêm một khoảng đệm để đảm bảo văn bản không bị cắt
+                    this.textBox1.Width = (int)size.Width + 10;
+                    this.textBox1.Height = (int)size.Height + 10;
+                }
 
             }
             catch
@@ -777,97 +807,114 @@ namespace RemakePaint
                 SelectedMode = 5;
                 pb_mainScreen.Cursor = Cursors.Default;
                 pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_line_50;
+                ResetBGBtn();
             };
             btnCircle.Click += (sender, e) =>
             {
                 SelectedMode = 6;
                 pb_mainScreen.Cursor = Cursors.Default;
                 pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_circle_30;
+                ResetBGBtn();
             };
             btnRectangle.Click += (sender, e) =>
             {
                 SelectedMode = 7;
                 pb_mainScreen.Cursor = Cursors.Default;
                 pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_rectangle_48;
+                ResetBGBtn();
             };
             btnTriangle.Click += (sender, e) =>
             {
                 SelectedMode = 8;
                 pb_mainScreen.Cursor = Cursors.Default;
                 pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_triangle_30;
+                ResetBGBtn();
             };
             btnRightTriangle.Click += (sender, e) =>
             {
                 SelectedMode = 9;
                 pb_mainScreen.Cursor = Cursors.Default;
                 pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_right_triangle_48;
+                ResetBGBtn();
             };
             btnRadiusRectangle.Click += (sender, e) =>
             {
                 SelectedMode = 10;
                 pb_mainScreen.Cursor = Cursors.Default;
                 pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_rectangle_48__1_;
+                ResetBGBtn();
             };
             btnRhombus.Click += (sender, e) =>
             {
                 SelectedMode = 11;
                 pb_mainScreen.Cursor = Cursors.Default;
                 pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_rhombus_48;
+                ResetBGBtn();
             };
             btnPentagon.Click += (sender, e) =>
             {
                 SelectedMode = 12;
                 pb_mainScreen.Cursor = Cursors.Default;
                 pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_pentagon_48;
+                ResetBGBtn();
             };
             btnHexagon.Click += (sender, e) =>
             {
                 SelectedMode = 13;
                 pb_mainScreen.Cursor = Cursors.Default;
                 pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_hexagon_48;
+                ResetBGBtn();
             };
             btnArrowUp.Click += (sender, e) =>
             {
                 SelectedMode = 14;
                 pb_mainScreen.Cursor = Cursors.Default;
                 pbCurrentShape.Image = global::RemakePaint.Properties.Resources.UpArrow1;
+                ResetBGBtn();
             };
             btnArrowDown.Click += (sender, e) =>
             {
                 SelectedMode = 17;
                 pb_mainScreen.Cursor = Cursors.Default;
                 pbCurrentShape.Image = global::RemakePaint.Properties.Resources.DownArrow;
+                ResetBGBtn();
             };
             btnArrowLeft.Click += (sender, e) =>
             {
                 SelectedMode = 15;
                 pb_mainScreen.Cursor = Cursors.Default;
                 pbCurrentShape.Image = global::RemakePaint.Properties.Resources.LeftArrow;
+                ResetBGBtn();
             };
             btnArrowRight.Click += (sender, e) =>
             {
                 SelectedMode = 16;
                 pb_mainScreen.Cursor = Cursors.Default;
                 pbCurrentShape.Image = global::RemakePaint.Properties.Resources.RightArrow;
+                ResetBGBtn();
             };
             btnPolygon.Click += (sender, e) =>
             {
                 SelectedMode = 18;
                 pb_mainScreen.Cursor = Cursors.Default;
                 pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_polygon_30;
+                ResetBGBtn();
             };
             btnStar.Click += (sender, e) =>
             {
                 SelectedMode = 19;
                 pb_mainScreen.Cursor = Cursors.Default;
                 pbCurrentShape.Image = global::RemakePaint.Properties.Resources.icons8_star_50;
+                ResetBGBtn();
             };
         }
         private void btnText_Click(object sender, EventArgs e)
         {
             SelectedMode = 24;
             pb_mainScreen.Cursor = Cursors.IBeam;
-            TrackBarPen.Visible = false;    
+            TrackBarPen.Visible = false;
+            ResetBGBtn();
+            btnText.BorderColor = Color.Black;
         }
         private void btnZoom_Click(object sender, EventArgs e)
         {
@@ -875,6 +922,8 @@ namespace RemakePaint
             pb_mainScreen.Cursor = new Cursor(bm.GetHicon());
             SelectedMode = 25;
             TrackBarPen.Visible = false;
+            ResetBGBtn();
+            btnZoom.BorderColor = Color.Black;
         }
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -1019,6 +1068,13 @@ namespace RemakePaint
                     }
                 }
             }
+            using (Graphics g = this.textBox1.CreateGraphics())
+            {
+                SizeF size = g.MeasureString(this.textBox1.Text, this.textBox1.Font);
+                // Thêm một khoảng đệm để đảm bảo văn bản không bị cắt
+                this.textBox1.Width = (int)size.Width + 10;
+                this.textBox1.Height = (int)size.Height + 10;
+            }
         }
 
         private void btnItalic_Click(object sender, EventArgs e)
@@ -1078,6 +1134,13 @@ namespace RemakePaint
                     }
                 }
             }
+            using (Graphics g = this.textBox1.CreateGraphics())
+            {
+                SizeF size = g.MeasureString(this.textBox1.Text, this.textBox1.Font);
+                // Thêm một khoảng đệm để đảm bảo văn bản không bị cắt
+                this.textBox1.Width = (int)size.Width + 10;
+                this.textBox1.Height = (int)size.Height + 10;
+            }
         }
 
         private void btnUnderline_Click(object sender, EventArgs e)
@@ -1136,6 +1199,13 @@ namespace RemakePaint
                         textBox1.Font = new Font(cb_Font.Text, Convert.ToInt32(cb_Size.Text), FontStyle.Regular);
                     }
                 }
+            }
+            using (Graphics g = this.textBox1.CreateGraphics())
+            {
+                SizeF size = g.MeasureString(this.textBox1.Text, this.textBox1.Font);
+                // Thêm một khoảng đệm để đảm bảo văn bản không bị cắt
+                this.textBox1.Width = (int)size.Width + 10;
+                this.textBox1.Height = (int)size.Height + 10;
             }
         }
 
@@ -1303,6 +1373,30 @@ namespace RemakePaint
             AskAIForm askAIForm = new AskAIForm();
             askAIForm.ShowDialog();
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            // truong hop chua save lan nao 
+            if (isSaved == false)
+            {
+                SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "File *.png, *jpg, *.bmp, *.gif|*.png; *.jpg; *.bmp; *.gif ", Title = "Save image" };
+                saveFileDialog.RestoreDirectory = true;
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    isSaved = true;
+                    path = saveFileDialog.FileName;
+
+                    pb_mainScreen.Image.Save(path);
+                }
+            }
+            // truong hop da save se goi ham saveas
+            else
+            {
+                saveAsToolStripMenuItem_Click(sender, e);
+            }
+            ResetLocationSizeTool();
+        }
+
 
         private void btnImageEditor_Click(object sender, EventArgs e)
         {

@@ -18,7 +18,7 @@ namespace RemakePaint
 {
     public partial class ShareFBForm : Form
     {
-        private string accessToken = "EAAOMF1Q1yXkBO8zEgTKz3COMf0xvYKViwzAnrIvr99eoeBMjUAxGio0oNDqRl3bn3rZACpFdBPPwZBwLUNVWBGSu0ungaSGzZBbZCO2XmTVJHIwYTJFpPySUL0A55dWkWCvo3KI1r8GXn1t0sRNkTmIfg3jggtPnf7oHPORO23QddvxsCZAFMJAW351ujY5Nbu1lLF2aJZCN9FIXzg28STLh6j";
+        private string accessToken = "EAAOMF1Q1yXkBOx0CBA5rMzxEyHtIVyAxHgPapPlelwXd80Y0OibPLrxgdT7OCOzSwj6gT8UzpboqTdUuqBrqBu8DIXZBFEFDSQqZCVBFptrB0aHfa51A9lYjJXmwjzIID5QHvGz4rNrUYHM3DRegY7kM7qS4zRZAsZA51aO3iCECisZAeRiWlJ7NfIvzTgd2MQvMfgJywdIUjiCBEZBmz7JUL1";
         private static readonly HttpClient client = new HttpClient();
         public ShareFBForm()
         {
@@ -101,6 +101,5 @@ namespace RemakePaint
                 return ms.ToArray();
             }
         }
-
     }
 }
